@@ -5,4 +5,8 @@ module iub.gulshanmodelthana {
 
     opens iub.gulshanmodelthana to javafx.fxml;
     exports iub.gulshanmodelthana;
+    exports iub.gulshanmodelthana.m1_mahmudullah_2230406;
+    opens iub.gulshanmodelthana.m1_mahmudullah_2230406 to javafx.fxml;
+
+
 }
