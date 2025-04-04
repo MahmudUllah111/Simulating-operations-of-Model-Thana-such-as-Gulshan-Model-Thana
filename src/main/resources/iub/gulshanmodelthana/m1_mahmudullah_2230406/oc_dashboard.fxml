@@ -40,7 +40,7 @@
             <Image url="@../image/User.png" />
          </image>
       </ImageView>
-      <Button layoutX="747.0" layoutY="499.0" mnemonicParsing="false" onMouseClicked="#outClick" prefHeight="38.0" prefWidth="140.0" style="-fx-background-color: black;" text="Log Out" textFill="WHITE">
+      <Button layoutX="762.0" layoutY="519.0" mnemonicParsing="false" onMouseClicked="#outClick" prefHeight="38.0" prefWidth="140.0" style="-fx-background-color: black;" text="Log Out" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -55,7 +55,7 @@
             <Image url="@../image/Mail.png" />
          </image>
       </ImageView>
-      <Label fx:id="labName" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="830.0" layoutY="81.0" prefHeight="26.0" prefWidth="60.0" text="Name" textAlignment="RIGHT" wrapText="true">
+      <Label fx:id="labName" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="818.0" layoutY="81.0" prefHeight="26.0" prefWidth="60.0" text="Name" textAlignment="RIGHT" wrapText="true">
          <font>
             <Font size="16.0" />
          </font>

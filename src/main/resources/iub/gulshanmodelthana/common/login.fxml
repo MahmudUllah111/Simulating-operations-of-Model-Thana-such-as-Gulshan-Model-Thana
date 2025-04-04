@@ -59,6 +59,6 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <ComboBox fx:id="roleComboBox" layoutX="690.0" layoutY="292.0" prefHeight="35.0" prefWidth="230.0" />
+      <ComboBox fx:id="roleComboBox" layoutX="690.0" layoutY="292.0" prefHeight="35.0" prefWidth="230.0" promptText="Select" />
    </children>
 </AnchorPane>

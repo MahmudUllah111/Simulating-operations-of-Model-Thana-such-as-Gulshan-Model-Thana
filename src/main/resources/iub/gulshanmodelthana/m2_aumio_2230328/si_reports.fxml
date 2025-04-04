@@ -10,7 +10,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="626.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m2_aumio_2230328.SiReportsController">
    <children>
       <ComboBox fx:id="reportTypeComboBox" layoutX="171.0" layoutY="263.0" prefWidth="150.0" />
@@ -38,7 +37,7 @@
       <TextField fx:id="timeAndDateTextField" layoutX="169.0" layoutY="220.0" prefHeight="25.0" prefWidth="246.0" />
       <DatePicker fx:id="datePicker" layoutX="429.0" layoutY="220.0" />
       <AnchorPane prefHeight="200.0" prefWidth="200.0" />
-      <Button layoutX="188.0" layoutY="538.0" mnemonicParsing="false" onAction="#addReportOnClick" prefHeight="25.0" prefWidth="116.0" text="Add Report" />
+      <Button layoutX="188.0" layoutY="538.0" mnemonicParsing="false" onAction="#sendReportOnClick" prefHeight="25.0" prefWidth="116.0" text="Send Report" />
       <Button layoutX="338.0" layoutY="538.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="25.0" prefWidth="116.0" text="Back" />
    </children>
 </AnchorPane>

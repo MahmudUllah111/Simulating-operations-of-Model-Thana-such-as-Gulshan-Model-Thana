@@ -34,17 +34,17 @@ public class SiReportsController {
     }
 
     @FXML
-    void addReportOnClick(ActionEvent event) {
-
-    }
-
-    @FXML
     void backOnClick(ActionEvent event) {
 
     }
 
     @FXML
     void fileclick(MouseEvent event) {
+
+    }
+
+    @FXML
+    void sendReportOnClick(ActionEvent event) {
 
     }
 
