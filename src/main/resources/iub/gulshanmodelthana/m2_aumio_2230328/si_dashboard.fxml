@@ -8,10 +8,10 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="630.0" prefWidth="1247.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m2_aumio_2230328.SiDashboard">
+<AnchorPane prefHeight="630.0" prefWidth="1247.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m2_aumio_2230328.SiDashboardController">
    <children>
       <Button layoutX="51.0" layoutY="277.0" mnemonicParsing="false" onAction="#reportsOnClick" prefHeight="25.0" prefWidth="111.0" text="Reports" />
-      <ImageView fx:id="imageUser" layoutX="1146.0" layoutY="26.0" onMouseClicked="#logClick">
+      <ImageView fx:id="userImageView" layoutX="1146.0" layoutY="26.0" onMouseClicked="#logClick">
          <image>
             <Image url="@../image/User.png" />
          </image>
@@ -32,25 +32,30 @@
       </Label>
       <Line endX="-100.0" endY="474.0" layoutX="530.0" layoutY="-309.0" startX="350.0" startY="474.0" />
       <Button layoutX="1123.0" layoutY="575.0" mnemonicParsing="false" onAction="#logOutOnClick" prefHeight="25.0" prefWidth="80.0" text="Log out" />
-      <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="1091.0" layoutY="42.0" onMouseClicked="#notClick">
+      <ImageView fx:id="mailImageView" fitHeight="25.0" fitWidth="32.0" layoutX="1091.0" layoutY="42.0" onMouseClicked="#notClick">
          <image>
             <Image url="@../image/Not.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="1041.0" layoutY="42.0" onMouseClicked="#mailClick">
+      <ImageView fx:id="notificationImageWiew" fitHeight="25.0" fitWidth="32.0" layoutX="1041.0" layoutY="42.0" onMouseClicked="#mailClick">
          <image>
             <Image url="@../image/Mail.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="23.0" layoutY="23.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="dashboardImageView" fitHeight="28.0" fitWidth="51.0" layoutX="23.0" layoutY="23.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/sandwich.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="211.0" fitWidth="397.0" layoutX="518.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../Desktop/images.png" />
+            <Image url="@../image/policelogo.png" />
          </image>
       </ImageView>
+      <Label layoutX="66.0" layoutY="21.0" text="Dashboard">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

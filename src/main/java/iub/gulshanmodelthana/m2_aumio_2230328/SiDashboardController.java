@@ -17,9 +17,6 @@ public class SiDashboardController {
     private ImageView notificationImageWiew;
 
     @FXML
-    private ImageView policeLogoImageView;
-
-    @FXML
     private ImageView userImageView;
 
     @FXML
