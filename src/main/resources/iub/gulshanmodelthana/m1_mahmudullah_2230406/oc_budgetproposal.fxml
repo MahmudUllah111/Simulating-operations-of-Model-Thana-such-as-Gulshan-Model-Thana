@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="569.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m1_mahmudullah_2230406.OcBudgetProposalController">
+    <children>
+        <ImageView fx:id="imageUser" layoutX="843.0" layoutY="35.0" onMouseClicked="#logClick">
+            <image>
+                <Image url="@../image/User.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="16.0" fitWidth="25.0" layoutX="807.0" layoutY="60.0" onMouseClicked="#notClick">
+            <image>
+                <Image url="@../image/Not.png" />
+            </image>
+        </ImageView>
+        <ImageView layoutX="764.0" layoutY="59.0" onMouseClicked="#mailClick">
+            <image>
+                <Image url="@../image/Mail.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="labName" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="846.0" layoutY="91.0" prefHeight="26.0" prefWidth="44.0" text="Name" textAlignment="RIGHT" wrapText="true">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="24.0" layoutY="18.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#backMessage" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/arrow.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="24.0" layoutY="54.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/sandwich.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="59.0" layoutY="52.0" prefHeight="32.0" prefWidth="175.0" text="Budget Proposal">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+        </Label>
+        <TableView fx:id="submittedBudgetTableView" layoutX="24.0" layoutY="241.0" prefHeight="224.0" prefWidth="871.0">
+            <columns>
+                <TableColumn fx:id="itemNameTableColumn" prefWidth="306.0" text="Item Name" />
+                <TableColumn fx:id="purposeTableColumn" prefWidth="228.0" text="Purpose" />
+                <TableColumn fx:id="ammountTableColumn" prefWidth="130.0" text="Ammount" />
+                <TableColumn fx:id="submissionDateTableColumn" prefWidth="206.0" text="Submission Date" />
+            </columns>
+        </TableView>
+        <Label layoutX="24.0" layoutY="212.0" text="Submitted Budget">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Button layoutX="38.0" layoutY="489.0" mnemonicParsing="false" onAction="#reviewInDetailsButton" prefHeight="43.0" prefWidth="165.0" text="Review In Details" />
+        <Button layoutX="501.0" layoutY="489.0" mnemonicParsing="false" onAction="#approveSelectedBudgetButton" prefHeight="43.0" prefWidth="165.0" text="Approve Selected Budget" />
+        <Button layoutX="707.0" layoutY="489.0" mnemonicParsing="false" onAction="#denySelectedBudget" prefHeight="43.0" prefWidth="165.0" text="Deny Selected Budget" />
+    </children>
+</AnchorPane>
