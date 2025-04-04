@@ -3,17 +3,19 @@ package iub.gulshanmodelthana.m2_aumio_2230328;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 
 public class SiCaseManagementController {
 
     @FXML
-    private TableView<?> caseReviewTableView;
+    private RadioButton activeRadioButton;
 
     @FXML
-    private TableColumn<?, ?> crimeTypeTableColumn;
+    private TextField caseIDTextView;
+
+    @FXML
+    private RadioButton completedRadioButton;
 
     @FXML
     private TextField crimeTypeTextField;
@@ -22,25 +24,13 @@ public class SiCaseManagementController {
     private DatePicker dateOfIncidentDatePicker;
 
     @FXML
-    private TableColumn<?, ?> dateOfIncidentTableColumn;
+    private TextField officerIDTextField;
 
     @FXML
-    private TableColumn<?, ?> suspectIDTableColumn;
+    private TextField officerNameTextFile;
 
     @FXML
-    private TextField suspectIDTextField;
-
-    @FXML
-    private TableColumn<?, ?> suspectInformationURLTableColumn;
-
-    @FXML
-    private TextField suspectInformationURLTextField;
-
-    @FXML
-    private TableColumn<?, ?> suspectNameTableColumn;
-
-    @FXML
-    private TextField suspectNameTextFile;
+    private TextField suspectInformationTextField;
 
     @FXML
     void backOnClick(ActionEvent event) {
@@ -53,7 +43,7 @@ public class SiCaseManagementController {
     }
 
     @FXML
-    void selectCaseOnClick(ActionEvent event) {
+    void reviewCasesOnClick(ActionEvent event) {
 
     }
 

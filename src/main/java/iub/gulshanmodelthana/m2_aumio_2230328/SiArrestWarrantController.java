@@ -30,9 +30,12 @@ public class SiArrestWarrantController {
 
     }
 
-    @FXML
+    @Deprecated
     void viewWarrantsOnClick(ActionEvent event) {
 
     }
 
+    @FXML
+    public void suspectDatabaseOnClick(ActionEvent actionEvent) {
+    }
 }

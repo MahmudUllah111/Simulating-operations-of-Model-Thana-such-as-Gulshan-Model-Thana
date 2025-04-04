@@ -8,7 +8,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="509.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m2_aumio_2230328.SiArrestWarrantController">
    <children>
       <Label layoutX="285.0" layoutY="27.0" prefHeight="111.0" prefWidth="325.0" text="Arrest Warrants">
@@ -30,7 +29,7 @@
       <Label layoutX="42.0" layoutY="324.0" text="Suspect Details" />
       <TextArea fx:id="suspectDetailsTextField" layoutX="154.0" layoutY="324.0" prefHeight="111.0" prefWidth="697.0" />
       <Button layoutX="154.0" layoutY="455.0" mnemonicParsing="false" onAction="#addWarrantOnClick" prefHeight="25.0" prefWidth="292.0" text="Add Warrant" />
-      <Button layoutX="512.0" layoutY="455.0" mnemonicParsing="false" onAction="#viewWarrantsOnClick" prefHeight="25.0" prefWidth="311.0" text="View Warrants" />
+      <Button layoutX="512.0" layoutY="455.0" mnemonicParsing="false" onAction="#suspectDatabaseOnClick" prefHeight="25.0" prefWidth="311.0" text="Suspect Database" />
       <Line endX="601.0" layoutX="255.0" layoutY="446.0" startX="-100.0" />
    </children>
 </AnchorPane>
