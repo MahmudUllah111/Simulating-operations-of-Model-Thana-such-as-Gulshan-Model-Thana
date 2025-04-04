@@ -1,14 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="iub.gulshanmodelthana.m2_aumio_2230328.SiPetrolLogs"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="712.0" prefWidth="1073.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m2_aumio_2230328.SiPetrolLogsController">
+   <children>
+      <Label layoutX="444.0" layoutY="14.0" prefHeight="135.0" prefWidth="185.0" text="Petrol Logs">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="536.0" layoutY="110.0" startX="-100.0" />
+      <Label layoutX="35.0" layoutY="167.0" prefHeight="17.0" prefWidth="145.0" text="Petrol Officer Name" />
+      <Label layoutX="35.0" layoutY="194.0" prefHeight="17.0" prefWidth="145.0" text="Petrol Officer ID" />
+      <Label layoutX="35.0" layoutY="220.0" prefHeight="17.0" prefWidth="145.0" text="Petrol Route" />
+      <Label layoutX="436.0" layoutY="167.0" prefHeight="17.0" prefWidth="145.0" text="Petrol Vehicle Type" />
+      <Label layoutX="436.0" layoutY="203.0" prefHeight="17.0" prefWidth="145.0" text="Date" />
+      <Button layoutX="581.0" layoutY="237.0" mnemonicParsing="false" onAction="#assignPetrolOfficerOnClick" prefHeight="39.0" prefWidth="150.0" text="Assign Petrol Officer" />
+      <TextField fx:id="PetrolOfficerNameTextField" layoutX="167.0" layoutY="163.0" />
+      <TextField fx:id="petrolOfficerIDTextField" layoutX="167.0" layoutY="190.0" />
+      <ComboBox fx:id="petrolRouteComboBox" layoutX="167.0" layoutY="216.0" prefWidth="150.0" />
+      <ComboBox fx:id="petrolVehicleTypeTextField" layoutX="581.0" layoutY="163.0" prefWidth="150.0" />
+      <DatePicker fx:id="dateDatepicker" layoutX="581.0" layoutY="199.0" prefHeight="25.0" prefWidth="150.0" />
+      <Line endX="100.0" layoutX="292.0" layoutY="154.0" startX="100.0" startY="113.0" />
+      <Line endX="888.0" layoutX="136.0" layoutY="287.0" startX="-100.0" />
+      <Label layoutX="36.0" layoutY="330.0" text="Assigned Petrols">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="assignedPetrolsTableView" layoutX="35.0" layoutY="356.0" prefHeight="290.0" prefWidth="1007.0">
+        <columns>
+          <TableColumn fx:id="officerNameTableColumn" prefWidth="300.0" text="Officer Name" />
+          <TableColumn fx:id="OfficerIDTableColumn" prefWidth="182.0" text="Officer ID" />
+            <TableColumn fx:id="petrolRouteTableColumn" prefWidth="190.0" text="Petrol Route" />
+            <TableColumn fx:id="petrolVehicleTableColumn" prefWidth="167.0" text="Petrol Vehicle" />
+            <TableColumn fx:id="dateTableColumn" prefWidth="162.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="859.0" layoutY="673.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="25.0" prefWidth="150.0" text="Back" />
+      <Line endX="888.0" layoutX="144.0" layoutY="659.0" startX="-100.0" />
+   </children>
 </AnchorPane>
