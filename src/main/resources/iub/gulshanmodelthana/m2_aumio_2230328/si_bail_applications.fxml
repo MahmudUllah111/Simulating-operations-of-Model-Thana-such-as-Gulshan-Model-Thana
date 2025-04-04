@@ -8,8 +8,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="583.0" prefWidth="932.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m2_aumio_2230328.SiBailApplications">
+<AnchorPane prefHeight="583.0" prefWidth="932.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m2_aumio_2230328.SiBailApplicationsController">
    <children>
       <Label layoutX="364.0" layoutY="49.0" prefHeight="41.0" prefWidth="204.0" text="Bail Applications">
          <font>
@@ -22,12 +21,16 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <TableView layoutX="20.0" layoutY="218.0" prefHeight="299.0" prefWidth="902.0">
+      <TableView fx:id="pendingBailApplicationsTableView" layoutX="20.0" layoutY="218.0" prefHeight="299.0" prefWidth="902.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn fx:id="bailApplicantNameTableColumn" prefWidth="271.0" text="Bail applicant name" />
+          <TableColumn fx:id="bailApplicantSuspectIDTableColumn" minWidth="0.0" prefWidth="157.0" text="Bail Applicant Suspect ID" />
+            <TableColumn fx:id="bailApplicantAccusedCrimeTableColumn" minWidth="6.0" prefWidth="262.0" text="bail Applicant Accused Crime" />
+            <TableColumn fx:id="requestedBailDurationTableColumn" prefWidth="211.0" text="Requested bail Duration" />
         </columns>
       </TableView>
-      <Button layoutX="807.0" layoutY="533.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="84.0" text="back" />
+      <Button layoutX="807.0" layoutY="533.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="26.0" prefWidth="84.0" text="back" />
+      <Button layoutX="42.0" layoutY="534.0" mnemonicParsing="false" onAction="#approveOnClick" text="Approve" />
+      <Button layoutX="137.0" layoutY="534.0" mnemonicParsing="false" onAction="#denyOnClick" text="Deny" />
    </children>
 </AnchorPane>
