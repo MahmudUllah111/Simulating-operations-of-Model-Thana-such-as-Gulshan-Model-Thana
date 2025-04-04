@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="630.0" prefWidth="1247.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m2_aumio_2230328.SiDashboard">
+<AnchorPane prefHeight="630.0" prefWidth="1247.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m2_aumio_2230328.SiDashboard">
    <children>
       <Button layoutX="51.0" layoutY="277.0" mnemonicParsing="false" onAction="#reportsOnClick" prefHeight="25.0" prefWidth="111.0" text="Reports" />
       <ImageView fx:id="imageUser" layoutX="1146.0" layoutY="26.0" onMouseClicked="#logClick">
@@ -45,6 +45,11 @@
       <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="23.0" layoutY="23.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/sandwich.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="211.0" fitWidth="397.0" layoutX="518.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Desktop/images.png" />
          </image>
       </ImageView>
    </children>
