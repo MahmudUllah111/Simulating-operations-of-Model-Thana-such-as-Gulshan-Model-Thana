@@ -8,7 +8,19 @@ import javafx.scene.input.MouseEvent;
 public class SiDashboardController {
 
     @FXML
-    private ImageView imageUser;
+    private ImageView dashboardImageView;
+
+    @FXML
+    private ImageView mailImageView;
+
+    @FXML
+    private ImageView notificationImageWiew;
+
+    @FXML
+    private ImageView policeLogoImageView;
+
+    @FXML
+    private ImageView userImageView;
 
     @FXML
     void arrestWarrentOnClick(ActionEvent event) {
