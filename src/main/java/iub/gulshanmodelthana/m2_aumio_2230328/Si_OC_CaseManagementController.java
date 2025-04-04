@@ -6,7 +6,7 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 
-public class SiCaseManagementController {
+public class Si_OC_CaseManagementController {
 
     @FXML
     private RadioButton activeRadioButton;

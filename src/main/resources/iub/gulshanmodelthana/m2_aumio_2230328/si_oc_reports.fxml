@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="626.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m2_aumio_2230328.SiReportsController">
+<AnchorPane prefHeight="626.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m2_aumio_2230328.Si_OC_ReportsController">
    <children>
       <ComboBox fx:id="reportTypeComboBox" layoutX="171.0" layoutY="263.0" prefWidth="150.0" />
       <Label layoutX="79.0" layoutY="267.0" text="Report Type" />

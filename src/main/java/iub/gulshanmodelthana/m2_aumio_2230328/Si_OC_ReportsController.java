@@ -8,7 +8,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
-public class SiReportsController {
+public class Si_OC_ReportsController {
 
     @FXML
     private TextArea crimeSceneDetailsTextArea;
