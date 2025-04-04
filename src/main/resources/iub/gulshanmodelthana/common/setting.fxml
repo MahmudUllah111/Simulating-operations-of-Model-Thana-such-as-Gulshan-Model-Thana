@@ -63,15 +63,13 @@
         </ImageView>
         <Circle fx:id="maildot" fill="#ff3737" layoutX="1078.0" layoutY="43.0" radius="8.0" stroke="TRANSPARENT" strokeType="INSIDE" />
         <Circle fx:id="notificationdot" fill="#ff3737" layoutX="1121.0" layoutY="43.0" radius="8.0" stroke="TRANSPARENT" strokeType="INSIDE" />
-        <AnchorPane fx:id="paneLog" layoutX="896.0" prefHeight="120.0" prefWidth="304.0" style="-fx-background-color: #D6DAC8;" visible="false">
-            <children>
-                <Label fx:id="labName" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="27.0" layoutY="29.0" text="Name" textAlignment="RIGHT" wrapText="true">
-                    <font>
-                        <Font size="16.0" />
-                    </font>
-                </Label>
-            </children>
-        </AnchorPane>
+        <AnchorPane fx:id="paneLog" layoutX="896.0" prefHeight="120.0" prefWidth="304.0" style="-fx-background-color: #D6DAC8;" visible="false" />
+      <Button layoutX="1113.0" layoutY="80.0" mnemonicParsing="false" onAction="#logoutbutton" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: black;" text="LogOut" textFill="WHITE" />
+          <Label fx:id="namelabel" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="968.0" layoutY="38.0" prefHeight="26.0" prefWidth="65.0" text="Name" textAlignment="RIGHT" wrapText="true">
+              <font>
+                  <Font size="16.0" />
+              </font>
+          </Label>
         <ImageView fx:id="imageUser" layoutX="1136.0" layoutY="16.0" onMouseClicked="#logClick">
             <image>
                 <Image url="@../image/User.png" />

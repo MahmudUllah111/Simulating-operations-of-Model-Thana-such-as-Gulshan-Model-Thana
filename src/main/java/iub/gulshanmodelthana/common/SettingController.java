@@ -4,8 +4,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -26,9 +24,6 @@ public class SettingController {
     private ImageView imageUser2;
 
     @FXML
-    private Label labName;
-
-    @FXML
     private Circle maildot;
 
     @FXML
@@ -42,6 +37,8 @@ public class SettingController {
 
     @FXML
     private AnchorPane paneSide;
+    @FXML
+    private Label namelabel;
 
 
     @FXML
@@ -70,4 +67,7 @@ public class SettingController {
 
     }
 
+    @FXML
+    public void logoutbutton(ActionEvent actionEvent) {
+    }
 }
