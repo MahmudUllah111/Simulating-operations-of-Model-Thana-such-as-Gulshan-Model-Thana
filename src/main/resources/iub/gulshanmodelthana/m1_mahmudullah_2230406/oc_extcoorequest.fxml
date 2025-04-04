@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="569.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m1_mahmudullah_2230406.OcExtcooRequestController">
    <children>
       <ImageView fx:id="imageUser" layoutX="849.0" layoutY="35.0" onMouseClicked="#logClick">
@@ -59,6 +58,9 @@
          </font>
       </Label>
       <DatePicker fx:id="dateDatePicker" layoutX="88.0" layoutY="336.0" />
-      <Button layoutX="33.0" layoutY="386.0" mnemonicParsing="false" onAction="#sendRequestButton" prefHeight="41.0" prefWidth="229.0" text="Send Request" />
+      <Button layoutX="33.0" layoutY="386.0" mnemonicParsing="false" onAction="#sendRequestButton" prefHeight="41.0" prefWidth="229.0" style="-fx-background-color: black;" text="Send Request" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
    </children>
 </AnchorPane>

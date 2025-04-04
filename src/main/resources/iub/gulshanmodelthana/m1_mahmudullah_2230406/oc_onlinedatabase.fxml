@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="618.0" prefWidth="964.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m1_mahmudullah_2230406.OcOnlineDatabaseController">
    <children>
       <ImageView fx:id="imageUser" layoutX="907.0" layoutY="31.0" onMouseClicked="#logClick">
@@ -29,7 +28,7 @@
             <Image url="@../image/Mail.png" />
          </image>
       </ImageView>
-      <Label fx:id="labName" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="877.0" layoutY="90.0" prefHeight="26.0" prefWidth="60.0" text="Name" textAlignment="RIGHT" wrapText="true">
+      <Label fx:id="labName" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="910.0" layoutY="89.0" prefHeight="26.0" prefWidth="43.0" text="Name" textAlignment="RIGHT" wrapText="true">
          <font>
             <Font size="16.0" />
          </font>
@@ -74,14 +73,14 @@
       <RadioButton fx:id="bailedradiobutton" layoutX="533.0" layoutY="127.0" mnemonicParsing="false" text="Bailed" />
       <Label layoutX="338.0" layoutY="161.0" prefHeight="18.0" prefWidth="50.0" text="Search" />
       <TextField fx:id="searchtextfield" layoutX="459.0" layoutY="158.0" prefHeight="26.0" prefWidth="150.0" promptText="Search caseNo, name, id, " style="-fx-border-color: black;" />
-      <Button layoutX="637.0" layoutY="83.0" mnemonicParsing="false" onAction="#addbutton" prefHeight="42.0" prefWidth="114.0" text="Add">
+      <Button layoutX="637.0" layoutY="83.0" mnemonicParsing="false" onAction="#addbutton" prefHeight="42.0" prefWidth="114.0" style="-fx-background-color: black;" text="Add" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="637.0" layoutY="149.0" mnemonicParsing="false" onAction="#searchbutton" prefHeight="42.0" prefWidth="114.0" text="Search">
+      <Button layoutX="637.0" layoutY="149.0" mnemonicParsing="false" onAction="#searchbutton" prefHeight="42.0" prefWidth="114.0" style="-fx-background-color: black;" text="Search" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="System Bold" size="14.0" />
          </font>
       </Button>
    </children>
