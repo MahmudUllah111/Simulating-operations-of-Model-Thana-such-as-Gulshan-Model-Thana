@@ -1,7 +1,7 @@
 package iub.gulshanmodelthana.m2_aumio_2230328;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
@@ -23,14 +23,18 @@ public class SiBailApplicationsController {
     private TableColumn<?, ?> requestedBailDurationTableColumn;
 
     @FXML
-    public void denyOnClick(ActionEvent actionEvent) {
+    void approveOnClick(ActionEvent event) {
+
     }
 
     @FXML
-    public void approveOnClick(ActionEvent actionEvent) {
+    void backOnClick(ActionEvent event) {
+
     }
 
     @FXML
-    public void backOnClick(ActionEvent actionEvent) {
+    void denyOnClick(ActionEvent event) {
+
     }
+
 }
