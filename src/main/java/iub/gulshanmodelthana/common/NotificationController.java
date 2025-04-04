@@ -2,7 +2,6 @@ package iub.gulshanmodelthana.common;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.image.ImageView;
@@ -10,31 +9,19 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Circle;
 
-public class SettingController {
+public class NotificationController {
+
+    @FXML
+    private TableColumn<?, ?> dtable;
 
     @FXML
     private TableColumn<?, ?> dtableSide;
 
     @FXML
-    private PasswordField enConfirmPassword;
-
-    @FXML
-    private PasswordField enCurrentPassword;
-
-    @FXML
-    private PasswordField enNewPassword;
-
-    @FXML
     private ImageView imageUser;
 
     @FXML
-    private ImageView imageUser2;
-
-    @FXML
     private Label labName;
-
-    @FXML
-    private Label labName2;
 
     @FXML
     private Circle mdot;
@@ -43,13 +30,25 @@ public class SettingController {
     private Circle ndot;
 
     @FXML
+    private TableColumn<?, ?> ntable;
+
+    @FXML
     private AnchorPane paneLog;
 
     @FXML
     private AnchorPane paneSide;
 
     @FXML
+    private TableView<?> table;
+
+    @FXML
     private TableView<?> tableSide;
+
+    @FXML
+    private TableColumn<?, ?> ttable;
+
+    @FXML
+    private TableColumn<?, ?> utable;
 
     @FXML
     void logClick(MouseEvent event) {
@@ -73,11 +72,6 @@ public class SettingController {
 
     @FXML
     void sandAction(MouseEvent event) {
-
-    }
-
-    @FXML
-    void saveClick(MouseEvent event) {
 
     }
 
