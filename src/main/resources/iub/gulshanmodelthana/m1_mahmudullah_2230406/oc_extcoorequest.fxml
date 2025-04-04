@@ -1,8 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 
 <AnchorPane prefHeight="569.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m1_mahmudullah_2230406.OcExtcooRequestController">
-
+   <children>
+      <ImageView fx:id="imageUser" layoutX="849.0" layoutY="35.0" onMouseClicked="#logClick">
+         <image>
+            <Image url="@../image/User.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="25.0" layoutX="813.0" layoutY="60.0" onMouseClicked="#notClick">
+         <image>
+            <Image url="@../image/Not.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="768.0" layoutY="59.0" onMouseClicked="#mailClick">
+         <image>
+            <Image url="@../image/Mail.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labName" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="855.0" layoutY="93.0" prefHeight="26.0" prefWidth="60.0" text="Name" textAlignment="RIGHT" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="24.0" layoutY="18.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#backMessage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/arrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="24.0" layoutY="54.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/sandwich.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="59.0" layoutY="52.0" prefHeight="32.0" prefWidth="314.0" text="Coordination Request">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="106.0" prefHeight="41.0" prefWidth="74.0" text="purpose">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="purposeTextArea" layoutX="31.0" layoutY="147.0" prefHeight="165.0" prefWidth="737.0" />
+      <Label layoutX="31.0" layoutY="328.0" prefHeight="41.0" prefWidth="74.0" text="Date">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateDatePicker" layoutX="88.0" layoutY="336.0" />
+      <Button layoutX="33.0" layoutY="386.0" mnemonicParsing="false" onAction="#sendRequestButton" prefHeight="41.0" prefWidth="229.0" text="Send Request" />
+   </children>
 </AnchorPane>
