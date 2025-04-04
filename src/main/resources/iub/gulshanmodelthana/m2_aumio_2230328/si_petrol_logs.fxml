@@ -11,7 +11,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="712.0" prefWidth="1073.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m2_aumio_2230328.SiPetrolLogsController">
    <children>
       <Label layoutX="444.0" layoutY="14.0" prefHeight="135.0" prefWidth="185.0" text="Petrol Logs">
@@ -47,7 +46,7 @@
             <TableColumn fx:id="dateTableColumn" prefWidth="162.0" text="Date" />
         </columns>
       </TableView>
-      <Button layoutX="859.0" layoutY="673.0" mnemonicParsing="false" onAction="#assignPetrolOfficerOnClick" prefHeight="25.0" prefWidth="150.0" text="Back" />
+      <Button layoutX="859.0" layoutY="673.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="25.0" prefWidth="150.0" text="Back" />
       <Line endX="888.0" layoutX="144.0" layoutY="659.0" startX="-100.0" />
    </children>
 </AnchorPane>

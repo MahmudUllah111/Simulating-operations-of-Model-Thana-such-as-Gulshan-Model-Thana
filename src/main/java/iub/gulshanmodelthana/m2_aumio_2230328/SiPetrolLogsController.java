@@ -48,4 +48,7 @@ public class SiPetrolLogsController {
 
     }
 
+    @FXML
+    public void backOnClick(ActionEvent actionEvent) {
+    }
 }
