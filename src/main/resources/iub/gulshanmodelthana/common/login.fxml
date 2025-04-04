@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
@@ -11,24 +12,24 @@
 
 <AnchorPane prefHeight="481.0" prefWidth="999.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.common.LoginController">
    <children>
-      <ImageView fitHeight="515.0" fitWidth="999.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="515.0" fitWidth="999.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/IoginBackgroundImage.jpg" />
          </image>
       </ImageView>
-      <TextField fx:id="emailtextfield" layoutX="696.0" layoutY="227.0" prefHeight="44.0" prefWidth="230.0" />
-      <PasswordField fx:id="passwordtextfield" layoutX="696.0" layoutY="296.0" prefHeight="44.0" prefWidth="230.0" />
-      <Button layoutX="696.0" layoutY="361.0" mnemonicParsing="false" onAction="#loginbutton" prefHeight="34.0" prefWidth="106.0" text="LogIn">
+      <TextField fx:id="emailtextfield" layoutX="689.0" layoutY="162.0" prefHeight="44.0" prefWidth="230.0" />
+      <PasswordField fx:id="passwordtextfield" layoutX="689.0" layoutY="226.0" prefHeight="44.0" prefWidth="230.0" />
+      <Button layoutX="689.0" layoutY="361.0" mnemonicParsing="false" onAction="#loginbutton" prefHeight="34.0" prefWidth="106.0" text="LogIn">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Label layoutX="566.0" layoutY="232.0" prefHeight="35.0" prefWidth="66.0" text="Email" textFill="#fafafa">
+      <Label layoutX="559.0" layoutY="167.0" prefHeight="35.0" prefWidth="66.0" text="Email" textFill="#fafafa">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="566.0" layoutY="300.0" prefHeight="35.0" prefWidth="106.0" text="Password" textFill="#fafafa">
+      <Label layoutX="559.0" layoutY="224.0" prefHeight="35.0" prefWidth="106.0" text="Password" textFill="#fafafa">
          <font>
             <Font size="24.0" />
          </font>
@@ -48,10 +49,16 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Button layoutX="819.0" layoutY="361.0" mnemonicParsing="false" onAction="#signupbutton" prefHeight="34.0" prefWidth="106.0" text="Sign Up">
+      <Button layoutX="813.0" layoutY="361.0" mnemonicParsing="false" onAction="#signupbutton" prefHeight="34.0" prefWidth="106.0" text="Sign Up">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
+      <Label layoutX="559.0" layoutY="292.0" prefHeight="35.0" prefWidth="106.0" text="Role" textFill="#fafafa">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="roleComboBox" layoutX="690.0" layoutY="292.0" prefHeight="35.0" prefWidth="230.0" />
    </children>
 </AnchorPane>
