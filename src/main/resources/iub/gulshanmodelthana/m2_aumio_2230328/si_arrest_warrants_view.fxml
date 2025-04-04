@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="536.0" prefWidth="985.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m2_aumio_2230328.SiArrestWarrantsView">
+   <children>
+      <Label layoutX="292.0" layoutY="23.0" prefHeight="103.0" prefWidth="401.0" text="View Arrest Warrants">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Line endX="264.0" layoutX="393.0" layoutY="106.0" startX="-100.0" />
+      <TableView fx:id="suspectWarrantTableView" layoutY="215.0" prefHeight="321.0" prefWidth="985.0">
+        <columns>
+          <TableColumn fx:id="nameTableColumn" prefWidth="165.0" text=" Name" />
+          <TableColumn fx:id="warrantIDTableColumn" prefWidth="95.0" text="Warrant ID" />
+            <TableColumn fx:id="ageTableColumn" prefWidth="59.0" text="Age" />
+            <TableColumn fx:id="homeAdressTableColumn" prefWidth="141.0" text="Home Address" />
+            <TableColumn fx:id="contactNumberTableColumn" prefWidth="130.0" text="Contact Number" />
+            <TableColumn fx:id="warrantDetailsTableColumn" prefWidth="394.0" text="warrant Details" />
+        </columns>
+      </TableView>
+      <Label layoutX="13.0" layoutY="186.0" text="Suspect Warrants" />
+      <Line endX="-11.0" layoutX="115.0" layoutY="203.0" startX="-100.0" />
+   </children>
+</AnchorPane>
