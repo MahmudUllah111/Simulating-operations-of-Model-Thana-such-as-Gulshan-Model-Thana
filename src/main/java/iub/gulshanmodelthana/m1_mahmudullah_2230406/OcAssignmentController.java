@@ -21,16 +21,22 @@ public class OcAssignmentController {
     private TextArea adddetailstextarea;
 
     @FXML
-    private TableColumn<?, ?> assignedofficercolumn;
+    private TableColumn<?, ?> assignedofficernamecolumn;
 
     @FXML
     private TextField assignedofficertextfield;
+
+    @FXML
+    private TextField assignedofficertextfield1;
 
     @FXML
     private TableColumn<?, ?> assignmentidcolumn;
 
     @FXML
     private TextField assignmentidtextfield;
+
+    @FXML
+    private TableColumn<?, ?> assignmentprogresscolumn;
 
     @FXML
     private RadioButton completedradiobutton;
@@ -51,7 +57,7 @@ public class OcAssignmentController {
     private Label labName;
 
     @FXML
-    private TableColumn<?, ?> progresscolumn;
+    private TableColumn<?, ?> officeridcolumn;
 
     @FXML
     private TableView<?> tableview;
