@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="569.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m1_mahmudullah_2230406.ItAccesslogsController">
+    <children>
+        <ImageView fx:id="imageUser" layoutX="863.0" layoutY="38.0" onMouseClicked="#logClick">
+            <image>
+                <Image url="@../image/User.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="16.0" fitWidth="25.0" layoutX="825.0" layoutY="59.0" onMouseClicked="#notClick">
+            <image>
+                <Image url="@../image/Not.png" />
+            </image>
+        </ImageView>
+        <ImageView layoutX="782.0" layoutY="58.0" onMouseClicked="#mailClick">
+            <image>
+                <Image url="@../image/Mail.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="labName" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="866.0" layoutY="97.0" prefHeight="26.0" prefWidth="44.0" text="Name" textAlignment="RIGHT" wrapText="true">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="10.0" layoutY="24.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#backMessage" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/arrow.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="10.0" layoutY="54.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/sandwich.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="45.0" layoutY="52.0" prefHeight="32.0" prefWidth="150.0" text="Access Logs">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tableview" layoutY="151.0" prefHeight="343.0" prefWidth="920.0">
+            <columns>
+                <TableColumn fx:id="emailidcolumn" prefWidth="288.0" text="Email ID " />
+                <TableColumn fx:id="rolecolumn" prefWidth="297.60003662109375" text="Role" />
+                <TableColumn fx:id="datecolumn" prefWidth="334.40008544921875" text="Date" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

@@ -59,8 +59,17 @@
                 <Font name="System Bold" size="12.0" />
             </font>
         </Label>
-        <Button layoutX="38.0" layoutY="489.0" mnemonicParsing="false" onAction="#reviewInDetailsButton" prefHeight="43.0" prefWidth="165.0" text="Review In Details" />
-        <Button layoutX="501.0" layoutY="489.0" mnemonicParsing="false" onAction="#approveSelectedBudgetButton" prefHeight="43.0" prefWidth="165.0" text="Approve Selected Budget" />
-        <Button layoutX="707.0" layoutY="489.0" mnemonicParsing="false" onAction="#denySelectedBudget" prefHeight="43.0" prefWidth="165.0" text="Deny Selected Budget" />
+        <Button layoutX="38.0" layoutY="489.0" mnemonicParsing="false" onAction="#reviewInDetailsButton" prefHeight="43.0" prefWidth="190.0" style="-fx-background-color: black;" text="Review In Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+        <Button layoutX="501.0" layoutY="489.0" mnemonicParsing="false" onAction="#approveSelectedBudgetButton" prefHeight="43.0" prefWidth="190.0" style="-fx-background-color: black;" text="Approve Selected Budget" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+        <Button layoutX="707.0" layoutY="489.0" mnemonicParsing="false" onAction="#denySelectedBudget" prefHeight="43.0" prefWidth="190.0" style="-fx-background-color: black;" text="Deny Selected Budget" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
     </children>
 </AnchorPane>

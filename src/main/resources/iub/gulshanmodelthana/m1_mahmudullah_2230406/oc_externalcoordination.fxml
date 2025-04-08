@@ -48,11 +48,11 @@
          </font>
       </Label>
       <Label layoutX="11.0" layoutY="101.0" text="Agency Name" />
-      <TextField fx:id="agencynametextfield" layoutX="103.0" layoutY="98.0" />
+      <TextField fx:id="agencynametextfield" layoutX="103.0" layoutY="98.0" prefHeight="26.0" prefWidth="257.0" />
       <Label layoutX="10.0" layoutY="139.0" text="Agency ID" />
-      <TextField fx:id="agencyidtextfield" layoutX="103.0" layoutY="135.0" />
+      <TextField fx:id="agencyidtextfield" layoutX="103.0" layoutY="135.0" prefHeight="26.0" prefWidth="258.0" />
       <Label layoutX="8.0" layoutY="178.0" text="Contact Details" />
-      <TextField fx:id="contactdetailstextfield" layoutX="103.0" layoutY="174.0" />
+      <TextField fx:id="contactdetailstextfield" layoutX="103.0" layoutY="174.0" prefHeight="26.0" prefWidth="258.0" />
       <TableView fx:id="tableview" layoutY="235.0" prefHeight="266.0" prefWidth="908.0">
         <columns>
           <TableColumn fx:id="agencynamecolumn" prefWidth="264.8000122308731" text="Agency Name" />

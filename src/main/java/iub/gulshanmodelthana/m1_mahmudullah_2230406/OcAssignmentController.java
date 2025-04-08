@@ -97,4 +97,7 @@ public class OcAssignmentController {
 
     }
 
+    @FXML
+    public void addtotableview(ActionEvent actionEvent) {
+    }
 }
