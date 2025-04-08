@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="929.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m2_aumio_2230328.AdminFinanceController">
+   <children>
+      <Label layoutX="380.0" layoutY="14.0" prefHeight="75.0" prefWidth="134.0" text="Finance">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Line endX="110.0" layoutX="442.0" layoutY="75.0" startX="-100.0" />
+      <TableView fx:id="expenditureLogsTableView" layoutX="21.0" layoutY="201.0" prefHeight="266.0" prefWidth="896.0">
+        <columns>
+            <TableColumn fx:id="itemNameTableColumn" prefWidth="228.0" text="Item Name" />
+          <TableColumn fx:id="dateTableColumn" prefWidth="132.0" text="Date" />
+          <TableColumn fx:id="amountSpentTableColumn" prefWidth="170.0" text="Amount Spent" />
+            <TableColumn fx:id="catagoryTableColumn" prefWidth="150.0" text="Category" />
+            <TableColumn fx:id="responsibleOfficerTableColumn" prefWidth="215.0" text="Responsible Officer" />
+        </columns>
+      </TableView>
+      <Label layoutX="21.0" layoutY="171.0" prefHeight="20.0" prefWidth="125.0" text="Expenditure Logs">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="43.0" layoutY="479.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="25.0" prefWidth="56.0" text="Back" />
+   </children>
+</AnchorPane>
