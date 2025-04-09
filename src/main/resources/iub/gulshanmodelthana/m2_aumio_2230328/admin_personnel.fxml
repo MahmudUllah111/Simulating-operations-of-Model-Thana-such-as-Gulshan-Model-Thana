@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="889.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m2_aumio_2230328.AdminPersonnelController">
+   <children>
+      <Label layoutX="162.0" layoutY="14.0" prefHeight="99.0" prefWidth="626.0" text="Training and Certifications">
+         <font>
+            <Font size="52.0" />
+         </font>
+      </Label>
+      <Line endX="529.0" layoutX="277.0" layoutY="112.0" startX="-163.0" />
+      <Button layoutX="36.0" layoutY="550.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="25.0" prefWidth="98.0" text="Back" />
+      <TableView fx:id="personnelTableView" layoutX="20.0" layoutY="215.0" prefHeight="200.0" prefWidth="853.0">
+        <columns>
+          <TableColumn fx:id="officerNameTableColumn" prefWidth="212.0" text="Officer Name" />
+          <TableColumn fx:id="officerIDTableColumn" prefWidth="158.0" text="Officer ID" />
+            <TableColumn fx:id="trainingNameTableColumn" prefWidth="118.0" text="Training Name" />
+            <TableColumn fx:id="trainingStatusTableColumn" prefWidth="177.0" text="Training Status" />
+            <TableColumn fx:id="resultTableColumn" prefWidth="187.0" text="result" />
+        </columns>
+      </TableView>
+      <Label layoutX="22.0" layoutY="186.0" text="Personnel">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Line endX="599.0" layoutX="263.0" layoutY="433.0" startX="-236.0" />
+      <Label layoutX="509.0" layoutY="517.0" text="Training Status" />
+      <ComboBox fx:id="trainingStatusComboBox" layoutX="613.0" layoutY="513.0" prefWidth="150.0" />
+      <Button layoutX="509.0" layoutY="550.0" mnemonicParsing="false" onAction="#filterByTrainingStatusOnClick" prefHeight="25.0" prefWidth="252.0" text="Filter By Training Status" />
+   </children>
+</AnchorPane>

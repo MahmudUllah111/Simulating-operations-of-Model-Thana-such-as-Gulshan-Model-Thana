@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="643.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m2_aumio_2230328.AdminMonthlyReportsController">
+   <children>
+      <Label layoutX="357.0" layoutY="26.0" prefHeight="52.0" prefWidth="262.0" text="Monthly Reports">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Line endX="204.0" layoutX="414.0" layoutY="78.0" startX="-57.0" />
+      <Button layoutX="35.0" layoutY="587.0" mnemonicParsing="false" onAction="#baclOnClick" prefHeight="25.0" prefWidth="142.0" text="Back" />
+      <Label layoutX="35.0" layoutY="322.0" text="Monthly activities" />
+      <TableView fx:id="monthlyActivitiesTableView" layoutX="29.0" layoutY="358.0" prefHeight="195.0" prefWidth="922.0">
+        <columns>
+          <TableColumn fx:id="activityNameTableColumn" prefWidth="352.0" text="Activity Name" />
+          <TableColumn fx:id="dateTableColumn" prefWidth="175.0" text="Date" />
+            <TableColumn fx:id="budgetSpentTableColumn" prefWidth="162.0" text="Budget Spent" />
+            <TableColumn fx:id="purposeTableColumn" prefWidth="232.0" text="Purpose" />
+        </columns>
+      </TableView>
+      <Label layoutX="44.0" layoutY="110.0" text="Activity Name" />
+      <Label layoutX="45.0" layoutY="161.0" text="Date" />
+      <Label layoutX="45.0" layoutY="211.0" text="Budget Spent" />
+      <Label layoutX="45.0" layoutY="248.0" text="Purpose" />
+      <TextField fx:id="activityNameTextField" layoutX="177.0" layoutY="106.0" prefHeight="25.0" prefWidth="158.0" />
+      <TextField fx:id="budgetSpentTextField" layoutX="176.0" layoutY="207.0" prefHeight="25.0" prefWidth="158.0" />
+      <TextField fx:id="purposeTextField" layoutX="176.0" layoutY="244.0" prefHeight="25.0" prefWidth="158.0" />
+      <DatePicker fx:id="dateDatePicker" layoutX="176.0" layoutY="157.0" prefHeight="25.0" prefWidth="158.0" />
+      <Button layoutX="176.0" layoutY="283.0" mnemonicParsing="false" onAction="#genarateActivityOnClick" prefHeight="25.0" prefWidth="158.0" text="Genarate activity" />
+   </children>
+</AnchorPane>
