@@ -90,4 +90,11 @@ public class ItRegisterlogsController {
 
     }
 
+    @FXML
+    public void savebutton(ActionEvent actionEvent) {
+    }
+
+    @FXML
+    public void editselecteduserbutton(ActionEvent actionEvent) {
+    }
 }

@@ -62,12 +62,12 @@
       </TableView>
       <Button layoutX="744.0" layoutY="511.0" mnemonicParsing="false" onAction="#selectagencybutton" prefHeight="44.0" prefWidth="142.0" style="-fx-background-color: black;" text="Select Agency" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Button>
       <Button layoutX="584.0" layoutY="511.0" mnemonicParsing="false" onAction="#addinfobutton" prefHeight="44.0" prefWidth="142.0" style="-fx-background-color: black;" text="Add Info" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Button>
    </children>

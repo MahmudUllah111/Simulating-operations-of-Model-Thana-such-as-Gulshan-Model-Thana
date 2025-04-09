@@ -57,12 +57,12 @@
       </TableView>
       <Button layoutX="524.0" layoutY="504.0" mnemonicParsing="false" onAction="#approvebutton" prefHeight="43.0" prefWidth="182.0" style="-fx-background-color: black;" text="Approve" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Button>
       <Button layoutX="723.0" layoutY="504.0" mnemonicParsing="false" onAction="#denybutton" prefHeight="43.0" prefWidth="182.0" style="-fx-background-color: black;" text="Deny" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Button>
    </children>

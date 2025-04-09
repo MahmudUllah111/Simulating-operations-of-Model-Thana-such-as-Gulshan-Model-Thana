@@ -1,12 +1,19 @@
 package iub.gulshanmodelthana.m1_mahmudullah_2230406;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
-public class ItDashboardController {
+public class ItSmErrorLogsContoller {
+
+    @FXML
+    private TableColumn<?, ?> errorcodecolumn;
+
+    @FXML
+    private TableColumn<?, ?> errordetailscolumn;
 
     @FXML
     private ImageView imageUser;
@@ -15,12 +22,10 @@ public class ItDashboardController {
     private Label labName;
 
     @FXML
-    void accesslogsbutton(ActionEvent event) {
-
-    }
+    private TableView<?> tableview;
 
     @FXML
-    void backupbutton(ActionEvent event) {
+    void backMessage(MouseEvent event) {
 
     }
 
@@ -35,37 +40,12 @@ public class ItDashboardController {
     }
 
     @FXML
-    void monitorbutton(ActionEvent event) {
-
-    }
-
-    @FXML
     void notClick(MouseEvent event) {
 
     }
 
     @FXML
-    void outClick(MouseEvent event) {
-
-    }
-
-    @FXML
-    void registerlogsbutton(ActionEvent event) {
-
-    }
-
-    @FXML
     void sandAction(MouseEvent event) {
-
-    }
-
-    @FXML
-    void unusuallogsbutton(ActionEvent event) {
-
-    }
-
-    @Deprecated
-    void usermanagementbutton(ActionEvent event) {
 
     }
 

@@ -50,7 +50,7 @@
             <columns>
                 <TableColumn fx:id="itemNameTableColumn" prefWidth="306.0" text="Item Name" />
                 <TableColumn fx:id="purposeTableColumn" prefWidth="228.0" text="Purpose" />
-                <TableColumn fx:id="ammountTableColumn" prefWidth="130.0" text="Ammount" />
+                <TableColumn fx:id="amountTableColumn" prefWidth="130.0" text="Amount" />
                 <TableColumn fx:id="submissionDateTableColumn" prefWidth="206.0" text="Submission Date" />
             </columns>
         </TableView>
@@ -61,15 +61,15 @@
         </Label>
         <Button layoutX="38.0" layoutY="489.0" mnemonicParsing="false" onAction="#reviewInDetailsButton" prefHeight="43.0" prefWidth="190.0" style="-fx-background-color: black;" text="Review In Details" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font></Button>
         <Button layoutX="501.0" layoutY="489.0" mnemonicParsing="false" onAction="#approveSelectedBudgetButton" prefHeight="43.0" prefWidth="190.0" style="-fx-background-color: black;" text="Approve Selected Budget" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font></Button>
         <Button layoutX="707.0" layoutY="489.0" mnemonicParsing="false" onAction="#denySelectedBudget" prefHeight="43.0" prefWidth="190.0" style="-fx-background-color: black;" text="Deny Selected Budget" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font></Button>
     </children>
 </AnchorPane>

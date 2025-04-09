@@ -57,9 +57,9 @@
             <TableColumn fx:id="casestatuscolumn" prefWidth="121.5999755859375" text="Cases Status" />
          </columns>
       </TableView>
-      <Button layoutX="720.0" layoutY="498.0" mnemonicParsing="false" onAction="#selectcasebutton" prefHeight="50.0" prefWidth="183.0" style="-fx-background-color: black;" text="Select Case" textFill="WHITE">
+      <Button layoutX="731.0" layoutY="496.0" mnemonicParsing="false" onAction="#selectcasebutton" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: black;" text="Select Case" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="16.0" />
+            <Font name="System Bold" size="14.0" />
          </font>
       </Button>
    </children>

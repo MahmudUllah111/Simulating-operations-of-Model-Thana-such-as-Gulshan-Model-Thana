@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="569.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m1_mahmudullah_2230406.ItUnusuallogsController">
+<AnchorPane prefHeight="569.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m1_mahmudullah_2230406.ItSmErrorLogsContoller">
     <children>
         <ImageView fx:id="imageUser" layoutX="863.0" layoutY="38.0" onMouseClicked="#logClick">
             <image>
@@ -40,17 +40,15 @@
                 <Image url="@../image/sandwich.png" />
             </image>
         </ImageView>
-        <Label layoutX="45.0" layoutY="52.0" prefHeight="32.0" prefWidth="150.0" text="Unusual Logs">
+        <Label layoutX="45.0" layoutY="52.0" prefHeight="32.0" prefWidth="170.0" text="Error Logs">
             <font>
                 <Font name="System Bold" size="22.0" />
             </font>
         </Label>
-        <TableView fx:id="tableview" layoutY="151.0" prefHeight="343.0" prefWidth="922.0">
+        <TableView fx:id="tableview" layoutY="151.0" prefHeight="290.0" prefWidth="920.0">
             <columns>
-                <TableColumn fx:id="emailidcolumn" prefWidth="160.79998779296875" text="Email ID " />
-                <TableColumn fx:id="rolecolumn" prefWidth="185.60000610351562" text="Role" />
-                <TableColumn fx:id="datecolumn" prefWidth="164.0" text="Date" />
-            <TableColumn fx:id="activitycolumn" prefWidth="408.0" text="Activity" />
+                <TableColumn fx:id="errorcodecolumn" prefWidth="484.79998779296875" text="Error Code" />
+                <TableColumn fx:id="errordetailscolumn" prefWidth="438.4000244140625" text="Error Details" />
             </columns>
         </TableView>
     </children>

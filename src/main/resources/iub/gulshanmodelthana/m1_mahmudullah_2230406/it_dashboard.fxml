@@ -16,7 +16,6 @@
         <Button layoutX="14.0" layoutY="207.0" mnemonicParsing="false" onAction="#registerlogsbutton" prefHeight="37.0" prefWidth="154.0" text="Register Logs" />
         <Button layoutX="14.0" layoutY="262.0" mnemonicParsing="false" onAction="#monitorbutton" prefHeight="37.0" prefWidth="154.0" text="Monitor" />
         <Button layoutX="14.0" layoutY="318.0" mnemonicParsing="false" onAction="#backupbutton" prefHeight="37.0" prefWidth="154.0" text="Backup" />
-        <Button layoutX="14.0" layoutY="371.0" mnemonicParsing="false" onAction="#usermanagementbutton" prefHeight="37.0" prefWidth="154.0" text="User Management" />
         <Label alignment="TOP_CENTER" layoutX="252.0" prefHeight="47.0" prefWidth="366.0" text="Bangladesh Police">
             <font>
                 <Font name="System Bold" size="40.0" />

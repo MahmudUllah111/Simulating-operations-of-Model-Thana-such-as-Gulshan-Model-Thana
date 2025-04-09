@@ -58,9 +58,9 @@
          </font>
       </Label>
       <DatePicker fx:id="dateDatePicker" layoutX="88.0" layoutY="336.0" />
-      <Button layoutX="33.0" layoutY="386.0" mnemonicParsing="false" onAction="#sendRequestButton" prefHeight="42.0" prefWidth="165.0" style="-fx-background-color: black;" text="Send Request" textFill="WHITE">
+      <Button layoutX="33.0" layoutY="386.0" mnemonicParsing="false" onAction="#sendRequestButton" prefHeight="42.0" prefWidth="124.0" style="-fx-background-color: black;" text="Send Request" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font></Button>
    </children>
 </AnchorPane>

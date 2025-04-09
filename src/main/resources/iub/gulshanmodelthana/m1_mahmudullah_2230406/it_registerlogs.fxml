@@ -49,7 +49,7 @@
                 <Font name="System Bold" size="22.0" />
             </font>
         </Label>
-        <TableView fx:id="tableview" layoutY="235.0" prefHeight="382.0" prefWidth="978.0">
+        <TableView fx:id="tableview" layoutY="235.0" prefHeight="306.0" prefWidth="978.0">
             <columns>
                 <TableColumn fx:id="namecolumn" prefWidth="202.39999389648438" text="Name" />
                 <TableColumn fx:id="emailidcolumn" prefWidth="182.4000244140625" text="Email ID" />
@@ -79,5 +79,15 @@
       <Label layoutX="347.0" layoutY="93.0" text="Role" />
       <DatePicker fx:id="registrationdatepicker" layoutX="113.0" layoutY="191.0" prefHeight="26.0" prefWidth="167.0" promptText="Registration" />
       <Label layoutX="13.0" layoutY="195.0" text="Date" />
+      <Button layoutX="814.0" layoutY="554.0" mnemonicParsing="false" onAction="#editselecteduserbutton" prefHeight="42.0" prefWidth="150.0" style="-fx-background-color: black;" text="Edit Selected User" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="647.0" layoutY="554.0" mnemonicParsing="false" onAction="#savebutton" prefHeight="42.0" prefWidth="150.0" style="-fx-background-color: black;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>

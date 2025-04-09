@@ -53,14 +53,14 @@
             <TableColumn fx:id="datecolumn" prefWidth="299.19989013671875" text="Date" />
          </columns>
       </TableView>
-      <Button layoutX="496.0" layoutY="491.0" mnemonicParsing="false" onAction="#viewselectedfootagebutton" prefHeight="43.0" prefWidth="206.0" style="-fx-background-color: black;" text="View Selected Footage" textFill="WHITE">
+      <Button layoutX="496.0" layoutY="491.0" mnemonicParsing="false" onAction="#viewselectedfootagebutton" prefHeight="43.0" prefWidth="195.0" style="-fx-background-color: black;" text="View Selected Footage" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="712.0" layoutY="491.0" mnemonicParsing="false" onAction="#downloadselectedfootagebutton" prefHeight="43.0" prefWidth="205.0" style="-fx-background-color: black;" text="Download Selected Footage" textFill="WHITE">
+      <Button layoutX="707.0" layoutY="491.0" mnemonicParsing="false" onAction="#downloadselectedfootagebutton" prefHeight="43.0" prefWidth="195.0" style="-fx-background-color: black;" text="Download Selected Footage" textFill="WHITE">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="13.0" />
          </font>
       </Button>
    </children>

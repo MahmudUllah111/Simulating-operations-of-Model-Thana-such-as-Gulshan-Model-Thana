@@ -5,35 +5,32 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
-public class OcBudgetProposalController {
+public class ItSmSystemInfoController {
+
+    @FXML
+    private TextArea componentdetailstextarea;
+
+    @FXML
+    private TableColumn<?, ?> currentsoftwareversiontablecolumn;
 
     @FXML
     private ImageView imageUser;
 
     @FXML
-    private TableColumn<?, ?> itemNameTableColumn;
-
-    @FXML
     private Label labName;
 
     @FXML
-    private TableColumn<?, ?> purposeTableColumn;
+    private Label messageoutputlabel;
 
     @FXML
-    private TableColumn<?, ?> submissionDateTableColumn;
+    private TableColumn<?, ?> patchedtablecolumn;
 
     @FXML
-    private TableView<?> submittedBudgetTableView;
-    @FXML
-    private TableColumn amountTableColumn;
-
-    @FXML
-    void approveSelectedBudgetButton(ActionEvent event) {
-
-    }
+    private TableView<?> tableview;
 
     @FXML
     void backMessage(MouseEvent event) {
@@ -41,7 +38,7 @@ public class OcBudgetProposalController {
     }
 
     @FXML
-    void denySelectedBudget(ActionEvent event) {
+    void checkupdatesbutton(ActionEvent event) {
 
     }
 
@@ -57,11 +54,6 @@ public class OcBudgetProposalController {
 
     @FXML
     void notClick(MouseEvent event) {
-
-    }
-
-    @FXML
-    void reviewInDetailsButton(ActionEvent event) {
 
     }
 
