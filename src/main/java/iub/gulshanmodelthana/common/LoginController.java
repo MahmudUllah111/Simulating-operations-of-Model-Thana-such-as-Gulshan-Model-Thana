@@ -23,7 +23,7 @@ public class LoginController {
     private PasswordField passwordtextfield;
 
     @FXML
-    private ComboBox<?> roleComboBox;
+    private ComboBox<String> roleComboBox;
 
     @FXML
     void loginbutton(ActionEvent event) {
@@ -40,5 +40,14 @@ public class LoginController {
         stage.setTitle("Create Account");
         stage.setScene(nextScene);
         stage.show();
+    }
+
+    @FXML
+    void initialize(){
+        roleComboBox.getItems().addAll("Officer In Charge","IT Officer",
+                                            "Sub Inspector","Administrative Officer",
+                                            "Duty Officer","Training Officer",
+                                            "Criminal Records Manager","Complaint Registration Officer");
+
     }
 }
