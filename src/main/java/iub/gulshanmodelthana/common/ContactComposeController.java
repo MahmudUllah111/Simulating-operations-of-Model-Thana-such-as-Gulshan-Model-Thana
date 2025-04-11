@@ -35,12 +35,6 @@ public class ContactComposeController {
     private Label labName;
 
     @FXML
-    private Circle mdot;
-
-    @FXML
-    private Circle ndot;
-
-    @FXML
     private AnchorPane paneLog;
 
     @FXML

@@ -16,7 +16,6 @@
                 <Image url="@../image/IoginBackgroundImage.jpg" />
             </image>
         </ImageView>
-        <Label fx:id="labWarning" layoutX="1004.0" layoutY="400.0" text="Wrong Credentials !" textFill="#ff6363" visible="false" />
       <Label layoutX="39.0" layoutY="72.0" prefHeight="84.0" prefWidth="410.0" text="Bangladesh Police" textFill="WHITE">
          <font>
             <Font size="50.0" />
@@ -45,7 +44,6 @@
                     </font>
                 </Label>
                 <TextField fx:id="nametextfield" layoutX="162.0" layoutY="125.0" prefHeight="27.0" prefWidth="504.0" style="-fx-border-color: black; -fx-background-color: white;" />
-                <TextField fx:id="emailtextfield" editable="false" layoutX="162.0" layoutY="206.0" prefHeight="27.0" prefWidth="504.0" style="-fx-border-color: black; -fx-background-color: white;" />
                 <Label layoutX="21.0" layoutY="246.0" text="Phone">
                     <font>
                         <Font size="16.0" />
@@ -95,6 +93,8 @@
             </Label>
             <Button layoutX="321.0" layoutY="533.0" mnemonicParsing="false" onAction="#switchTologin" prefHeight="46.0" prefWidth="131.0" text="Already a User? Login" />
             <Button layoutX="495.0" layoutY="533.0" mnemonicParsing="false" onAction="#registerbutton" prefHeight="46.0" prefWidth="131.0" text="Register" />
+              <Label fx:id="labWarning" layoutX="16.0" layoutY="527.0" prefHeight="59.0" prefWidth="206.0" text="Wrong Credentials !" textFill="#ff6363" visible="false" />
+            <TextField fx:id="emailtextfield" layoutX="162.0" layoutY="206.0" prefHeight="27.0" prefWidth="504.0" style="-fx-border-color: black; -fx-background-color: white;" />
             </children>
         </AnchorPane>
     </children>

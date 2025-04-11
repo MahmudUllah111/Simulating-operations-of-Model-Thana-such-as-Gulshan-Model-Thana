@@ -48,12 +48,6 @@ public class ContactInboxController {
     private Label labSender;
 
     @FXML
-    private Circle mdot;
-
-    @FXML
-    private Circle ndot;
-
-    @FXML
     private AnchorPane paneLog;
 
     @FXML

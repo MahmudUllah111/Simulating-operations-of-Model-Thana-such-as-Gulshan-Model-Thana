@@ -32,13 +32,7 @@ public class ContactController {
     private Label labName;
 
     @FXML
-    private Circle mdot;
-
-    @FXML
     private TableColumn<?, ?> mtable;
-
-    @FXML
-    private Circle ndot;
 
     @FXML
     private AnchorPane paneLog;

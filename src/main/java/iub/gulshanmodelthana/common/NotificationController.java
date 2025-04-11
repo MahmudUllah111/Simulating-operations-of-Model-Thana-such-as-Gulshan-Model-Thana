@@ -24,12 +24,6 @@ public class NotificationController {
     private Label labName;
 
     @FXML
-    private Circle mdot;
-
-    @FXML
-    private Circle ndot;
-
-    @FXML
     private TableColumn<?, ?> ntable;
 
     @FXML

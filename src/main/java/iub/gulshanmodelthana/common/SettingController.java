@@ -37,12 +37,6 @@ public class SettingController {
     private Label labName2;
 
     @FXML
-    private Circle mdot;
-
-    @FXML
-    private Circle ndot;
-
-    @FXML
     private AnchorPane paneLog;
 
     @FXML
