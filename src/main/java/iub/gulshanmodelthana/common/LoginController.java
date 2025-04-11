@@ -1,6 +1,7 @@
 package iub.gulshanmodelthana.common;
 
 import iub.gulshanmodelthana.HelloApplication;
+import iub.gulshanmodelthana.m1_mahmudullah_2230406.OcDashboardController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -50,6 +51,10 @@ public class LoginController {
         }
         if (fxmlLoader != null) {
             Scene nextScene = new Scene(fxmlLoader.load());
+
+            OcDashboardController dc = fxmlLoader.getController();
+            dc.displayname(email);
+
             Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             stage.setTitle("Gulshan Model Thana");
             stage.setScene(nextScene);

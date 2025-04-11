@@ -14,6 +14,11 @@ public class OcDashboardController {
     @FXML
     private Label labName;
 
+    public void displayname(String email){
+        labName.setText(email);
+
+    }
+
     @FXML
     void assignmentbutton(ActionEvent event) {
 

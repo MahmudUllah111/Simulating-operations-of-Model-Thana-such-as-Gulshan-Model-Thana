@@ -11,12 +11,12 @@
 
 <AnchorPane prefHeight="569.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m1_mahmudullah_2230406.OcCctvFootageController">
    <children>
-      <ImageView fx:id="imageUser" layoutX="853.0" layoutY="21.0" onMouseClicked="#logClick">
+      <ImageView fx:id="imageUser" layoutX="865.0" layoutY="21.0" onMouseClicked="#logClick">
          <image>
             <Image url="@../image/User.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="16.0" fitWidth="25.0" layoutX="815.0" layoutY="42.0" onMouseClicked="#notClick">
+      <ImageView fitHeight="16.0" fitWidth="25.0" layoutX="819.0" layoutY="42.0" onMouseClicked="#notClick">
          <image>
             <Image url="@../image/Not.png" />
          </image>
@@ -26,7 +26,7 @@
             <Image url="@../image/Mail.png" />
          </image>
       </ImageView>
-      <Label fx:id="labName" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="857.0" layoutY="79.0" prefHeight="26.0" prefWidth="42.0" text="Name" textAlignment="RIGHT" wrapText="true">
+      <Label fx:id="labName" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="772.0" layoutY="72.0" prefHeight="26.0" prefWidth="150.0" text="Name" textAlignment="RIGHT" wrapText="true">
          <font>
             <Font size="16.0" />
          </font>

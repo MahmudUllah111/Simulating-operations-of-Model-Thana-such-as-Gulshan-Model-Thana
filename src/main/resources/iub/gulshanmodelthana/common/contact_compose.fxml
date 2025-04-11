@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: #EEEDEB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.common.ContactComposeController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: #EEEDEB;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.common.ContactComposeController">
     <children>
         <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="13.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#backMessage" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -84,8 +84,8 @@
             </image>
         </ImageView>
         <AnchorPane fx:id="paneLog" layoutX="896.0" prefHeight="120.0" prefWidth="304.0" style="-fx-background-color: #D6DAC8 #D6DAC8;" visible="false" />
-          <Button layoutX="1129.0" layoutY="79.0" mnemonicParsing="false" onMouseClicked="#outClick" style="-fx-background-color: black;" text="Log Out" textFill="WHITE" />
-          <Label fx:id="labName" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="971.0" layoutY="40.0" text="Name" textAlignment="RIGHT" wrapText="true">
+          <Button layoutX="1129.0" layoutY="76.0" mnemonicParsing="false" onMouseClicked="#outClick" style="-fx-background-color: black;" text="Log Out" textFill="WHITE" />
+          <Label fx:id="labName" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="911.0" layoutY="38.0" prefHeight="26.0" prefWidth="140.0" text="Name" textAlignment="RIGHT" wrapText="true">
               <font>
                   <Font size="16.0" />
               </font>

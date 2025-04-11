@@ -25,7 +25,7 @@
                 <Image url="@../image/Mail.png" />
             </image>
         </ImageView>
-        <Label fx:id="labName" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="866.0" layoutY="97.0" prefHeight="26.0" prefWidth="44.0" text="Name" textAlignment="RIGHT" wrapText="true">
+        <Label fx:id="labName" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="782.0" layoutY="88.0" prefHeight="26.0" prefWidth="135.0" text="Name" textAlignment="RIGHT" wrapText="true">
             <font>
                 <Font size="16.0" />
             </font>
@@ -45,7 +45,7 @@
                 <Font name="System Bold" size="22.0" />
             </font>
         </Label>
-        <TableView fx:id="tableview" layoutY="151.0" prefHeight="290.0" prefWidth="920.0">
+        <TableView fx:id="tableview" layoutY="151.0" prefHeight="316.0" prefWidth="920.0">
             <columns>
                 <TableColumn fx:id="errorcodecolumn" prefWidth="484.79998779296875" text="Error Code" />
                 <TableColumn fx:id="errordetailscolumn" prefWidth="438.4000244140625" text="Error Details" />
