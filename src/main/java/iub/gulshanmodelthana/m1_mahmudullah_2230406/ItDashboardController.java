@@ -14,6 +14,10 @@ public class ItDashboardController {
     @FXML
     private Label labName;
 
+    public void displayname(String email) {
+        labName.setText(email);
+    }
+
     @FXML
     void accesslogsbutton(ActionEvent event) {
 
