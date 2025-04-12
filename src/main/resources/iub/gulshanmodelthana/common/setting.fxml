@@ -46,6 +46,7 @@
                     </font>
                 </Label>
                 <Button layoutX="357.0" layoutY="203.0" mnemonicParsing="false" onMouseClicked="#saveClick" prefHeight="28.0" prefWidth="89.0" style="-fx-background-color: black;" text="Save" textFill="WHITE" />
+            <Label fx:id="labWarning" layoutX="14.0" layoutY="198.0" prefHeight="50.0" prefWidth="310.0" />
             </children>
         </AnchorPane>
         <AnchorPane fx:id="paneSide" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="290.0" style="-fx-background-color: #9AD0C2;" visible="false" />
@@ -65,7 +66,7 @@
             </image>
         </ImageView>
         <AnchorPane fx:id="paneLog" layoutX="896.0" prefHeight="120.0" prefWidth="304.0" style="-fx-background-color: #D6DAC8;" visible="false" />
-          <Label fx:id="labName" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="902.0" layoutY="39.0" prefHeight="26.0" prefWidth="150.0" text="Name" textAlignment="RIGHT" wrapText="true">
+          <Label fx:id="labName" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="903.0" layoutY="39.0" prefHeight="26.0" prefWidth="150.0" text="Name" textAlignment="RIGHT" wrapText="true">
               <font>
                   <Font size="16.0" />
               </font>
