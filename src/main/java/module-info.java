@@ -1,6 +1,7 @@
 module iub.gulshanmodelthana {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.desktop;
 
 
     opens iub.gulshanmodelthana to javafx.fxml;
