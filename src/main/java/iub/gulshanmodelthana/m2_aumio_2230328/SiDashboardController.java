@@ -114,12 +114,26 @@ public class SiDashboardController {
     }
 
     @FXML
-    void mailClick(MouseEvent event) {
+    void mailClick(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/contact.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Mail");
+        stage.setScene(nextScene);
+        stage.show();
 
     }
 
     @FXML
-    void notClick(MouseEvent event) {
+    void notClick(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/notification.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Petrol Logs");
+        stage.setScene(nextScene);
+        stage.show();
 
     }
 
