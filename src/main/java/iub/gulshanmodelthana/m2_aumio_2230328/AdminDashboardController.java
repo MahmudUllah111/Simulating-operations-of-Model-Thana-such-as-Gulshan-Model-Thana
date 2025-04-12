@@ -24,12 +24,31 @@ public class AdminDashboardController {
     private ImageView imageUser;
 
     @FXML
-    void financeOnClick(ActionEvent event) {
+    void financeOnClick(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("m2_aumio_2230328/admin_finance.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Finance");
+        stage.setScene(nextScene);
+        stage.show();
+
 
     }
 
     @FXML
-    void inventoryOnClick(ActionEvent event) {
+    void inventoryOnClick(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("m2_aumio_2230328/admin_inventory.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Inventory");
+        stage.setScene(nextScene);
+        stage.show();
+
+
+
 
     }
 
@@ -74,7 +93,15 @@ public class AdminDashboardController {
     }
 
     @FXML
-    void monthlyReportOnClick(ActionEvent event) {
+    void monthlyReportOnClick(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("m2_aumio_2230328/admin_monthly_reports.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Monthly Reports");
+        stage.setScene(nextScene);
+        stage.show();
 
     }
 
@@ -97,16 +124,30 @@ public class AdminDashboardController {
     }
 
     @FXML
-    void personnelOnClick(ActionEvent event) {
+    void personnelOnClick(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("m2_aumio_2230328/admin_personnel.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Personnel");
+        stage.setScene(nextScene);
+        stage.show();
 
     }
 
     @FXML
-    void vehicleOnCLick(ActionEvent event) {
+    void vehicleOnCLick(ActionEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("m2_aumio_2230328/admin_vehicles.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("vehicles");
+        stage.setScene(nextScene);
+        stage.show();
 
     }
 
-    @Deprecated
-    public void legalDocumentsOnCLick(ActionEvent actionEvent) {
-    }
+
 }
