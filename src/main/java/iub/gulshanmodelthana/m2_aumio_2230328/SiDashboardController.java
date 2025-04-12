@@ -41,10 +41,19 @@ public class SiDashboardController {
     @FXML
     void bailApplicationOnClick(ActionEvent event) {
 
+
     }
 
     @FXML
-    void caseManagementOnClick(ActionEvent event) {
+    void caseManagementOnClick(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("m2_aumio_2230328/si_oc_case_management.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Case Management");
+        stage.setScene(nextScene);
+        stage.show();
+
 
     }
 

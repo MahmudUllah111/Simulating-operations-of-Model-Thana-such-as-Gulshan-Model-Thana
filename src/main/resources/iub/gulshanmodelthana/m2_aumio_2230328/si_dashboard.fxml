@@ -18,7 +18,7 @@
       </ImageView>
       <Button layoutX="49.0" layoutY="312.0" mnemonicParsing="false" onAction="#arrestWarrentOnClick" prefHeight="25.0" prefWidth="111.0" text="Arrest warrents" />
       <Line endX="-100.0" endY="474.0" layoutX="325.0" layoutY="125.0" startX="-100.0" startY="-75.0" />
-      <Button layoutX="51.0" layoutY="353.0" mnemonicParsing="false" onAction="#caseManagementOnClick" text="Case Managemen" />
+      <Button layoutX="51.0" layoutY="353.0" mnemonicParsing="false" onAction="#caseManagementOnClick" text="Case Management" />
       <Button layoutX="51.0" layoutY="392.0" mnemonicParsing="false" onAction="#petrolLogsOnCLick" prefHeight="25.0" prefWidth="111.0" text="Patrol Logs" />
       <Button layoutX="51.0" layoutY="426.0" mnemonicParsing="false" onAction="#evidenceLogsOnClick" prefHeight="25.0" prefWidth="111.0" text="Evidence Logs" />
       <Button layoutX="51.0" layoutY="459.0" mnemonicParsing="false" onAction="#suspectDatabaseOnClick" prefHeight="25.0" prefWidth="111.0" text="Suspect Database" />
