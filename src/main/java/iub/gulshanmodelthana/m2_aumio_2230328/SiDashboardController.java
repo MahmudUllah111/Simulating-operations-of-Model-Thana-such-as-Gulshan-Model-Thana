@@ -92,7 +92,16 @@ public class SiDashboardController {
     }
 
     @FXML
-    void logClick(MouseEvent event) {
+    void logClick(MouseEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/profile_change_password.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Profile");
+        stage.setScene(nextScene);
+        stage.show();
+
 
     }
 
