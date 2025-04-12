@@ -17,9 +17,6 @@ public class ContactController {
     private Button createID1;
 
     @FXML
-    private TableColumn<?, ?> dtable;
-
-    @FXML
     private TableColumn<?, ?> dtableSide;
 
     @FXML
@@ -32,25 +29,23 @@ public class ContactController {
     private Label labName;
 
     @FXML
-    private TableColumn<?, ?> mtable;
-
-    @FXML
     private AnchorPane paneLog;
 
     @FXML
     private AnchorPane paneSide;
 
     @FXML
-    private TableView<?> table;
-
-    @FXML
     private TableView<?> tableSide;
-
     @FXML
-    private TableColumn<?, ?> ttable;
-
+    private TableColumn messageColumn;
     @FXML
-    private TableColumn<?, ?> utable;
+    private TableView tableView;
+    @FXML
+    private TableColumn fromColumn;
+    @FXML
+    private TableColumn subjectColumn;
+    @FXML
+    private TableColumn dateColumn;
 
     @FXML
     void comClick(MouseEvent event) {

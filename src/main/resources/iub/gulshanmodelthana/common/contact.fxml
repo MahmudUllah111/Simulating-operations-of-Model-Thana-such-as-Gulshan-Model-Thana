@@ -17,12 +17,12 @@
                 <Font size="44.0" />
             </font>
         </Label>
-        <TableView fx:id="table" layoutX="14.0" layoutY="150.0" onMouseClicked="#sendMessage" prefHeight="436.0" prefWidth="1173.0" style="-fx-background-color: #AAD7D9; -fx-base: #AAD7D9; -fx-font-size: 16 px;">
+        <TableView fx:id="tableView" layoutX="14.0" layoutY="150.0" onMouseClicked="#sendMessage" prefHeight="436.0" prefWidth="1173.0" style="-fx-background-color: #AAD7D9; -fx-base: #AAD7D9; -fx-font-size: 16 px;">
             <columns>
-                <TableColumn fx:id="utable" minWidth="0.0" prefWidth="242.0" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="From" />
-                <TableColumn fx:id="mtable" editable="false" prefWidth="664.0" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Message" />
-                <TableColumn fx:id="ttable" minWidth="0.0" prefWidth="135.0" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Time" />
-                <TableColumn fx:id="dtable" minWidth="0.0" prefWidth="130.0" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Date" />
+                <TableColumn fx:id="fromColumn" minWidth="0.0" prefWidth="242.0" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="From" />
+                <TableColumn fx:id="subjectColumn" minWidth="0.0" prefWidth="255.0" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Subject" />
+                <TableColumn fx:id="messageColumn" editable="false" prefWidth="544.0" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Message" />
+                <TableColumn fx:id="dateColumn" minWidth="0.0" prefWidth="130.0" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Date" />
             </columns>
         </TableView>
         <AnchorPane layoutX="12.0" layoutY="102.0" prefHeight="36.0" prefWidth="1099.0">
