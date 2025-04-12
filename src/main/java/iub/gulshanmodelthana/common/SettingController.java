@@ -20,9 +20,6 @@ import java.io.IOException;
 public class SettingController {
 
     @FXML
-    private TableColumn<?, ?> dtableSide;
-
-    @FXML
     private PasswordField enConfirmPassword;
 
     @FXML
@@ -50,21 +47,36 @@ public class SettingController {
     private AnchorPane paneSide;
 
     @FXML
-    private TableView<?> tableSide;
+    void logClick(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/profile_change_password.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
 
-    @FXML
-    void logClick(MouseEvent event) {
-
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Gulshan Model thana");
+        stage.setScene(nextScene);
+        stage.show();
     }
 
     @FXML
-    void mailClick(MouseEvent event) {
+    void mailClick(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/contact.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
 
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Gulshan Model thana");
+        stage.setScene(nextScene);
+        stage.show();
     }
 
     @FXML
-    void notClick(MouseEvent event) {
+    void notClick(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/notification.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
 
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Gulshan Model thana");
+        stage.setScene(nextScene);
+        stage.show();
     }
 
     @FXML
@@ -87,10 +99,10 @@ public class SettingController {
     void saveClick(MouseEvent event) {
 
     }
-
     @FXML
-    void windowClick(MouseEvent event) {
-
+    public void initialize() {
+        labName.setText(Session.email);
+        labName2.setText(Session.email);
     }
 
 }

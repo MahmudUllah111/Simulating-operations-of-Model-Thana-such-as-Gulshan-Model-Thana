@@ -92,7 +92,6 @@ public class ItDashboardController {
 
     @FXML
     public void initialize() {
-
         labName.setText(Session.email);
     }
 
