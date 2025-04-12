@@ -2,24 +2,25 @@ package iub.gulshanmodelthana.common;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-
-import java.awt.*;
+import javafx.scene.control.Label;
 
 public class ProfileChangePasswordcontroller {
 
     @FXML
-    private Label roleName;
-    @FXML
-    private Label userName;
+    private Label labName;
 
     @FXML
-    void backOnClick(ActionEvent event) {
+    private Label roleName;
+
+    @FXML
+    void backButton(ActionEvent event) {
 
     }
 
     @FXML
-    void changeCurrentPasswordOnClick(ActionEvent event) {
+    void changeCurrentPasswordbutton(ActionEvent event) {
 
     }
 
 }
+

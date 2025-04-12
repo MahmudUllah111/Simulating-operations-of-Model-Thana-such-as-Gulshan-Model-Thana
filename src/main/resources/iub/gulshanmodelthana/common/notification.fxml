@@ -11,32 +11,14 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: #EEEDEB;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.common.NotificationController">
     <children>
-        <TableView fx:id="table" layoutX="14.0" layoutY="121.0" prefHeight="478.0" prefWidth="1186.0" style="-fx-background-color: #AAD7D9; -fx-base: #AAD7D9; -fx-font-size: 16 px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+        <TableView fx:id="tableview" layoutY="121.0" prefHeight="478.0" prefWidth="1200.0" style="-fx-background-color: #AAD7D9; -fx-base: #AAD7D9; -fx-font-size: 16 px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
             <columns>
-                <TableColumn fx:id="ntable" prefWidth="664.0" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Notification" />
-                <TableColumn fx:id="utable" minWidth="0.0" prefWidth="242.0" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Type" />
-                <TableColumn fx:id="ttable" minWidth="0.0" prefWidth="135.0" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Time" />
-                <TableColumn fx:id="dtable" minWidth="0.0" prefWidth="130.0" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Date" />
+                <TableColumn fx:id="notificationcolumn" prefWidth="331.1999939084053" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Notification" />
+                <TableColumn fx:id="typecolumn" minWidth="0.0" prefWidth="243.20001220703125" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Type" />
+                <TableColumn fx:id="timecolumn" minWidth="0.0" prefWidth="319.20001220703125" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Time" />
+                <TableColumn fx:id="datecolumn" minWidth="0.0" prefWidth="308.00006103515625" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Date" />
             </columns>
         </TableView>
-        <AnchorPane fx:id="paneSide" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="290.0" style="-fx-background-color: #9AD0C2;">
-            <children>
-                <TableView fx:id="tableSide" layoutX="12.0" layoutY="8.0" onMouseClicked="#windowClick" prefHeight="588.0" prefWidth="265.0" style="-fx-background-color: #9AD0C2; -fx-opacity: 0.9; -fx-base: #9AD0C2; -fx-font-size: 25;">
-                    <columns>
-                        <TableColumn fx:id="dtableSide" editable="false" minWidth="0.0" prefWidth="263.0" style="-fx-background-color: #9AD0C2; -fx-border-color: #9AD0C2;" />
-                    </columns>
-                </TableView>
-                <AnchorPane prefHeight="65.0" prefWidth="290.0">
-               <children>
-                    <Label layoutX="56.0" layoutY="-6.0" text="Notification">
-                        <font>
-                            <Font size="44.0" />
-                        </font>
-                    </Label>
-               </children>
-            </AnchorPane>
-            </children>
-        </AnchorPane>
         <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="13.0" layoutY="13.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../image/sandwich.png" />
@@ -67,5 +49,10 @@
                 <Image url="@../image/Not.png" />
             </image>
         </ImageView>
+        <Label layoutX="48.0" layoutY="-6.0" prefHeight="16.0" prefWidth="238.0" text="Notification">
+            <font>
+                <Font size="44.0" />
+            </font>
+        </Label>
     </children>
 </AnchorPane>

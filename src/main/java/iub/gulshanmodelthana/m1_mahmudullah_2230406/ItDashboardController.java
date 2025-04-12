@@ -1,11 +1,18 @@
 package iub.gulshanmodelthana.m1_mahmudullah_2230406;
 
+import iub.gulshanmodelthana.HelloApplication;
 import iub.gulshanmodelthana.common.Session;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class ItDashboardController {
 
@@ -31,8 +38,14 @@ public class ItDashboardController {
     }
 
     @FXML
-    void mailClick(MouseEvent event) {
+    void mailClick(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/contact.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
 
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Gulshan Model thana");
+        stage.setScene(nextScene);
+        stage.show();
     }
 
     @FXML
@@ -41,8 +54,15 @@ public class ItDashboardController {
     }
 
     @FXML
-    void notClick(MouseEvent event) {
+    void notClick(MouseEvent event) throws IOException {
 
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/notification.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Gulshan Model thana");
+        stage.setScene(nextScene);
+        stage.show();
     }
 
     @FXML

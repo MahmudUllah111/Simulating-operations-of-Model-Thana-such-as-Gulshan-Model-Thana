@@ -1,11 +1,18 @@
 package iub.gulshanmodelthana.m1_mahmudullah_2230406;
 
+import iub.gulshanmodelthana.HelloApplication;
 import iub.gulshanmodelthana.common.Session;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class OcDashboardController {
 
@@ -46,21 +53,6 @@ public class OcDashboardController {
     }
 
     @FXML
-    void logClick(MouseEvent event) {
-
-    }
-
-    @FXML
-    void mailClick(MouseEvent event) {
-
-    }
-
-    @FXML
-    void notClick(MouseEvent event) {
-
-    }
-
-    @FXML
     void ongoingcasesbutton(ActionEvent event) {
 
     }
@@ -71,8 +63,41 @@ public class OcDashboardController {
     }
 
     @FXML
-    void outClick(MouseEvent event) {
+    void logClick(MouseEvent event) {
 
+    }
+
+    @FXML
+    void mailClick(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/contact.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Gulshan Model thana");
+        stage.setScene(nextScene);
+        stage.show();
+    }
+
+    @FXML
+    void notClick(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/notification.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Gulshan Model thana");
+        stage.setScene(nextScene);
+        stage.show();
+    }
+
+    @FXML
+    void outClick(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/login.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Gulshan Model Thana");
+        stage.setScene(nextScene);
+        stage.show();
     }
 
     @FXML
