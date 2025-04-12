@@ -50,7 +50,12 @@ public class LoginController {
             case "IT Officer":
                 fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("m1_mahmudullah_2230406/it_dashboard.fxml"));
                 break;
-
+            case "Sub Inspector":
+                fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("m2_aumio_2230328/si_dashboard.fxml"));
+                break;
+            case "Administrative Officer":
+                fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("m2_aumio_2230328/admin_dashboard.fxml"));
+                break;
         }
 
         if (fxmlLoader != null) {
