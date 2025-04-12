@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
@@ -66,17 +67,45 @@ public class AdminDashboardController {
     }
 
     @FXML
-    void logClick(MouseEvent event) {
+    void logClick(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/profile_change_password.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Profile");
+        stage.setScene(nextScene);
+        stage.show();
 
     }
 
     @FXML
-    void logOutOnCLick(ActionEvent event) {
+    void logOutOnCLick(ActionEvent event) throws IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/login.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Log Out");
+        stage.setScene(nextScene);
+        stage.show();
+
+        Alert alert = new Alert(Alert.AlertType.WARNING);
+        alert.setContentText("You Have Logged Out.");
+        alert.show();
+
+
 
     }
 
     @FXML
-    void mailClick(MouseEvent event) {
+    void mailClick(MouseEvent event) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/notification.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Mail");
+        stage.setScene(nextScene);
+        stage.show();
 
     }
 
@@ -106,7 +135,14 @@ public class AdminDashboardController {
     }
 
     @FXML
-    void notClick(MouseEvent event) {
+    void notClick(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/contact.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Notification");
+        stage.setScene(nextScene);
+        stage.show();
 
     }
 
