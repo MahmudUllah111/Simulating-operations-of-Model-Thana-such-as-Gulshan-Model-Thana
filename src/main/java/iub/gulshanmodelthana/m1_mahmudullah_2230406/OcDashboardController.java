@@ -1,5 +1,6 @@
 package iub.gulshanmodelthana.m1_mahmudullah_2230406;
 
+import iub.gulshanmodelthana.common.Session;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -13,11 +14,6 @@ public class OcDashboardController {
 
     @FXML
     private Label labName;
-
-    public void displayname(String email){
-        labName.setText(email);
-
-    }
 
     @FXML
     void assignmentbutton(ActionEvent event) {
@@ -82,6 +78,11 @@ public class OcDashboardController {
     @FXML
     void sandAction(MouseEvent event) {
 
+    }
+
+    @FXML
+    public void initialize() {
+        labName.setText(Session.email);
     }
 
 }

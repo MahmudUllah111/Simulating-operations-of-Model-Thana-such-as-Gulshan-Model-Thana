@@ -29,7 +29,6 @@ public class LoginController {
 
     @FXML
     void loginbutton(ActionEvent event) throws IOException {
-
         String email = emailtextfield.getText();
         String password = passwordtextfield.getText();
         String selectedRole = roleComboBox.getValue();
@@ -41,6 +40,8 @@ public class LoginController {
             return;
         }
 
+        Session.email = email;
+
         FXMLLoader fxmlLoader = null;
         switch (selectedRole) {
             case "Officer In Charge":
@@ -49,22 +50,11 @@ public class LoginController {
             case "IT Officer":
                 fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("m1_mahmudullah_2230406/it_dashboard.fxml"));
                 break;
+
         }
+
         if (fxmlLoader != null) {
             Scene nextScene = new Scene(fxmlLoader.load());
-
-            switch (selectedRole) {
-                case "Officer In Charge":
-                    OcDashboardController ocdc = fxmlLoader.getController();
-                    ocdc.displayname(email);
-                    break;
-                case "IT Officer":
-                    ItDashboardController itdc = fxmlLoader.getController();
-                    itdc.displayname(email);
-                    break;
-            }
-
-
             Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             stage.setTitle("Gulshan Model Thana");
             stage.setScene(nextScene);
