@@ -106,14 +106,7 @@ public class SignupController {
 
     @FXML
     void switchTologin(ActionEvent event) throws IOException {
-
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/login.fxml"));
-        Scene nextScene = new Scene(fxmlLoader.load());
-
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setTitle("Gulshan Model Thana");
-        stage.setScene(nextScene);
-        stage.show();
+        SceneSwitcher.switchTo("login");
 
     }
 

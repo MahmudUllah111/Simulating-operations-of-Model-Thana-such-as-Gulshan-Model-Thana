@@ -1,8 +1,6 @@
 package iub.gulshanmodelthana.common;
 
 import iub.gulshanmodelthana.HelloApplication;
-import iub.gulshanmodelthana.m1_mahmudullah_2230406.ItDashboardController;
-import iub.gulshanmodelthana.m1_mahmudullah_2230406.OcDashboardController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -70,14 +68,7 @@ public class LoginController {
 
     @FXML
     void signupbutton(ActionEvent event) throws IOException {
-
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/signup.fxml"));
-        Scene nextScene = new Scene(fxmlLoader.load());
-
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setTitle("Create Account");
-        stage.setScene(nextScene);
-        stage.show();
+        SceneSwitcher.switchTo("signup");
     }
 
     @FXML

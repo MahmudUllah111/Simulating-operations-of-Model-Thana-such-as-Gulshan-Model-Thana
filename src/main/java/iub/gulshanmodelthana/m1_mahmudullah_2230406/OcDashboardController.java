@@ -1,6 +1,7 @@
 package iub.gulshanmodelthana.m1_mahmudullah_2230406;
 
 import iub.gulshanmodelthana.HelloApplication;
+import iub.gulshanmodelthana.common.SceneSwitcher;
 import iub.gulshanmodelthana.common.Session;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -64,46 +65,22 @@ public class OcDashboardController {
 
     @FXML
     void logClick(MouseEvent event)throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/profile_change_password.fxml"));
-        Scene nextScene = new Scene(fxmlLoader.load());
-
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setTitle("Gulshan Model Thana");
-        stage.setScene(nextScene);
-        stage.show();
+        SceneSwitcher.switchTo("profile_change_password");
     }
 
     @FXML
     void mailClick(MouseEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/contact.fxml"));
-        Scene nextScene = new Scene(fxmlLoader.load());
-
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setTitle("Gulshan Model thana");
-        stage.setScene(nextScene);
-        stage.show();
+        SceneSwitcher.switchTo("contact");
     }
 
     @FXML
     void notClick(MouseEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/notification.fxml"));
-        Scene nextScene = new Scene(fxmlLoader.load());
-
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setTitle("Gulshan Model thana");
-        stage.setScene(nextScene);
-        stage.show();
+        SceneSwitcher.switchTo("notification");
     }
 
     @FXML
     void outClick(MouseEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/login.fxml"));
-        Scene nextScene = new Scene(fxmlLoader.load());
-
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setTitle("Gulshan Model Thana");
-        stage.setScene(nextScene);
-        stage.show();
+        SceneSwitcher.switchTo("login");
     }
 
     @FXML

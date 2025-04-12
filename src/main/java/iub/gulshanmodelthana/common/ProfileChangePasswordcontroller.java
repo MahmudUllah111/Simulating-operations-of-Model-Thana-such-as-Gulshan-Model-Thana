@@ -26,13 +26,7 @@ public class ProfileChangePasswordcontroller {
 
     @FXML
     void changeCurrentPasswordbutton(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/setting.fxml"));
-        Scene nextScene = new Scene(fxmlLoader.load());
-
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setTitle("Gulshan Model Thana");
-        stage.setScene(nextScene);
-        stage.show();
+      SceneSwitcher.switchTo("setting");
     }
 
     @FXML
