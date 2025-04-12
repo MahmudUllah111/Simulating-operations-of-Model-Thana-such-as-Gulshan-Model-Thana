@@ -8,12 +8,15 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class NotificationController {
 
@@ -24,21 +27,25 @@ public class NotificationController {
     private Label labName;
 
     @FXML
-    private AnchorPane paneLog;
+    private TableColumn<Notification_Model, String> typecolumn;
     @FXML
-    private TableColumn<?, ?> typecolumn;
+    private TableColumn<Notification_Model, String> notificationcolumn;
     @FXML
-    private TableColumn<?, ?> notificationcolumn;
+    private TableView<Notification_Model> tableview;
     @FXML
-    private TableView<?> tableview;
+    private TableColumn<Notification_Model, LocalTime> timecolumn;
     @FXML
-    private TableColumn<?, ?> timecolumn;
-    @FXML
-    private TableColumn<?, ?> datecolumn;
+    private TableColumn<Notification_Model, LocalDate> datecolumn;
 
     @FXML
-    void logClick(MouseEvent event) {
+    void logClick(MouseEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/profile_change_password.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
 
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Gulshan Model thana");
+        stage.setScene(nextScene);
+        stage.show();
     }
 
     @FXML
@@ -82,6 +89,12 @@ public class NotificationController {
     @FXML
     public void initialize() {
         labName.setText(Session.email);
+
+        notificationcolumn.setCellValueFactory(new PropertyValueFactory<>("notification"));
+        typecolumn.setCellValueFactory(new PropertyValueFactory<>("type"));
+        timecolumn.setCellValueFactory(new PropertyValueFactory<>("time"));
+        datecolumn.setCellValueFactory(new PropertyValueFactory<>("date"));
+
     }
 
 }

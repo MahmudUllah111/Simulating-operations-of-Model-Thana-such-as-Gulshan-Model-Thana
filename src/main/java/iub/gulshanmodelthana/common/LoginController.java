@@ -41,6 +41,7 @@ public class LoginController {
         }
 
         Session.email = email;
+        Session.role = selectedRole;
 
         FXMLLoader fxmlLoader = null;
         switch (selectedRole) {
