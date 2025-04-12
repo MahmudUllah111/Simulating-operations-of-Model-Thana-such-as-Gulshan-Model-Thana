@@ -27,8 +27,15 @@ public class SiDashboardController {
     private ImageView userImageView;
 
     @FXML
-    void arrestWarrentOnClick(ActionEvent event) {
+    void arrestWarrentOnClick(ActionEvent event) throws IOException {
 
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("m2_aumio_2230328/si_arrest_warrant.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Arrest Warrant");
+        stage.setScene(nextScene);
+        stage.show();
     }
 
     @FXML
