@@ -1,18 +1,10 @@
 To: mahmudshuharto@gmail.com
-Subject: Need tutorial hour form CSE213 course.
+Subject: Need tutorial hour for CSE213 course.
 Message: Dear sir,
-I hope this message finds you well. I am writing to you today beacuse I have some problems in my project.
-For the past feew days I am some issues in my project file. For that reason I am unable tp do my work easily.
+I hope this message finds you well. I am writing to you today because I have some problems in my project.
+For the past few days I am some issues in my project file. For that reason I am unable tp do my work easily.
 
 I hope that you would be kind enough to give me extra tutorial hour to solve my project problems.
 
 Best Regards,
 Mahmud.
---------
-To: 1
-Subject: 1
-Message: hello
-
-To: mahmud
-Subject: nothing
-Message: hello world.
