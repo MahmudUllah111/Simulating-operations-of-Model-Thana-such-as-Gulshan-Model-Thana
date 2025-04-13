@@ -24,9 +24,6 @@ public class ContactInboxController {
     private Button buttLog;
 
     @FXML
-    private TableColumn<?, ?> dtableSide;
-
-    @FXML
     private TextField enSub;
 
     @FXML
@@ -49,12 +46,6 @@ public class ContactInboxController {
 
     @FXML
     private AnchorPane paneLog;
-
-    @FXML
-    private AnchorPane paneSide;
-
-    @FXML
-    private TableView<?> tableSide;
 
     @FXML
     void backMessage(MouseEvent event) {
@@ -96,7 +87,7 @@ public class ContactInboxController {
 
     }
 
-    @FXML
+    @Deprecated
     void windowClick(MouseEvent event) {
 
     }

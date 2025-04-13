@@ -37,11 +37,6 @@ public class ContactComposeController {
     }
 
     @FXML
-    void fileClick(MouseEvent event) {
-
-    }
-
-    @FXML
     void logClick(MouseEvent event) throws IOException {
         SceneSwitcher.switchTo("profile_change_password");
     }
@@ -59,6 +54,11 @@ public class ContactComposeController {
     @FXML
     void outClick(MouseEvent event) throws IOException {
     SceneSwitcher.switchTo("login");
+    }
+
+    @FXML
+    void fileClick(MouseEvent event) {
+
     }
 
     @FXML

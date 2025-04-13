@@ -94,12 +94,11 @@ public class ContactController {
     }
 
     public static List<Contact_Model> messageList = new ArrayList<>();
-
     static {
-        messageList.add(new Contact_Model("Mahmud", "Meeting", "Join at 10 AM", LocalDate.of(2025,4,10)));
-        messageList.add(new Contact_Model("HR", "Notice", "Submit Papers", LocalDate.of(2025, 4, 13)));
-        messageList.add(new Contact_Model("Support", "System Update", "Is on the way", LocalDate.of(2025, 4, 11)));
-        messageList.add(new Contact_Model("Admin", "Issue Solved", "Fixed", LocalDate.of(2025, 4, 12)));
+        messageList.add(new Contact_Model("SIMahmud", "Regarding leave from work.", "Feeling unwell from late night duty.", LocalDate.of(2025,4,10)));
+        messageList.add(new Contact_Model("SIOnto", "Update the station's ground fan.", "The ground's fan needs to be changed.", LocalDate.of(2025, 4, 11)));
+        messageList.add(new Contact_Model("Support", "System Update for new windows.", "Please update your pc with the latest windows.", LocalDate.of(2025, 4, 12)));
+        messageList.add(new Contact_Model("Admin", "Virus issue solved.", "Fixed", LocalDate.of(2025, 4, 13)));
     }
 
 }

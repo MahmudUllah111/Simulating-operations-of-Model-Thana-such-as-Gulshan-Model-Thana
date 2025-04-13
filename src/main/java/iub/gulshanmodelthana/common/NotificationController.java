@@ -11,6 +11,8 @@ import javafx.scene.input.MouseEvent;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
 
 public class NotificationController {
 
@@ -67,6 +69,15 @@ public class NotificationController {
         timecolumn.setCellValueFactory(new PropertyValueFactory<>("time"));
         datecolumn.setCellValueFactory(new PropertyValueFactory<>("date"));
 
+        tableview.getItems().setAll(messageList);
+    }
+
+    public static List<Notification_Model> messageList = new ArrayList<>();
+    static {
+        messageList.add(new Notification_Model("Meeting with Mahmud", "Meeting", LocalTime.of(10,0), LocalDate.of(2025,4,10)));
+        messageList.add(new Notification_Model("Submit your papers", "Notice", LocalTime.of(9,0), LocalDate.of(2025, 4, 11)));
+        messageList.add(new Notification_Model("System update scheduled", "System Update", LocalTime.of(8, 30), LocalDate.of(2025, 4, 12)));
+        messageList.add(new Notification_Model("Admin issue resolved", "Issue Solved", LocalTime.of(12, 45), LocalDate.of(2025, 4, 13)));
     }
 
 }
