@@ -1,5 +1,6 @@
 package iub.gulshanmodelthana.common;
 
+import iub.gulshanmodelthana.HelloApplication;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -12,7 +13,7 @@ public class SceneSwitcher {
 
     public static void switchTo(String fxmlFileName) throws IOException {
 
-        Parent root = FXMLLoader.load(SceneSwitcher.class.getResource(fxmlFileName + ".fxml"));
+        Parent root = FXMLLoader.load(HelloApplication.class.getResource(fxmlFileName + ".fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
     }

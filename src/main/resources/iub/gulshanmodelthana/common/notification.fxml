@@ -13,10 +13,10 @@
     <children>
         <TableView fx:id="tableview" layoutY="121.0" prefHeight="478.0" prefWidth="1200.0" style="-fx-background-color: #AAD7D9; -fx-base: #AAD7D9; -fx-font-size: 16 px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
             <columns>
-                <TableColumn fx:id="notificationcolumn" prefWidth="331.1999939084053" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Notification" />
-                <TableColumn fx:id="typecolumn" minWidth="0.0" prefWidth="243.20001220703125" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Type" />
-                <TableColumn fx:id="timecolumn" minWidth="0.0" prefWidth="319.20001220703125" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Time" />
-                <TableColumn fx:id="datecolumn" minWidth="0.0" prefWidth="308.00006103515625" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Date" />
+                <TableColumn fx:id="notificationcolumn" prefWidth="383.9999634027481" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Notification" />
+                <TableColumn fx:id="typecolumn" minWidth="0.0" prefWidth="259.2000427246094" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Type" />
+                <TableColumn fx:id="timecolumn" minWidth="0.0" prefWidth="209.5999755859375" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Time" />
+                <TableColumn fx:id="datecolumn" minWidth="0.0" prefWidth="355.2000732421875" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Date" />
             </columns>
         </TableView>
         <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="13.0" layoutY="13.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">

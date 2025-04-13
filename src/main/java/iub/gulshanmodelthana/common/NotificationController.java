@@ -24,35 +24,40 @@ public class NotificationController {
 
     @FXML
     private TableColumn<Notification_Model, String> typecolumn;
+
     @FXML
     private TableColumn<Notification_Model, String> notificationcolumn;
+
     @FXML
     private TableView<Notification_Model> tableview;
+
     @FXML
     private TableColumn<Notification_Model, LocalTime> timecolumn;
+
     @FXML
     private TableColumn<Notification_Model, LocalDate> datecolumn;
 
     @FXML
     void logClick(MouseEvent event) throws IOException {
-      SceneSwitcher.switchTo("profile_change_password");
+        ProfileChangePasswordcontroller.lastscene = "common/notification";
+      SceneSwitcher.switchTo("common/profile_change_password");
     }
 
     @FXML
     void mailClick(MouseEvent event) throws IOException {
-        SceneSwitcher.switchTo("contact");
+        SceneSwitcher.switchTo("common/contact");
 
     }
 
     @FXML
     void notClick(MouseEvent event) throws IOException {
-        SceneSwitcher.switchTo("notification");
+        SceneSwitcher.switchTo("common/notification");
 
     }
 
     @FXML
     void outClick(MouseEvent event) throws IOException {
-        SceneSwitcher.switchTo("login");
+        SceneSwitcher.switchTo("common/login");
     }
 
     @FXML

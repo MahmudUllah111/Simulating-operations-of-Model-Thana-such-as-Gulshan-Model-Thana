@@ -32,27 +32,28 @@ public class ContactComposeController {
 
     @FXML
     void backMessage(MouseEvent event) throws IOException {
-        SceneSwitcher.switchTo("contact");
+        SceneSwitcher.switchTo("common/contact");
     }
 
     @FXML
     void logClick(MouseEvent event) throws IOException {
-        SceneSwitcher.switchTo("profile_change_password");
+        ProfileChangePasswordcontroller.lastscene = "common/contact_compose";
+        SceneSwitcher.switchTo("common/profile_change_password");
     }
 
     @FXML
     void mailClick(MouseEvent event) throws IOException {
-        SceneSwitcher.switchTo("contact");
+        SceneSwitcher.switchTo("common/contact");
     }
 
     @FXML
     void notClick(MouseEvent event) throws IOException {
-        SceneSwitcher.switchTo("notification");
+        SceneSwitcher.switchTo("common/notification");
     }
 
     @FXML
     void outClick(MouseEvent event) throws IOException {
-        SceneSwitcher.switchTo("login");
+        SceneSwitcher.switchTo("common/login");
     }
 
     @FXML
@@ -67,7 +68,7 @@ public class ContactComposeController {
         String message = textarea.getText();
 
         if (to.isEmpty() || subject.isEmpty() || message.isEmpty()) {
-            labFile.setText("Please fill out all fields before sending.");
+            labFile.setText(" Please fill out all the forms before sending ");
             labFile.setTextFill(Color.RED);
             labFile.setStyle("-fx-border-color: red");
             labFile.setVisible(true);

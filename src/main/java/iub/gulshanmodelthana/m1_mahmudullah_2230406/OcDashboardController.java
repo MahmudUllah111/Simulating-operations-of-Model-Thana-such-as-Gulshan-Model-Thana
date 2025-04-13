@@ -1,6 +1,7 @@
 package iub.gulshanmodelthana.m1_mahmudullah_2230406;
 
 import iub.gulshanmodelthana.HelloApplication;
+import iub.gulshanmodelthana.common.ProfileChangePasswordcontroller;
 import iub.gulshanmodelthana.common.SceneSwitcher;
 import iub.gulshanmodelthana.common.Session;
 import javafx.event.ActionEvent;
@@ -65,22 +66,23 @@ public class OcDashboardController {
 
     @FXML
     void logClick(MouseEvent event)throws IOException {
-        SceneSwitcher.switchTo("profile_change_password");
+        ProfileChangePasswordcontroller.lastscene = "m1_mahmudullah_2230406/oc_dashboard";
+        SceneSwitcher.switchTo("common/profile_change_password");
     }
 
     @FXML
     void mailClick(MouseEvent event) throws IOException {
-        SceneSwitcher.switchTo("contact");
+        SceneSwitcher.switchTo("common/contact");
     }
 
     @FXML
     void notClick(MouseEvent event) throws IOException {
-        SceneSwitcher.switchTo("notification");
+        SceneSwitcher.switchTo("common/notification");
     }
 
     @FXML
     void outClick(MouseEvent event) throws IOException {
-        SceneSwitcher.switchTo("login");
+        SceneSwitcher.switchTo("common/login");
     }
 
     @FXML

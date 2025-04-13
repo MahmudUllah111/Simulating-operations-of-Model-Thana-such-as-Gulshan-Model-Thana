@@ -79,7 +79,7 @@
         </ImageView>
         <Label fx:id="labFile" layoutX="15.0" layoutY="540.0" prefHeight="42.0" prefWidth="1027.0" text="warninglabel" textFill="#007c1f" visible="false">
             <font>
-                <Font name="System Bold Italic" size="12.0" />
+                <Font name="System Bold" size="12.0" />
             </font>
         </Label>
 

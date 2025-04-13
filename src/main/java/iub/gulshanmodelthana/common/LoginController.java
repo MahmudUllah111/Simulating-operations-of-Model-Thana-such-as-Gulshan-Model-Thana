@@ -68,7 +68,7 @@ public class LoginController {
 
     @FXML
     void signupbutton(ActionEvent event) throws IOException {
-        SceneSwitcher.switchTo("signup");
+        SceneSwitcher.switchTo("common/signup");
     }
 
     @FXML

@@ -54,27 +54,28 @@ public class ContactController {
 
     @FXML
     void comClick(MouseEvent event) throws IOException {
-        SceneSwitcher.switchTo("contact_compose");
+        SceneSwitcher.switchTo("common/contact_compose");
     }
 
     @FXML
     void logClick(MouseEvent event) throws IOException {
-        SceneSwitcher.switchTo("profile_change_password");
+        ProfileChangePasswordcontroller.lastscene = "common/contact";
+        SceneSwitcher.switchTo("common/profile_change_password");
     }
 
     @FXML
     void mailClick(MouseEvent event) throws IOException {
-        SceneSwitcher.switchTo("contact");
+        SceneSwitcher.switchTo("common/contact");
     }
 
     @FXML
     void notClick(MouseEvent event) throws IOException {
-        SceneSwitcher.switchTo("notification");
+        SceneSwitcher.switchTo("common/notification");
     }
 
     @FXML
     void outClick(MouseEvent event) throws IOException {
-       SceneSwitcher.switchTo("login");
+       SceneSwitcher.switchTo("common/login");
     }
 
     @FXML
@@ -96,9 +97,9 @@ public class ContactController {
     public static List<Contact_Model> messageList = new ArrayList<>();
     static {
         messageList.add(new Contact_Model("SIMahmud", "Regarding leave from work.", "Feeling unwell from late night duty.", LocalDate.of(2025,4,10)));
-        messageList.add(new Contact_Model("SIOnto", "Update the station's ground fan.", "The ground's fan needs to be changed.", LocalDate.of(2025, 4, 11)));
-        messageList.add(new Contact_Model("Support", "System Update for new windows.", "Please update your pc with the latest windows.", LocalDate.of(2025, 4, 12)));
-        messageList.add(new Contact_Model("Admin", "Virus issue solved.", "Fixed", LocalDate.of(2025, 4, 13)));
+        messageList.add(new Contact_Model("SIOnto", "Regarding the station's ground fan.", "The ground's fan needs to be changed.", LocalDate.of(2025, 4, 11)));
+        messageList.add(new Contact_Model("Support", "Regarding update system with new software.", "Please update your pc with the latest windows.", LocalDate.of(2025, 4, 12)));
+        messageList.add(new Contact_Model("Admin", "Regarding computer bug solution.", "The issue has been fixed", LocalDate.of(2025, 4, 13)));
     }
 
 }

@@ -14,14 +14,16 @@ public class ProfileChangePasswordcontroller {
     @FXML
     private Label roleName;
 
-    @FXML
-    void backButton(ActionEvent event) {
+    public static String lastscene = null;
 
+    @FXML
+    void backButton(ActionEvent event) throws IOException {
+    SceneSwitcher.switchTo(lastscene);
     }
 
     @FXML
     void changeCurrentPasswordbutton(ActionEvent event) throws IOException {
-      SceneSwitcher.switchTo("setting");
+      SceneSwitcher.switchTo("common/setting");
     }
 
     @FXML
