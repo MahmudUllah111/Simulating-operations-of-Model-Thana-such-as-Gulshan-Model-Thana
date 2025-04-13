@@ -11,16 +11,9 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Circle;
 
+import java.io.IOException;
+
 public class ContactComposeController {
-
-    @FXML
-    private TextArea areaSend;
-
-    @FXML
-    private TableColumn<?, ?> dtableSide;
-
-    @FXML
-    private TextField fieldSub;
 
     @FXML
     private TextField fieldTo;
@@ -33,19 +26,14 @@ public class ContactComposeController {
 
     @FXML
     private Label labName;
+    @FXML
+    private TextArea textarea;
+    @FXML
+    private TextField fieldsubject;
 
     @FXML
-    private AnchorPane paneLog;
-
-    @FXML
-    private AnchorPane paneSide;
-
-    @FXML
-    private TableView<?> tableSide;
-
-    @FXML
-    void backMessage(MouseEvent event) {
-
+    void backMessage(MouseEvent event) throws IOException {
+     SceneSwitcher.switchTo("contact");
     }
 
     @FXML
@@ -54,23 +42,23 @@ public class ContactComposeController {
     }
 
     @FXML
-    void logClick(MouseEvent event) {
-
+    void logClick(MouseEvent event) throws IOException {
+        SceneSwitcher.switchTo("profile_change_password");
     }
 
     @FXML
-    void mailClick(MouseEvent event) {
-
+    void mailClick(MouseEvent event) throws IOException {
+        SceneSwitcher.switchTo("contact");
     }
 
     @FXML
-    void notClick(MouseEvent event) {
-
+    void notClick(MouseEvent event) throws IOException {
+     SceneSwitcher.switchTo("notification");
     }
 
     @FXML
-    void outClick(MouseEvent event) {
-
+    void outClick(MouseEvent event) throws IOException {
+    SceneSwitcher.switchTo("login");
     }
 
     @FXML
@@ -80,11 +68,6 @@ public class ContactComposeController {
 
     @FXML
     void sendClick(MouseEvent event) {
-
-    }
-
-    @FXML
-    void windowClick(MouseEvent event) {
 
     }
 
