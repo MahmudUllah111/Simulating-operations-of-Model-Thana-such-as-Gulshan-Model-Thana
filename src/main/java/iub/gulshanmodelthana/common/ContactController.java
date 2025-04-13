@@ -79,10 +79,6 @@ public class ContactController {
     }
 
     @FXML
-    void sandAction(MouseEvent event) {
-    }
-
-    @FXML
     public void initialize() {
         labName.setText(Session.email);
 

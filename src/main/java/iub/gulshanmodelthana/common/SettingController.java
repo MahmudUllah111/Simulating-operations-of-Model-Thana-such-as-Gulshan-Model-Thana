@@ -62,10 +62,6 @@ public class SettingController {
         SceneSwitcher.switchTo("common/login");
     }
 
-    @FXML
-    void sandAction(MouseEvent event) {
-
-    }
 
     @FXML
     void saveClick(MouseEvent event) {

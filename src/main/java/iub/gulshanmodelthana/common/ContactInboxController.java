@@ -1,40 +1,20 @@
 package iub.gulshanmodelthana.common;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
-
 
 public class ContactInboxController {
-
-    @FXML
-    private TextArea areaMessage;
-
-    @FXML
-    private Button buttFile;
-
-    @FXML
-    private Button buttLog;
-
-    @FXML
-    private TextField enSub;
-
-    @FXML
-    private ImageView imageFile;
 
     @FXML
     private ImageView imageUser;
 
     @FXML
-    private Label labFile;
-
-    @FXML
-    private Label labFileNo;
+    private TextArea inboxmessagetextarea;
 
     @FXML
     private Label labName;
@@ -43,20 +23,10 @@ public class ContactInboxController {
     private Label labSender;
 
     @FXML
-    private AnchorPane paneLog;
+    private TextField subjectinboxtextfield;
 
     @FXML
-    void backMessage(MouseEvent event) {
-
-    }
-
-    @FXML
-    void comClick(MouseEvent event) {
-
-    }
-
-    @FXML
-    void fileClick(MouseEvent event) {
+    void backarrow(MouseEvent event) {
 
     }
 
@@ -81,13 +51,9 @@ public class ContactInboxController {
     }
 
     @FXML
-    void sandAction(MouseEvent event) {
+    void replybutton(ActionEvent event) {
 
     }
 
-    @Deprecated
-    void windowClick(MouseEvent event) {
-
-    }
 
 }

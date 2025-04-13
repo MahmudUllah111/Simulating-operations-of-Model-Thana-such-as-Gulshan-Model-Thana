@@ -57,11 +57,6 @@ public class ContactComposeController {
     }
 
     @FXML
-    void sandAction(MouseEvent event) {
-
-    }
-
-    @FXML
     void sendClick(MouseEvent event) {
         String to = fieldTo.getText();
         String subject = fieldsubject.getText();

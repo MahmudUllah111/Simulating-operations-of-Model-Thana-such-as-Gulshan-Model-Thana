@@ -7,6 +7,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 import java.time.LocalDate;
@@ -36,6 +37,8 @@ public class NotificationController {
 
     @FXML
     private TableColumn<Notification_Model, LocalDate> datecolumn;
+    @FXML
+    private AnchorPane paneLog;
 
     @FXML
     void logClick(MouseEvent event) throws IOException {
@@ -58,11 +61,6 @@ public class NotificationController {
     @FXML
     void outClick(MouseEvent event) throws IOException {
         SceneSwitcher.switchTo("common/login");
-    }
-
-    @FXML
-    void sandAction(MouseEvent event) {
-
     }
 
     @FXML

@@ -19,7 +19,7 @@
                 <TableColumn fx:id="datecolumn" minWidth="0.0" prefWidth="355.2000732421875" style="-fx-background-color: #AAD7D9; -fx-text-fill: black; -fx-border-color: #B4B4B8;" text="Date" />
             </columns>
         </TableView>
-        <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="13.0" layoutY="13.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="13.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../image/sandwich.png" />
             </image>
