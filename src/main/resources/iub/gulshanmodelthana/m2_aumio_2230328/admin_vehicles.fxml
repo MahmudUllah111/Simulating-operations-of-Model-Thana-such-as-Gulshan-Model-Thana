@@ -25,7 +25,7 @@
             <TableColumn fx:id="fuelConsumptionTableColumn" prefWidth="216.0" text="Fuel Consumption" />
         </columns>
       </TableView>
-      <Button fx:id="backOnClick" layoutX="65.0" layoutY="649.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Back" />
+      <Button fx:id="backOnClick" layoutX="65.0" layoutY="649.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="25.0" prefWidth="95.0" text="Back" />
       <Line endX="525.0" layoutX="440.0" layoutY="593.0" startX="-392.0" />
       <Label layoutX="633.0" layoutY="613.0" prefHeight="18.0" prefWidth="70.0" text="Vehicle ID" />
       <TextField fx:id="vehicleIDTextField" layoutX="701.0" layoutY="609.0" prefHeight="25.0" prefWidth="175.0" />
