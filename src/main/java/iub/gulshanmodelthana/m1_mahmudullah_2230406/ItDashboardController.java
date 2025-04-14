@@ -25,16 +25,6 @@ public class ItDashboardController {
     private Label labName;
 
     @FXML
-    void accesslogsbutton(ActionEvent event) {
-
-    }
-
-    @FXML
-    void backupbutton(ActionEvent event) {
-
-    }
-
-    @FXML
     void logClick(MouseEvent event) throws IOException {
         ProfileChangePasswordcontroller.lastscene = "m1_mahmudullah_2230406/it_dashboard";
         SceneSwitcher.switchTo("common/profile_change_password");
@@ -46,11 +36,6 @@ public class ItDashboardController {
     }
 
     @FXML
-    void monitorbutton(ActionEvent event) {
-
-    }
-
-    @FXML
     void notClick(MouseEvent event) throws IOException {
         SceneSwitcher.switchTo("common/notification");
     }
@@ -58,27 +43,31 @@ public class ItDashboardController {
     @FXML
     void outClick(MouseEvent event) throws IOException {
         SceneSwitcher.switchTo("common/login");
-
     }
 
     @FXML
-    void registerlogsbutton(ActionEvent event) {
-
+    void accesslogsbutton(ActionEvent event) throws IOException {
+        SceneSwitcher.switchTo("m1_mahmudullah_2230406/it_accesslogs");
     }
 
     @FXML
-    void sandAction(MouseEvent event) {
-
+    void backupbutton(ActionEvent event) throws IOException {
+        SceneSwitcher.switchTo("m1_mahmudullah_2230406/it_backuprestore");
     }
 
     @FXML
-    void unusuallogsbutton(ActionEvent event) {
-
+    void monitorbutton(ActionEvent event) throws IOException {
+        SceneSwitcher.switchTo("m1_mahmudullah_2230406/it_systemmonitor");
     }
 
-    @Deprecated
-    void usermanagementbutton(ActionEvent event) {
+    @FXML
+    void registerlogsbutton(ActionEvent event) throws IOException {
+        SceneSwitcher.switchTo("m1_mahmudullah_2230406/it_registerlogs");
+    }
 
+    @FXML
+    void unusuallogsbutton(ActionEvent event) throws IOException {
+        SceneSwitcher.switchTo("m1_mahmudullah_2230406/it_unusuallogs");
     }
 
     @FXML

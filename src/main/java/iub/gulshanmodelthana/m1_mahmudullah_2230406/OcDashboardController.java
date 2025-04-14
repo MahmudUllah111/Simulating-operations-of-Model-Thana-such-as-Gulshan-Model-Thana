@@ -25,43 +25,43 @@ public class OcDashboardController {
     private Label labName;
 
     @FXML
-    void assignmentbutton(ActionEvent event) {
-
+    void assignmentbutton(ActionEvent event) throws IOException {
+        SceneSwitcher.switchTo("m1_mahmudullah_2230406/oc_assignment");
     }
 
     @FXML
-    void budgetproposalbutton(ActionEvent event) {
-
+    void budgetproposalbutton(ActionEvent event) throws IOException {
+        SceneSwitcher.switchTo("m1_mahmudullah_2230406/oc_budgetproposal");
     }
 
     @FXML
-    void cctvfootagebutton(ActionEvent event) {
-
+    void cctvfootagebutton(ActionEvent event) throws IOException {
+        SceneSwitcher.switchTo("m1_mahmudullah_2230406/oc_cctvfootage");
     }
 
     @FXML
-    void crimereportbutton(ActionEvent event) {
-
+    void crimereportbutton(ActionEvent event) throws IOException {
+        SceneSwitcher.switchTo("m1_mahmudullah_2230406/oc_crimereport");
     }
 
     @FXML
-    void externalcoordinationbutton(ActionEvent event) {
-
+    void externalcoordinationbutton(ActionEvent event) throws IOException {
+        SceneSwitcher.switchTo("m1_mahmudullah_2230406/oc_externalcoordination");
     }
 
     @FXML
-    void leaverequestbutton(ActionEvent event) {
-
+    void leaverequestbutton(ActionEvent event) throws IOException {
+        SceneSwitcher.switchTo("m1_mahmudullah_2230406/oc_leaverequest");
     }
 
     @FXML
-    void ongoingcasesbutton(ActionEvent event) {
-
+    void ongoingcasesbutton(ActionEvent event) throws IOException {
+        SceneSwitcher.switchTo("m1_mahmudullah_2230406/oc_ongoingcases");
     }
 
     @FXML
-    void onlinedatabasebutton(ActionEvent event) {
-
+    void onlinedatabasebutton(ActionEvent event) throws IOException {
+        SceneSwitcher.switchTo("m1_mahmudullah_2230406/oc_onlinedatabase");
     }
 
     @FXML
@@ -83,11 +83,6 @@ public class OcDashboardController {
     @FXML
     void outClick(MouseEvent event) throws IOException {
         SceneSwitcher.switchTo("common/login");
-    }
-
-    @FXML
-    void sandAction(MouseEvent event) {
-
     }
 
     @FXML

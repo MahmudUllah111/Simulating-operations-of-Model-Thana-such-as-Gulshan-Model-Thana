@@ -60,7 +60,7 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="14.0" layoutY="45.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="14.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/sandwich.png" />
          </image>
