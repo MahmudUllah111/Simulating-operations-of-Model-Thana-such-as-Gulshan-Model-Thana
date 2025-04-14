@@ -25,9 +25,6 @@ public class ContactInboxController {
     private Label labName;
 
     @FXML
-    private Label labSender;
-
-    @FXML
     private TextField subjectinboxtextfield;
 
     @FXML
@@ -63,6 +60,8 @@ public class ContactInboxController {
 
     @FXML
     void initialize() throws FileNotFoundException {
+        labName.setText(Session.email);
+
         File myfile = new File("SentMessage.txt");
         Scanner sc = new Scanner(myfile);
 
