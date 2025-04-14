@@ -31,7 +31,7 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="4.0" layoutY="39.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="4.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/sandwich.png" />
          </image>
@@ -46,22 +46,18 @@
             <Image url="@../image/arrow.png" />
          </image>
       </ImageView>
-      <TableView fx:id="tableview" layoutY="123.0" prefHeight="343.0" prefWidth="925.0">
+      <TableView fx:id="tableview" layoutY="123.0" prefHeight="358.0" prefWidth="926.0">
          <columns>
             <TableColumn fx:id="footageidcolumn" prefWidth="175.20000612735748" text="Footage ID" />
             <TableColumn fx:id="locationcolumn" prefWidth="451.20001220703125" text="Location" />
             <TableColumn fx:id="datecolumn" prefWidth="299.19989013671875" text="Date" />
          </columns>
       </TableView>
-      <Button layoutX="496.0" layoutY="491.0" mnemonicParsing="false" onAction="#viewselectedfootagebutton" prefHeight="43.0" prefWidth="195.0" style="-fx-background-color: black;" text="View Selected Footage" textFill="WHITE">
+      <Button layoutX="696.0" layoutY="499.0" mnemonicParsing="false" onAction="#saveselectedfootagedetailsbutton" prefHeight="43.0" prefWidth="215.0" style="-fx-background-color: black;" text="Save Selected Footafe Details" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
-      <Button layoutX="707.0" layoutY="491.0" mnemonicParsing="false" onAction="#downloadselectedfootagebutton" prefHeight="43.0" prefWidth="195.0" style="-fx-background-color: black;" text="Download Selected Footage" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font>
-      </Button>
+      <Label fx:id="warninglabel" layoutX="11.0" layoutY="497.0" prefHeight="50.0" prefWidth="634.0" />
    </children>
 </AnchorPane>

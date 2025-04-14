@@ -51,9 +51,9 @@
             <TableColumn fx:id="offiicernamecolumn" prefWidth="143.2000274658203" text="Officer Name" />
             <TableColumn fx:id="officeridcolumn" prefWidth="91.20001220703125" text="Officer ID" />
             <TableColumn fx:id="crimetypecolumn" prefWidth="120.0" text="Crime Type" />
-            <TableColumn fx:id="dateofincidentcolumn" minWidth="1.5999755859375" prefWidth="127.20001220703125" text="Date of Incident" />
-            <TableColumn fx:id="suspectinformationcolumn" prefWidth="214.39996337890625" text="Suspect Information" />
-            <TableColumn fx:id="casestatuscolumn" prefWidth="121.5999755859375" text="Cases Status" />
+            <TableColumn fx:id="dateofincidentcolumn" minWidth="1.5999755859375" prefWidth="114.39996337890625" text="Date of Incident" />
+            <TableColumn fx:id="suspectinformationcolumn" prefWidth="260.00006103515625" text="Suspect Information" />
+            <TableColumn fx:id="casestatuscolumn" prefWidth="91.199951171875" text="Cases Status" />
          </columns>
       </TableView>
    </children>
