@@ -1,6 +1,5 @@
 package iub.gulshanmodelthana.m1_mahmudullah_2230406;
 
-import iub.gulshanmodelthana.common.Contact_Model;
 import iub.gulshanmodelthana.common.ProfileChangePasswordcontroller;
 import iub.gulshanmodelthana.common.SceneSwitcher;
 import iub.gulshanmodelthana.common.Session;
@@ -29,9 +28,6 @@ public class OcAssignmentController {
 
     @FXML
     private TextField assignedofficertextfield;
-
-    @FXML
-    private TextField assignedofficertextfield1;
 
     @FXML
     private TableColumn<OcAssignment_Model, String> assignmentidcolumn;
@@ -69,8 +65,10 @@ public class OcAssignmentController {
     @FXML
     private Label warninglabel;
 
-    ToggleGroup tg;
+    @FXML
+    private TextField officeridtextfield;
 
+    ToggleGroup tg;
 
     @FXML
     void backMessage(MouseEvent event) throws IOException {
@@ -94,14 +92,23 @@ public class OcAssignmentController {
     }
 
     @FXML
-    void updateofficerbutton(ActionEvent event) {
+    void updateofficerbutton(ActionEvent event) throws IOException {
+        OcAssignment_Model selected = tableview.getSelectionModel().getSelectedItem();
+        if (selected == null) {
+            warninglabel.setText("Please select a row to update.");
+            warninglabel.setStyle("-fx-border-color: red;");
+            warninglabel.setVisible(true);
+            return;
+        }
+        OcAssignmentUpdateController.itemToEdit = selected;
 
+        SceneSwitcher.switchTo("m1_mahmudullah_2230406/oc_assignment_update");
     }
 
     @FXML
     public void addtotableview(ActionEvent actionEvent) {
         String assignmentId = assignmentidtextfield.getText();
-        String officerId = assignedofficertextfield1.getText();
+        String officerId = officeridtextfield.getText();
         String officerName = assignedofficertextfield.getText();
         LocalDate dueDate = duedatepicker.getValue();
         String details = adddetailstextarea.getText();
