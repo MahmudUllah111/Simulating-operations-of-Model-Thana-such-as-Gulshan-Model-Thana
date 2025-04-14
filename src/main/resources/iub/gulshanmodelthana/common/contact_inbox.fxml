@@ -23,7 +23,7 @@
         </TextArea>
         <TextField fx:id="subjectinboxtextfield" editable="false" layoutX="15.0" layoutY="108.0" prefHeight="28.0" prefWidth="1173.0" style="-fx-border-color: black;">
             <font>
-                <Font name="System Italic" size="18.0" />
+                <Font size="18.0" />
             </font>
         </TextField>
         <Label fx:id="labSender" layoutX="15.0" layoutY="79.0" text="From: Sender">

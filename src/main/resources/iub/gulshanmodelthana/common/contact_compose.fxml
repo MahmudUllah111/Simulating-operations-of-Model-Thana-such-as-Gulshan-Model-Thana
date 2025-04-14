@@ -77,11 +77,16 @@
                 <Image url="@../image/User.png" />
             </image>
         </ImageView>
-        <Label fx:id="labFile" layoutX="15.0" layoutY="540.0" prefHeight="42.0" prefWidth="1027.0" text="warninglabel" textFill="#007c1f" visible="false">
+        <Label fx:id="labFile" layoutX="15.0" layoutY="545.0" prefHeight="42.0" prefWidth="898.0" text="warninglabel" textFill="#007c1f" visible="false">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
         </Label>
+      <Button layoutX="929.0" layoutY="548.0" mnemonicParsing="false" onMouseClicked="#viewinboxclick" prefHeight="36.0" prefWidth="123.0" style="-fx-background-color: black;" text="View Inbox" textFill="#eeeeee">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
 
     </children>
 </AnchorPane>

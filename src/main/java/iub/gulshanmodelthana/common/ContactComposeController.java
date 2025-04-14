@@ -74,7 +74,6 @@ public class ContactComposeController {
             fw.write("To: " + to + "\n");
             fw.write("Subject: " + subject + "\n");
             fw.write("Message: " + message + "\n");
-            fw.write("------------------------\n");
             fw.close();
 
             labFile.setText(" Message sent successful.");
@@ -92,7 +91,12 @@ public class ContactComposeController {
     }
 
     @FXML
+    void viewinboxclick(MouseEvent event) throws IOException {
+        SceneSwitcher.switchTo("common/contact_inbox");
+    }
+    @FXML
     void initialize(){
         labName.setText(Session.email);
     }
+
 }
