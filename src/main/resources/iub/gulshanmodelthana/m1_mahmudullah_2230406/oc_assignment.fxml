@@ -40,7 +40,7 @@
             <Image url="@../image/arrow.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="14.0" layoutY="44.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="14.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/sandwich.png" />
          </image>
@@ -53,26 +53,22 @@
       <TableView fx:id="tableview" layoutY="297.0" prefHeight="272.0" prefWidth="910.0">
         <columns>
           <TableColumn fx:id="assignmentidcolumn" prefWidth="109.60000306367874" text="Assigment ID" />
-          <TableColumn fx:id="officeridcolumn" prefWidth="115.20001220703125" text="Officer Id" />
-            <TableColumn fx:id="assignedofficernamecolumn" prefWidth="158.40003967285156" text="Assigned Officer Name" />
-            <TableColumn fx:id="duedatecolumn" prefWidth="101.5999755859375" text="Due Date" />
-            <TableColumn fx:id="detailscolumn" prefWidth="265.59991455078125" text="Details" />
-            <TableColumn fx:id="assignmentprogresscolumn" prefWidth="152.800048828125" text="Assignment Progress" />
+            <TableColumn fx:id="assignedofficernamecolumn" prefWidth="166.40003967285156" text="Assigned Officer Name" />
+          <TableColumn fx:id="officeridcolumn" prefWidth="108.79998779296875" text="Officer Id" />
+            <TableColumn fx:id="assignmentprogresscolumn" prefWidth="127.20001220703125" text="Assignment Progress" />
+            <TableColumn fx:id="duedatecolumn" prefWidth="133.5999755859375" text="Due Date" />
+            <TableColumn fx:id="detailscolumn" prefWidth="262.39990234375" text="Details" />
         </columns>
       </TableView>
       <Label layoutX="14.0" layoutY="104.0" text="Assignment ID" />
       <TextField fx:id="assignmentidtextfield" layoutX="145.0" layoutY="100.0" />
       <Label layoutX="14.0" layoutY="146.0" text="Assigne Officer Name" />
       <TextField fx:id="assignedofficertextfield" layoutX="145.0" layoutY="142.0" />
-      <TextArea fx:id="adddetailstextarea" layoutX="478.0" layoutY="183.0" prefHeight="102.0" prefWidth="337.0" />
+      <TextArea fx:id="adddetailstextarea" layoutX="478.0" layoutY="183.0" prefHeight="102.0" prefWidth="283.0" />
       <Label layoutX="373.0" layoutY="104.0" text="Progress Status" />
       <RadioButton fx:id="activeradiobutton" layoutX="484.0" layoutY="104.0" mnemonicParsing="false" text="Active" />
       <RadioButton fx:id="completedradiobutton" layoutX="559.0" layoutY="104.0" mnemonicParsing="false" text="Completed" />
       <Button layoutX="170.0" layoutY="246.0" mnemonicParsing="false" onAction="#updateofficerbutton" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: black;" text="Update Officer" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font></Button>
-      <Button layoutX="327.0" layoutY="246.0" mnemonicParsing="false" onAction="#savebutton" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: black;" text="Save" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Button>
@@ -86,5 +82,6 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
+      <Label fx:id="warninglabel" layoutX="778.0" layoutY="199.0" prefHeight="68.0" prefWidth="125.0" />
    </children>
 </AnchorPane>
