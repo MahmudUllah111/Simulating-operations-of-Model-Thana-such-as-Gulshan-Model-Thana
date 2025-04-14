@@ -33,7 +33,9 @@ public class SiArrestWarrantController {
     private TextField warrantIDTextField;
 
     @FXML
-    void addWarrantOnClick(ActionEvent event) {
+    void addWarrantOnClick(ActionEvent event) throws IOException {
+
+
 
     }
 
@@ -50,7 +52,14 @@ public class SiArrestWarrantController {
     }
 
     @FXML
-    void suspectDatabaseOnClick(ActionEvent event) {
+    void suspectDatabaseOnClick(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("m2_aumio_2230328/si_arrest_warrants_view.fxml"));
+        Scene nextScene = new Scene(fxmlLoader.load());
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("Suspect Database");
+        stage.setScene(nextScene);
+        stage.show();
 
     }
 
