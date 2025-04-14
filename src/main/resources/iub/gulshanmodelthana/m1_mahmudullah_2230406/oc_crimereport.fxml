@@ -36,7 +36,7 @@
             <Image url="@../image/arrow.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="10.0" layoutY="54.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="10.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/sandwich.png" />
          </image>
@@ -50,7 +50,7 @@
          <columns>
             <TableColumn fx:id="reportnamecolumn" prefWidth="158.4000244140625" text="Report Name" />
             <TableColumn fx:id="locationcolumn" prefWidth="172.79998779296875" text="Location" />
-            <TableColumn fx:id="timeanddatecolumn" prefWidth="143.20001220703125" text="Time and Date" />
+            <TableColumn fx:id="datecolumn" prefWidth="143.20001220703125" text="Date" />
             <TableColumn fx:id="reporttypecolumn" prefWidth="142.4000244140625" text="Report Type" />
             <TableColumn fx:id="crimescenedetailscolumn" prefWidth="307.20001220703125" text="Crime Scene Details" />
          </columns>
@@ -65,5 +65,6 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
+      <Label fx:id="warninglabel" layoutX="24.0" layoutY="504.0" prefHeight="56.0" prefWidth="447.0" />
    </children>
 </AnchorPane>

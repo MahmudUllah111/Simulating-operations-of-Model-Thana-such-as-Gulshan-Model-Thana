@@ -30,6 +30,9 @@
       <RadioButton fx:id="completedradiobutton" layoutX="338.0" layoutY="254.0" mnemonicParsing="false" text="Passive" />
       <TextField fx:id="adddetailstextarea" layoutX="207.0" layoutY="343.0" prefHeight="98.0" prefWidth="298.0" />
       <DatePicker fx:id="duedatepicker" layoutX="206.0" layoutY="292.0" prefHeight="26.0" prefWidth="286.0" />
-      <Button layoutX="573.0" layoutY="415.0" mnemonicParsing="false" onAction="#updateButton" prefHeight="26.0" prefWidth="161.0" text="Update" />
+      <Button layoutX="573.0" layoutY="399.0" mnemonicParsing="false" onAction="#updateButton" prefHeight="42.0" prefWidth="162.0" style="-fx-background-color: black;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
    </children>
 </AnchorPane>
