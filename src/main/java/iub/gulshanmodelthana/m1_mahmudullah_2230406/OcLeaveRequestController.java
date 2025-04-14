@@ -107,11 +107,11 @@ public class OcLeaveRequestController {
 
     public static List<OcLeaveRequest_Model> messageList = new ArrayList<>();
     static {
-        messageList.add(new OcLeaveRequest_Model("1001","SI Mahmud","12111",LocalDate.of(2025,4,16),"Because of illness"));
-        messageList.add(new OcLeaveRequest_Model("1002","SI Onto","25252",LocalDate.of(2025,4,15),"To attend a marriage ceremony."));
-        messageList.add(new OcLeaveRequest_Model("1003","SI Sranto","12311",LocalDate.of(2025,4,19),"Going to village."));
-        messageList.add(new OcLeaveRequest_Model("1004","ASI Ahnaf","99999",LocalDate.of(2025,4,17),"To attend a function."));
-        messageList.add(new OcLeaveRequest_Model("1005","ASI Aumio","25800",LocalDate.of(2025,4,22),"To give the promotion exam."));
+        messageList.add(new OcLeaveRequest_Model("1001","SI Mahmud","1111212",LocalDate.of(2025,4,16),"Because of illness"));
+        messageList.add(new OcLeaveRequest_Model("1002","SI Onto","1111180",LocalDate.of(2025,4,15),"To attend a marriage ceremony."));
+        messageList.add(new OcLeaveRequest_Model("1003","SI Sranto","1111313",LocalDate.of(2025,4,19),"Going to village."));
+        messageList.add(new OcLeaveRequest_Model("1004","ASI Ahnaf","9999999",LocalDate.of(2025,4,17),"To attend a function."));
+        messageList.add(new OcLeaveRequest_Model("1005","ASI Aumio","2211111",LocalDate.of(2025,4,22),"To enter the SI promotion exam."));
 
 
     }

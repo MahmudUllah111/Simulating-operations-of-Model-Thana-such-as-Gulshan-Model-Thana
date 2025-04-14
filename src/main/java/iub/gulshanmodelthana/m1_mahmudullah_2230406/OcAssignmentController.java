@@ -158,8 +158,8 @@ public class OcAssignmentController {
 
     public static List<OcAssignment_Model> messageList = new ArrayList<>();
     static {
-        messageList.add(new OcAssignment_Model("1001","1212121","SIMahmud",LocalDate.of(2025,4,20),"Submit murder investigation report asap.","Active"));
-        messageList.add(new OcAssignment_Model("1002","1212122","SIOnto",LocalDate.of(2025,4,24),"Submit forencis report.","Active"));
-        messageList.add(new OcAssignment_Model("1003","3333313","SISranto",LocalDate.of(2025,4,12),"Home robbery investigation.","Completed"));
+        messageList.add(new OcAssignment_Model("1001","1111212","SI Mahmud",LocalDate.of(2025,4,20),"Submit murder investigation report asap.","Active"));
+        messageList.add(new OcAssignment_Model("1002","1111180","SI Onto",LocalDate.of(2025,4,24),"Submit forencis report.","Active"));
+        messageList.add(new OcAssignment_Model("1003","1111313","SI Sranto",LocalDate.of(2025,4,12),"Home robbery investigation.","Completed"));
     }
 }
