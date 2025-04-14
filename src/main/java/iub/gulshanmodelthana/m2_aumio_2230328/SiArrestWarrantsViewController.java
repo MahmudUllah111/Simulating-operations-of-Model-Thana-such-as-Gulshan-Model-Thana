@@ -15,25 +15,25 @@ import java.io.IOException;
 public class SiArrestWarrantsViewController {
 
     @FXML
-    private TableColumn<?, ?> ageTableColumn;
+    private TableColumn<SiArrestWarrantsViewModel, String> ageTableColumn;
 
     @FXML
-    private TableColumn<?, ?> contactNumberTableColumn;
+    private TableColumn<SiArrestWarrantsViewModel, String> contactNumberTableColumn;
 
     @FXML
-    private TableColumn<?, ?> homeAdressTableColumn;
+    private TableColumn<SiArrestWarrantsViewModel, String> homeAdressTableColumn;
 
     @FXML
-    private TableColumn<?, ?> nameTableColumn;
+    private TableColumn<SiArrestWarrantsViewModel, String> nameTableColumn;
 
     @FXML
-    private TableView<?> suspectWarrantTableView;
+    private TableView<SiArrestWarrantsViewModel> suspectWarrantTableView;
 
     @FXML
-    private TableColumn<?, ?> warrantDetailsTableColumn;
+    private TableColumn<SiArrestWarrantsViewModel, String> warrantDetailsTableColumn;
 
     @FXML
-    private TableColumn<?, ?> warrantIDTableColumn;
+    private TableColumn<SiArrestWarrantsViewModel, String> warrantIDTableColumn;
 
     @FXML
     void backOnClick(ActionEvent event) throws IOException {
