@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -15,7 +16,7 @@
          </font>
       </Label>
       <Line endX="264.0" layoutX="376.0" layoutY="90.0" startX="-100.0" />
-      <TableView fx:id="suspectWarrantTableView" layoutY="215.0" prefHeight="321.0" prefWidth="985.0">
+      <TableView fx:id="suspectWarrantTableView" layoutX="1.0" layoutY="187.0" prefHeight="280.0" prefWidth="985.0">
         <columns>
           <TableColumn fx:id="nameTableColumn" prefWidth="165.0" text=" Name" />
           <TableColumn fx:id="warrantIDTableColumn" prefWidth="95.0" text="Warrant ID" />
@@ -25,7 +26,7 @@
             <TableColumn fx:id="warrantDetailsTableColumn" prefWidth="394.0" text="warrant Details" />
         </columns>
       </TableView>
-      <Label layoutX="13.0" layoutY="186.0" text="Suspect Warrants" />
-      <Line endX="-11.0" layoutX="115.0" layoutY="203.0" startX="-100.0" />
+      <Label layoutX="13.0" layoutY="161.0" text="Suspect Warrants" />
+      <Button layoutX="34.0" layoutY="481.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="25.0" prefWidth="75.0" text="Back" />
    </children>
 </AnchorPane>
