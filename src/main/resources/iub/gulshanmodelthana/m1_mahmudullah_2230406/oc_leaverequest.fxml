@@ -36,7 +36,7 @@
                 <Image url="@../image/arrow.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="10.0" layoutY="54.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="10.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../image/sandwich.png" />
             </image>
@@ -48,10 +48,10 @@
         </Label>
         <TableView fx:id="tableview" layoutY="151.0" prefHeight="343.0" prefWidth="920.0">
             <columns>
-                <TableColumn fx:id="requestidcolumn" prefWidth="112.80001831054688" text="Request ID" />
+                <TableColumn fx:id="requestidcolumn" prefWidth="156.0" text="Request ID" />
+                <TableColumn fx:id="offiicernamecolumn" prefWidth="153.60003662109375" text="Officer Name" />
                 <TableColumn fx:id="officeridcolumn" prefWidth="119.19998168945312" text="Officer ID" />
-                <TableColumn fx:id="offiicernamecolumn" prefWidth="195.20001220703125" text="Officer Name" />
-                <TableColumn fx:id="dateandtimecolumn" prefWidth="176.0" text="Date and Time" />
+                <TableColumn fx:id="datecolumn" prefWidth="176.0" text="Date" />
                 <TableColumn fx:id="reasoncolumn" minWidth="1.5999755859375" prefWidth="318.4000244140625" text="Reason" />
             </columns>
         </TableView>
@@ -65,5 +65,6 @@
                 <Font name="System Bold" size="14.0" />
             </font>
         </Button>
+      <Label fx:id="warninglabel" layoutX="8.0" layoutY="504.0" prefHeight="50.0" prefWidth="467.0" />
     </children>
 </AnchorPane>
