@@ -73,14 +73,10 @@ public class OcCrimeReportController {
         if (selectedReport != null) {
             warninglabel.setText("The report is approved.");
             warninglabel.setStyle("-fx-border-color: green");
-            warninglabel.setVisible(true);
-
         }
         else {
             warninglabel.setText("Please select a report first.");
             warninglabel.setStyle("-fx-border-color: red");
-            warninglabel.setVisible(true);
-
         }
     }
     @FXML
@@ -89,13 +85,11 @@ public class OcCrimeReportController {
         if (selectedReport != null) {
             warninglabel.setText("The report has been denied.");
             warninglabel.setStyle("-fx-border-color: orange");
-            warninglabel.setVisible(true);
 
         }
         else {
             warninglabel.setText("Please select a report first.");
             warninglabel.setStyle("-fx-border-color: red");
-            warninglabel.setVisible(true);
 
         }
     }

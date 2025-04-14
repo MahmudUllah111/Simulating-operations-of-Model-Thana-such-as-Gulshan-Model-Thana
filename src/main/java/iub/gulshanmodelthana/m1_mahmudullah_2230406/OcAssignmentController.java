@@ -97,7 +97,6 @@ public class OcAssignmentController {
         if (selected == null) {
             warninglabel.setText("Please select a row to update.");
             warninglabel.setStyle("-fx-border-color: red;");
-            warninglabel.setVisible(true);
             return;
         }
         OcAssignmentUpdateController.itemToEdit = selected;
@@ -125,9 +124,8 @@ public class OcAssignmentController {
         }
 
         if (assignmentId.isEmpty() || officerId.isEmpty() || officerName.isEmpty() || dueDate == null || details.isEmpty() || progress.equals("Not Selected")) {
-            warninglabel.setText("Please fill up properly.");
+            warninglabel.setText("Please fill up fields properly.");
             warninglabel.setStyle("-fx-border-color: red");
-            warninglabel.setVisible(true);
             return;
         }
 
@@ -136,8 +134,6 @@ public class OcAssignmentController {
         tableview.getItems().setAll(messageList);
         warninglabel.setText("Added");
         warninglabel.setStyle("-fx-border-color: green");
-        warninglabel.setVisible(true);
-
     }
 
     @FXML
