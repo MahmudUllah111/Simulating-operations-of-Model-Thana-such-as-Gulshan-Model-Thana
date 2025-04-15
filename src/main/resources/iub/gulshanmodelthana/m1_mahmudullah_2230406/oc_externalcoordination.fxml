@@ -37,7 +37,7 @@
             <Image url="@../image/arrow.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="10.0" layoutY="47.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="10.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/sandwich.png" />
          </image>
@@ -53,11 +53,11 @@
       <TextField fx:id="agencyidtextfield" layoutX="103.0" layoutY="135.0" prefHeight="26.0" prefWidth="258.0" />
       <Label layoutX="8.0" layoutY="178.0" text="Contact Details" />
       <TextField fx:id="contactdetailstextfield" layoutX="103.0" layoutY="174.0" prefHeight="26.0" prefWidth="258.0" />
-      <TableView fx:id="tableview" layoutY="235.0" prefHeight="266.0" prefWidth="908.0">
+      <TableView fx:id="tableview" layoutY="214.0" prefHeight="287.0" prefWidth="908.0">
         <columns>
-          <TableColumn fx:id="agencynamecolumn" prefWidth="264.8000122308731" text="Agency Name" />
-          <TableColumn fx:id="agencyidcolumn" prefWidth="371.9999694824219" text="Agency ID" />
-            <TableColumn fx:id="contactdetailscolumn" prefWidth="269.60003662109375" text="Contact Details" />
+          <TableColumn fx:id="agencynamecolumn" prefWidth="343.19997560977936" text="Agency Name" />
+          <TableColumn fx:id="agencyidcolumn" prefWidth="244.80001831054688" text="Agency ID" />
+            <TableColumn fx:id="contactdetailscolumn" prefWidth="320.79998779296875" text="Contact Details" />
         </columns>
       </TableView>
       <Button layoutX="744.0" layoutY="511.0" mnemonicParsing="false" onAction="#selectagencybutton" prefHeight="44.0" prefWidth="142.0" style="-fx-background-color: black;" text="Select Agency" textFill="WHITE">
@@ -70,5 +70,6 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
+      <Label fx:id="warninglabel" layoutX="13.0" layoutY="510.0" prefHeight="50.0" prefWidth="494.0" />
    </children>
 </AnchorPane>

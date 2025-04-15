@@ -111,7 +111,7 @@ public class OcAssignmentController {
         String officerName = assignedofficertextfield.getText();
         LocalDate dueDate = duedatepicker.getValue();
         String details = adddetailstextarea.getText();
-        String progress;
+        String progress = "";
 
         if (activeradiobutton.isSelected()) {
             progress = "Active";
@@ -119,11 +119,8 @@ public class OcAssignmentController {
         else if (completedradiobutton.isSelected()) {
             progress = "Completed";
         }
-        else {
-            progress = "Not Selected";
-        }
 
-        if (assignmentId.isEmpty() || officerId.isEmpty() || officerName.isEmpty() || dueDate == null || details.isEmpty() || progress.equals("Not Selected")) {
+        if (assignmentId.isEmpty() || officerId.isEmpty() || officerName.isEmpty() || dueDate == null || details.isEmpty() || progress.isEmpty()) {
             warninglabel.setText("Please fill up fields properly.");
             warninglabel.setStyle("-fx-border-color: red");
             return;

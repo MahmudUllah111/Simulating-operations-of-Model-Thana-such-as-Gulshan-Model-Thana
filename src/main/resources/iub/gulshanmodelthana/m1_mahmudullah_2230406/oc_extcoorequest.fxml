@@ -36,7 +36,7 @@
             <Image url="@../image/arrow.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="24.0" layoutY="54.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="24.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/sandwich.png" />
          </image>
@@ -57,10 +57,11 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <DatePicker fx:id="dateDatePicker" layoutX="88.0" layoutY="336.0" />
-      <Button layoutX="33.0" layoutY="386.0" mnemonicParsing="false" onAction="#sendRequestButton" prefHeight="42.0" prefWidth="124.0" style="-fx-background-color: black;" text="Send Request" textFill="WHITE">
+      <DatePicker fx:id="dateDatePicker" layoutX="88.0" layoutY="336.0" promptText="Select a date" />
+      <Button layoutX="780.0" layoutY="386.0" mnemonicParsing="false" onAction="#sendRequestButton" prefHeight="42.0" prefWidth="124.0" style="-fx-background-color: black;" text="Send Request" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></Button>
+      <Label fx:id="warninglabel" layoutX="31.0" layoutY="386.0" prefHeight="62.0" prefWidth="498.0" />
    </children>
 </AnchorPane>
