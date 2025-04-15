@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -76,8 +77,8 @@ public class SiPetrolLogsController {
         success.setContentText("Petrol officer assigned successfully.");
         success.show();
 
-    }
 
+    }
 
 
 
@@ -96,5 +97,11 @@ public class SiPetrolLogsController {
     void initialize() {
         petrolRouteComboBox.getItems().addAll("Gulshan 1", "Gulshan 2", "Notunbazar", "Police Plaza Area");
         petrolVehicleTypeComboBox.getItems().addAll("Pick up", "Car", "Bike", "On Foot");
+
+        officerNameTableColumn.setCellValueFactory(new PropertyValueFactory<>("officerName"));
+        OfficerIDTableColumn.setCellValueFactory(new PropertyValueFactory<>("officerID"));
+        petrolRouteTableColumn.setCellValueFactory(new PropertyValueFactory<>("petrolRoute"));
+        petrolVehicleTableColumn.setCellValueFactory(new PropertyValueFactory<>("vehicleType"));
+        dateTableColumn.setCellValueFactory(new PropertyValueFactory<>("date"));
     }
 }
