@@ -1,19 +1,27 @@
 package iub.gulshanmodelthana.m2_aumio_2230328;
 
 import iub.gulshanmodelthana.HelloApplication;
+import iub.gulshanmodelthana.m1_mahmudullah_2230406.OcAssignment_Model;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import static iub.gulshanmodelthana.m2_aumio_2230328.SiArrestWarrantsViewController.messageList;
+
 public class SiArrestWarrantController {
+
+    @FXML
+    private TableView<SiArrestWarrantsViewModel> suspectWarrantTableView;
+
 
     @FXML
     private TextField suspectAgeTextField;
@@ -39,21 +47,25 @@ public class SiArrestWarrantController {
         String suspectName = suspectNameTextField.getText();
         String warrantID = warrantIDTextField.getText();
         String suspectAge = suspectAgeTextField.getText();
-        String suspectHomeAddress = suspectHomeAdressTextField.getText();
-        String suspectContactNumber = suspectContactNumberTextField.getText();
+        String suspectHomeAddrress = suspectHomeAdressTextField.getText();
+        String suspectContaactNumber = suspectContactNumberTextField.getText();
         String suspectDetails = suspectDetailsTextField.getText();
 
-        if (suspectName.isEmpty() || warrantID.isEmpty() || suspectAge.isEmpty() || suspectHomeAddress.isEmpty() || suspectContactNumber.isEmpty() || suspectDetails.isEmpty()) {
+        if (suspectName.isEmpty() || warrantID.isEmpty() || suspectAge.isEmpty() || suspectHomeAddrress.isEmpty() || suspectContaactNumber.isEmpty() || suspectDetails.isEmpty()) {
             Alert warning = new Alert(Alert.AlertType.ERROR);
             warning.setContentText("Please fill in all fields.");
             warning.show();
             return;
-
-
-
-
         }
+
+        SiArrestWarrantsViewModel newWarrant = new SiArrestWarrantsViewModel(suspectName, warrantID, suspectAge, suspectHomeAddrress, suspectContaactNumber, suspectDetails);
+        messageList.add(newWarrant);
+        suspectWarrantTableView.getItems().add(newWarrant);
     }
+
+
+
+
 
         @FXML
         void backOnClick (ActionEvent event) throws IOException {
