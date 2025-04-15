@@ -22,7 +22,7 @@
       <Label layoutX="421.0" layoutY="102.0" text="Officer name" />
       <Label layoutX="421.0" layoutY="136.0" text="Officer id" />
       <TextField fx:id="crimeTypeTextField" layoutX="135.0" layoutY="139.0" prefHeight="25.0" prefWidth="182.0" />
-      <TextField fx:id="officerNameTextFile" layoutX="562.0" layoutY="98.0" prefHeight="25.0" prefWidth="182.0" />
+      <TextField fx:id="officerNameTextField" layoutX="562.0" layoutY="98.0" prefHeight="25.0" prefWidth="182.0" />
       <TextField fx:id="officerIDTextField" layoutX="562.0" layoutY="132.0" prefHeight="25.0" prefWidth="182.0" />
       <DatePicker fx:id="dateOfIncidentDatePicker" layoutX="135.0" layoutY="173.0" prefHeight="25.0" prefWidth="182.0" />
       <Line endX="-50.0" endY="-149.0" layoutX="434.0" layoutY="241.0" startX="-50.0" startY="-11.0" />
@@ -32,7 +32,7 @@
       <Label layoutX="421.0" layoutY="167.0" text="Suspect Information " />
       <TextField fx:id="suspectInformationTextField" layoutX="562.0" layoutY="163.0" prefHeight="25.0" prefWidth="182.0" />
       <Label layoutX="31.0" layoutY="105.0" text="Case ID" />
-      <TextField fx:id="caseIDTextView" layoutX="136.0" layoutY="101.0" prefHeight="25.0" prefWidth="182.0" />
+      <TextField fx:id="caseIDTextField" layoutX="136.0" layoutY="101.0" prefHeight="25.0" prefWidth="182.0" />
       <Label layoutX="31.0" layoutY="210.0" text="Case status" />
       <RadioButton fx:id="activeRadioButton" layoutX="140.0" layoutY="210.0" mnemonicParsing="false" text="active" />
       <RadioButton fx:id="completedRadioButton" layoutX="216.0" layoutY="210.0" mnemonicParsing="false" text="Completed" />
