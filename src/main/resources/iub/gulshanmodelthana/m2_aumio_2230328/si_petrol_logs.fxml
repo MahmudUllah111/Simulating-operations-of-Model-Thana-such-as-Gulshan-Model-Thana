@@ -28,7 +28,7 @@
       <TextField fx:id="PetrolOfficerNameTextField" layoutX="167.0" layoutY="163.0" />
       <TextField fx:id="petrolOfficerIDTextField" layoutX="167.0" layoutY="190.0" />
       <ComboBox fx:id="petrolRouteComboBox" layoutX="167.0" layoutY="216.0" prefWidth="150.0" />
-      <ComboBox fx:id="petrolVehicleTypeTextField" layoutX="581.0" layoutY="163.0" prefWidth="150.0" />
+      <ComboBox fx:id="petrolVehicleTypeComboBox" layoutX="581.0" layoutY="163.0" prefWidth="150.0" />
       <DatePicker fx:id="dateDatepicker" layoutX="581.0" layoutY="199.0" prefHeight="25.0" prefWidth="150.0" />
       <Line endX="100.0" layoutX="292.0" layoutY="154.0" startX="100.0" startY="113.0" />
       <Line endX="888.0" layoutX="136.0" layoutY="287.0" startX="-100.0" />
