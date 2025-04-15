@@ -32,26 +32,6 @@ public class ContactController {
     @FXML
     private DatePicker filterdp;
 
-
-    @FXML
-    void filterClick(MouseEvent event) {
-        LocalDate selectedDate = filterdp.getValue();
-
-        if (selectedDate == null) {
-            tableView.getItems().setAll(messageList);
-            return;
-        }
-
-        List<Contact_Model> filteredList = new ArrayList<>();
-        for (Contact_Model cm : messageList) {
-            if (selectedDate.equals(cm.getDate())) {
-                filteredList.add(cm);
-            }
-        }
-
-        tableView.getItems().setAll(filteredList);
-    }
-
     @FXML
     void comClick(MouseEvent event) throws IOException {
         SceneSwitcher.switchTo("common/contact_compose");
@@ -76,6 +56,25 @@ public class ContactController {
     @FXML
     void outClick(MouseEvent event) throws IOException {
        SceneSwitcher.switchTo("common/login");
+    }
+
+    @FXML
+    void filterClick(MouseEvent event) {
+        LocalDate selectedDate = filterdp.getValue();
+
+        if (selectedDate == null) {
+            tableView.getItems().setAll(messageList);
+            return;
+        }
+
+        List<Contact_Model> filteredList = new ArrayList<>();
+        for (Contact_Model cm : messageList) {
+            if (selectedDate.equals(cm.getDate())) {
+                filteredList.add(cm);
+            }
+        }
+
+        tableView.getItems().setAll(filteredList);
     }
 
     @FXML

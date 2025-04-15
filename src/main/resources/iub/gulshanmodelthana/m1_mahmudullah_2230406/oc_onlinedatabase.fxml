@@ -38,7 +38,7 @@
             <Image url="@../image/arrow.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="10.0" layoutY="43.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="10.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../image/sandwich.png" />
          </image>
@@ -50,12 +50,12 @@
       </Label>
       <TableView fx:id="tableview" layoutY="235.0" prefHeight="382.0" prefWidth="978.0">
          <columns>
-            <TableColumn fx:id="suspectnamecolumn" prefWidth="151.99999696016312" text="Suspect Name" />
-            <TableColumn fx:id="suspectrecordidcolumn" prefWidth="133.59996032714844" text="Suspect Record ID" />
+            <TableColumn fx:id="suspectnamecolumn" prefWidth="167.99999696016312" text="Suspect Name" />
+            <TableColumn fx:id="suspectrecordidcolumn" prefWidth="117.60002136230469" text="Suspect Record ID" />
             <TableColumn fx:id="suspectcontactnocolumn" prefWidth="178.39996337890625" text="Suspect Contact No" />
-            <TableColumn fx:id="suspectaddresscolumn" prefWidth="181.60003662109375" text="Suspect Address" />
-            <TableColumn fx:id="casenumbercolumn" minWidth="1.5999755859375" prefWidth="144.79998779296875" text="Case Number" />
-            <TableColumn fx:id="casestatuscolumn" prefWidth="176.79998779296875" text="Case Status" />
+            <TableColumn fx:id="suspectaddresscolumn" prefWidth="231.99993896484375" text="Suspect Address" />
+            <TableColumn fx:id="casenumbercolumn" minWidth="1.5999755859375" prefWidth="136.00006103515625" text="Case Number" />
+            <TableColumn fx:id="casestatuscolumn" prefWidth="136.0001220703125" text="Case Status" />
          </columns>
       </TableView>
       <Label layoutX="10.0" layoutY="95.0" text="Suspect Name" />
@@ -83,5 +83,6 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
+      <Label fx:id="warninglabel" layoutX="781.0" layoutY="141.0" prefHeight="76.0" prefWidth="186.0" />
    </children>
 </AnchorPane>
