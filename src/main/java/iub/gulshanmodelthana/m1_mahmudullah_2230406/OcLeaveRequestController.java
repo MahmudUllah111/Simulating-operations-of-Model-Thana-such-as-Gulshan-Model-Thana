@@ -69,11 +69,11 @@ public class OcLeaveRequestController {
     void approveleaverequestbutton(ActionEvent event) {
         OcLeaveRequest_Model selectedReport = tableview.getSelectionModel().getSelectedItem();
         if (selectedReport != null) {
-            warninglabel.setText("The request has been approved.");
+            warninglabel.setText(" The request has been approved.");
             warninglabel.setStyle("-fx-border-color: green");
         }
         else {
-            warninglabel.setText("Please select a request first.");
+            warninglabel.setText(" Please select a request first.");
             warninglabel.setStyle("-fx-border-color: red");
         }
     }
@@ -82,11 +82,11 @@ public class OcLeaveRequestController {
     void rejectleaverequestbutton(ActionEvent event) {
         OcLeaveRequest_Model selectedReport = tableview.getSelectionModel().getSelectedItem();
         if (selectedReport != null) {
-            warninglabel.setText("The request has been rejected.");
+            warninglabel.setText(" The request has been rejected.");
             warninglabel.setStyle("-fx-border-color: orange");
         }
         else {
-            warninglabel.setText("Please select a request first.");
+            warninglabel.setText(" Please select a request first.");
             warninglabel.setStyle("-fx-border-color: red");
 
         }

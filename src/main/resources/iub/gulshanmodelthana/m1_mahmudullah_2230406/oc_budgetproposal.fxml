@@ -36,7 +36,7 @@
                 <Image url="@../image/arrow.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="24.0" layoutY="54.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="24.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../image/sandwich.png" />
             </image>
@@ -46,30 +46,27 @@
                 <Font name="System Bold" size="22.0" />
             </font>
         </Label>
-        <TableView fx:id="submittedBudgetTableView" layoutX="24.0" layoutY="241.0" prefHeight="224.0" prefWidth="871.0">
+        <TableView fx:id="tableview" layoutX="24.0" layoutY="193.0" prefHeight="298.0" prefWidth="871.0">
             <columns>
-                <TableColumn fx:id="itemNameTableColumn" prefWidth="306.0" text="Item Name" />
-                <TableColumn fx:id="purposeTableColumn" prefWidth="228.0" text="Purpose" />
+                <TableColumn fx:id="itemNameTableColumn" prefWidth="267.2000370025635" text="Item Name" />
+                <TableColumn fx:id="purposeTableColumn" prefWidth="267.1999816894531" text="Purpose" />
                 <TableColumn fx:id="amountTableColumn" prefWidth="130.0" text="Amount" />
                 <TableColumn fx:id="submissionDateTableColumn" prefWidth="206.0" text="Submission Date" />
             </columns>
         </TableView>
-        <Label layoutX="24.0" layoutY="212.0" text="Submitted Budget">
+        <Label layoutX="24.0" layoutY="167.0" text="Submitted Budget">
             <font>
                 <Font name="System Bold" size="12.0" />
             </font>
         </Label>
-        <Button layoutX="38.0" layoutY="489.0" mnemonicParsing="false" onAction="#reviewInDetailsButton" prefHeight="43.0" prefWidth="190.0" style="-fx-background-color: black;" text="Review In Details" textFill="WHITE">
+        <Button layoutX="502.0" layoutY="503.0" mnemonicParsing="false" onAction="#approveSelectedBudgetButton" prefHeight="43.0" prefWidth="190.0" style="-fx-background-color: black;" text="Approve Selected Budget" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></Button>
-        <Button layoutX="501.0" layoutY="489.0" mnemonicParsing="false" onAction="#approveSelectedBudgetButton" prefHeight="43.0" prefWidth="190.0" style="-fx-background-color: black;" text="Approve Selected Budget" textFill="WHITE">
+        <Button layoutX="712.0" layoutY="503.0" mnemonicParsing="false" onAction="#denySelectedBudget" prefHeight="43.0" prefWidth="190.0" style="-fx-background-color: black;" text="Deny Selected Budget" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font></Button>
-        <Button layoutX="707.0" layoutY="489.0" mnemonicParsing="false" onAction="#denySelectedBudget" prefHeight="43.0" prefWidth="190.0" style="-fx-background-color: black;" text="Deny Selected Budget" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="13.0" />
-         </font></Button>
+      <Label fx:id="warninglabel" layoutX="24.0" layoutY="504.0" prefHeight="50.0" prefWidth="455.0" />
     </children>
 </AnchorPane>
