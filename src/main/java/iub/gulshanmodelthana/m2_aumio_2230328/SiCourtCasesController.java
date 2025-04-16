@@ -8,6 +8,7 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -40,5 +41,17 @@ public class SiCourtCasesController {
         stage.show();
 
     }
+
+    @FXML
+    void initialize(){
+
+        caseTypeTableColumn.setCellValueFactory(new PropertyValueFactory<>("caseType"));
+        caseNameTableColumn.setCellValueFactory(new PropertyValueFactory<>("caseName"));
+        caseIDTableColumn.setCellValueFactory(new PropertyValueFactory<>("caseID"));
+        caseStatusTableColumn.setCellValueFactory(new PropertyValueFactory<>("caseStatus"));
+
+
+    }
+
 
 }
