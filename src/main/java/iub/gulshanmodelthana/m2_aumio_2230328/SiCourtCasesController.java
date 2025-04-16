@@ -11,24 +11,27 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
+import java.awt.*;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SiCourtCasesController {
 
     @FXML
-    private TableColumn<?, ?> caseIDTableColumn;
+    private TableColumn<SiCourtCasesModel,String> caseIDTableColumn;
 
     @FXML
-    private TableColumn<?, ?> caseNameTableColumn;
+    private TableColumn<SiCourtCasesModel,String> caseNameTableColumn;
 
     @FXML
-    private TableColumn<?, ?> caseStatusTableColumn;
+    private TableColumn<SiCourtCasesModel,String> caseStatusTableColumn;
 
     @FXML
-    private TableColumn<?, ?> caseTypeTableColumn;
+    private TableColumn<SiCourtCasesModel,String> caseTypeTableColumn;
 
     @FXML
-    private TableView<?> ongoingCasesTableView;
+    private TableView<SiCourtCasesModel> ongoingCasesTableView;
 
     @FXML
     void backOnClick(ActionEvent event) throws IOException {
@@ -50,7 +53,14 @@ public class SiCourtCasesController {
         caseIDTableColumn.setCellValueFactory(new PropertyValueFactory<>("caseID"));
         caseStatusTableColumn.setCellValueFactory(new PropertyValueFactory<>("caseStatus"));
 
+        ongoingCasesTableView.getItems().setAll(messageList);
 
+
+    }
+    public static List<SiCourtCasesModel> messageList = new ArrayList<>();
+    static {
+
+        messageList.add(new SiCourtCasesModel("Murder","house32 Murder","228","ongoing"));
     }
 
 
