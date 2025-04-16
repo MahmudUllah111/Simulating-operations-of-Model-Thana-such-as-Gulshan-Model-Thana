@@ -35,6 +35,24 @@ public class OcAssignmentUpdateController {
     public static OcAssignment_Model itemToEdit;
 
     @FXML
+    void updateButton(ActionEvent event) throws IOException {
+        itemToEdit.setAssignmentid(assignmentidtextfield.getText());
+        itemToEdit.setOfficerid(officeridtextfield.getText());
+        itemToEdit.setAssignedofficername(assignedofficertextfield.getText());
+        itemToEdit.setDuedate(duedatepicker.getValue());
+        itemToEdit.setDetails(adddetailstextarea.getText());
+
+        if (activeradiobutton.isSelected()) {
+            itemToEdit.setAssignmentprogress("Active");
+        }
+        else if (completedradiobutton.isSelected()) {
+            itemToEdit.setAssignmentprogress("Completed");
+        }
+
+        SceneSwitcher.switchTo("m1_mahmudullah_2230406/oc_assignment");
+    }
+
+    @FXML
     void initialize() {
         if (itemToEdit != null) {
             assignmentidtextfield.setText(itemToEdit.getAssignmentid());
@@ -50,22 +68,5 @@ public class OcAssignmentUpdateController {
                 completedradiobutton.setSelected(true);
             }
         }
-    }
-
-    @FXML
-    void updateButton(ActionEvent event) throws IOException {
-        itemToEdit.setAssignmentid(assignmentidtextfield.getText());
-        itemToEdit.setOfficerid(officeridtextfield.getText());
-        itemToEdit.setAssignedofficername(assignedofficertextfield.getText());
-        itemToEdit.setDuedate(duedatepicker.getValue());
-        itemToEdit.setDetails(adddetailstextarea.getText());
-
-        if (activeradiobutton.isSelected()) {
-            itemToEdit.setAssignmentprogress("Active");
-        } else if (completedradiobutton.isSelected()) {
-            itemToEdit.setAssignmentprogress("Completed");
-        }
-
-        SceneSwitcher.switchTo("m1_mahmudullah_2230406/oc_assignment");
     }
 }

@@ -66,14 +66,12 @@ public class ContactController {
             tableView.getItems().setAll(messageList);
             return;
         }
-
         List<Contact_Model> filteredList = new ArrayList<>();
         for (Contact_Model cm : messageList) {
             if (selectedDate.equals(cm.getDate())) {
                 filteredList.add(cm);
             }
         }
-
         tableView.getItems().setAll(filteredList);
     }
 

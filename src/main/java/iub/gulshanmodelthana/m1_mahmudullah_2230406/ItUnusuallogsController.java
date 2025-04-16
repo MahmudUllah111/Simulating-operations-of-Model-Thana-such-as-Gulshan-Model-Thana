@@ -59,6 +59,7 @@ public class ItUnusuallogsController {
     void notClick(MouseEvent event) throws IOException {
         SceneSwitcher.switchTo("common/notification");
     }
+
     @FXML
     void initialize(){
         labName.setText(Session.email);
@@ -84,5 +85,4 @@ public class ItUnusuallogsController {
         messageList.add(new ItUnusuallogs_Model("adminbackup@xyz.com", "Unknown", LocalDate.of(2025, 4, 14), "Aborted scheduled system backup unexpectedly."));
         messageList.add(new ItUnusuallogs_Model("sami@xyz.gov", "HR Officer", LocalDate.of(2025, 4, 14), "Tried to modify officer records."));
     }
-
 }
