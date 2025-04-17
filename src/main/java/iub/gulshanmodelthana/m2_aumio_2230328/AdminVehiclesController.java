@@ -65,7 +65,7 @@ public class AdminVehiclesController {
         messageList.add(new AdminVehicleModel("228","2 months","1000km","50L"));
         messageList.add(new AdminVehicleModel("271","1 year","12000km","520L"));
         messageList.add(new AdminVehicleModel("235","1 month","320km","10L"));
-        messageList.add(new AdminVehicleModel("206","7 days","50km","1L"));
+        messageList.add(new AdminVehicleModel("206","7 days","50km","1L")); //forgot to set git title again
     }
 
 }
