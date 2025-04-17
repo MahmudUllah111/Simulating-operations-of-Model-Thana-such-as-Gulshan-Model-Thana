@@ -11,7 +11,7 @@
 <AnchorPane prefHeight="584.0" prefWidth="1044.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m2_aumio_2230328.AdminDashboardController">
    <children>
       <Line endX="10.799957275390625" endY="409.0" layoutX="241.0" layoutY="181.0" startX="10.7999267578125" />
-      <Label alignment="TOP_CENTER" layoutX="339.0" layoutY="9.0" prefHeight="47.0" prefWidth="366.0" text="Bangladesh Police">
+      <Label alignment="TOP_CENTER" layoutX="295.0" layoutY="14.0" prefHeight="58.0" prefWidth="454.0" text="Gulshan Model Thana">
          <font>
             <Font name="System Bold" size="40.0" />
          </font>

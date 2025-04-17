@@ -6,3 +6,7 @@ Footage ID: CAM 5
 Location: Office building reception
 Date: 2025-04-14
 ---------------------------------------
+Footage ID: CAM 1
+Location: Main doors of a mall
+Date: 2025-04-09
+---------------------------------------

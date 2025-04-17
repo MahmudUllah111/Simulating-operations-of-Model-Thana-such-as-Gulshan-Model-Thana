@@ -25,7 +25,7 @@
       <Button layoutX="51.0" layoutY="494.0" mnemonicParsing="false" onAction="#courtCasesOnClick" prefHeight="25.0" prefWidth="111.0" text="Court Cases" />
       <Button layoutX="51.0" layoutY="528.0" mnemonicParsing="false" onAction="#bailApplicationOnClick" prefHeight="25.0" prefWidth="111.0" text="Bail Applications" />
       <Label layoutX="1155.0" layoutY="84.0" text="Name" />
-      <Label layoutX="456.0" layoutY="79.0" prefHeight="84.0" prefWidth="410.0" text="Bangladesh Police">
+      <Label layoutX="410.0" layoutY="76.0" prefHeight="84.0" prefWidth="490.0" text="Gulshan Model Thana">
          <font>
             <Font size="50.0" />
          </font>
