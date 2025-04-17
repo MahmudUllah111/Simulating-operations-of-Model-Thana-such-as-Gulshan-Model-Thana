@@ -50,8 +50,7 @@ public class SiPetrolLogsController {
     @FXML
     private ComboBox<String> petrolVehicleTypeComboBox;
 
-    @FXML
-    private TableColumn evidenceCollectionDateTableColumn;
+
 
 
     public static List<SiPetrolLogsModel> messageList = new ArrayList<>();
@@ -106,5 +105,6 @@ public class SiPetrolLogsController {
         petrolRouteTableColumn.setCellValueFactory(new PropertyValueFactory<>("petrolRoute"));
         petrolVehicleTableColumn.setCellValueFactory(new PropertyValueFactory<>("vehicleType"));
         dateTableColumn.setCellValueFactory(new PropertyValueFactory<>("date"));
+
     }
 }

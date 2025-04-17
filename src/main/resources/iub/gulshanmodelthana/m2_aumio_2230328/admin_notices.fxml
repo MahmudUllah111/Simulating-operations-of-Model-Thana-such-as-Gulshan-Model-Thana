@@ -27,8 +27,7 @@
       <TextField fx:id="senderNameTextField" layoutX="123.0" layoutY="44.0" />
       <TextArea fx:id="noticeTextArea" layoutX="123.0" layoutY="102.0" prefHeight="100.0" prefWidth="671.0" />
       <Button layoutX="123.0" layoutY="212.0" mnemonicParsing="false" onAction="#addNoticeONClick" text="Add notice" />
-      <Button layoutX="697.0" layoutY="522.0" mnemonicParsing="false" onAction="#archiveSelectedNoticeOnClick" prefHeight="25.0" prefWidth="194.0" text="Archive selected notice" />
-      <Button layoutX="62.0" layoutY="522.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
+      <Button layoutX="62.0" layoutY="522.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="25.0" prefWidth="84.0" text="Back" />
       <DatePicker fx:id="publicationDatePicker" layoutX="123.0" layoutY="71.0" prefHeight="25.0" prefWidth="149.0" />
       <Label layoutX="20.0" layoutY="245.0" text="Notices" />
    </children>
