@@ -93,7 +93,8 @@ public class ItBackupRestoreController {
     }
 
     @FXML
-    void exportasfilebutton(ActionEvent event) {
+    public void createbackupfilebutton(ActionEvent actionEvent) {
+
         String name = filenameTextField.getText();
         String content = backupfiletextarea.getText();
         LocalDate date = datePicker.getValue();

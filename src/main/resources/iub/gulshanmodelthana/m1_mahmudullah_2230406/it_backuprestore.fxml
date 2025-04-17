@@ -34,7 +34,7 @@
                 <Font size="16.0" />
             </font>
         </Label>
-        <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="24.0" layoutY="18.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#backMessage" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="24.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#backMessage" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../image/arrow.png" />
             </image>
@@ -55,7 +55,7 @@
             </font>
         </Label>
         <TextArea fx:id="backupfiletextarea" layoutX="31.0" layoutY="190.0" prefHeight="154.0" prefWidth="668.0" />
-      <Button layoutX="743.0" layoutY="397.0" mnemonicParsing="false" onAction="#exportasfilebutton" prefHeight="42.0" prefWidth="124.0" style="-fx-background-color: black;" text="Export to File" textFill="WHITE">
+      <Button layoutX="743.0" layoutY="397.0" mnemonicParsing="false" onAction="#createbackupfilebutton" prefHeight="42.0" prefWidth="140.0" style="-fx-background-color: black;" text="Create Backup File" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
@@ -67,14 +67,14 @@
           <TableColumn fx:id="datetablecolumn" prefWidth="168.79998779296875" text="Date" />
         </columns>
       </TableView>
-      <Button layoutX="743.0" layoutY="468.0" mnemonicParsing="false" onAction="#restorebutton" prefHeight="42.0" prefWidth="124.0" style="-fx-background-color: black;" text="Restore" textFill="WHITE">
+      <Button layoutX="743.0" layoutY="468.0" mnemonicParsing="false" onAction="#restorebutton" prefHeight="42.0" prefWidth="140.0" style="-fx-background-color: black;" text="Restore" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
       <Label layoutX="296.0" layoutY="110.0" text="Date" />
       <DatePicker fx:id="datePicker" layoutX="352.0" layoutY="106.0" promptText="Select Date" />
-      <Label fx:id="warninglabel" layoutX="708.0" layoutY="190.0" prefHeight="142.0" prefWidth="195.0" />
+      <Label fx:id="warninglabel" layoutX="708.0" layoutY="193.0" prefHeight="142.0" prefWidth="195.0" />
       <Label layoutX="28.0" layoutY="110.0" prefHeight="18.0" prefWidth="61.0" text="File Name" />
       <TextField fx:id="filenameTextField" layoutX="103.0" layoutY="106.0" promptText="Create a Name" />
     </children>
