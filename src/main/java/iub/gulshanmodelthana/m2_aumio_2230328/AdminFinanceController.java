@@ -34,7 +34,7 @@ public class AdminFinanceController {
 
     @FXML
     void backOnClick(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("m2_aumio_2230328/si_dashboard.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("m2_aumio_2230328/Admin_dashboard.fxml"));
         Scene nextScene = new Scene(fxmlLoader.load());
 
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
