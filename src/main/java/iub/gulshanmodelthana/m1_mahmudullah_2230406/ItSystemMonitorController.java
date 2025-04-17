@@ -65,7 +65,6 @@ public class ItSystemMonitorController {
         SceneSwitcher.switchTo("m1_mahmudullah_2230406/it_smsysteminfo");
     }
 
-
     @FXML
     void initialize(){
         labName.setText(Session.email);
