@@ -37,7 +37,7 @@
                 <Image url="@../image/arrow.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="10.0" layoutY="54.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="10.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../image/sandwich.png" />
             </image>
@@ -47,7 +47,7 @@
                 <Font name="System Bold" size="22.0" />
             </font>
         </Label>
-        <TableView fx:id="tableview" layoutY="283.0" prefHeight="203.0" prefWidth="920.0">
+        <TableView fx:id="tableview" layoutY="244.0" prefHeight="242.0" prefWidth="920.0">
             <columns>
                 <TableColumn fx:id="currentsoftwareversiontablecolumn" prefWidth="450.4000244140625" text="Current Software Version" />
                 <TableColumn fx:id="patchedtablecolumn" prefWidth="469.60003662109375" text="Patches" />
@@ -58,8 +58,8 @@
                 <Font name="System Bold" size="14.0" />
             </font>
         </Button>
-      <Label layoutX="10.0" layoutY="170.0" text="Component Details" />
-      <TextArea fx:id="componentdetailstextarea" layoutX="149.0" layoutY="127.0" prefHeight="120.0" prefWidth="378.0" />
-      <Label fx:id="messageoutputlabel" layoutX="434.0" layoutY="493.0" prefHeight="50.0" prefWidth="320.0" />
+      <Label layoutX="14.0" layoutY="159.0" text="Component Details" />
+      <TextArea fx:id="componentdetailstextarea" layoutX="149.0" layoutY="105.0" prefHeight="126.0" prefWidth="378.0" />
+      <Label fx:id="warninglabel" layoutX="14.0" layoutY="496.0" prefHeight="62.0" prefWidth="499.0" />
     </children>
 </AnchorPane>

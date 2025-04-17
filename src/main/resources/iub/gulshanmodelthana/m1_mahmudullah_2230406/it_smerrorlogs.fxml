@@ -35,7 +35,7 @@
                 <Image url="@../image/arrow.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="10.0" layoutY="54.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="10.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../image/sandwich.png" />
             </image>
