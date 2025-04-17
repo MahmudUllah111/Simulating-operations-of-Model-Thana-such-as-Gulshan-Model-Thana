@@ -15,22 +15,22 @@ import java.io.IOException;
 public class AdminFinanceController {
 
     @FXML
-    private TableColumn<?, ?> amountSpentTableColumn;
+    private TableColumn<AdminFinanceModel, String> amountSpentTableColumn;
 
     @FXML
-    private TableColumn<?, ?> catagoryTableColumn;
+    private TableColumn<AdminFinanceModel, String> catagoryTableColumn;
 
     @FXML
-    private TableColumn<?, ?> dateTableColumn;
+    private TableColumn<AdminFinanceModel, String> dateTableColumn;
 
     @FXML
-    private TableView<?> expenditureLogsTableView;
+    private TableView<AdminFinanceModel> expenditureLogsTableView;
 
     @FXML
-    private TableColumn<?, ?> itemNameTableColumn;
+    private TableColumn<AdminFinanceModel, String> itemNameTableColumn;
 
     @FXML
-    private TableColumn<?, ?> responsibleOfficerTableColumn;
+    private TableColumn<AdminFinanceModel, String> responsibleOfficerTableColumn;
 
     @FXML
     void backOnClick(ActionEvent event) throws IOException {
@@ -43,5 +43,7 @@ public class AdminFinanceController {
         stage.show();
 
     }
+
+
 
 }
