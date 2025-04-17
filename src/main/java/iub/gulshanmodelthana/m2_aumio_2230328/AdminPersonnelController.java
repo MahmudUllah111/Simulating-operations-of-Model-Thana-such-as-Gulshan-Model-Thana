@@ -31,9 +31,6 @@ public class AdminPersonnelController {
     private TableColumn<?, ?> trainingNameTableColumn;
 
     @FXML
-    private ComboBox<?> trainingStatusComboBox;
-
-    @FXML
     private TableColumn<?, ?> trainingStatusTableColumn;
 
     @FXML
@@ -48,7 +45,7 @@ public class AdminPersonnelController {
 
     }
 
-    @FXML
+    @Deprecated
     void filterByTrainingStatusOnClick(ActionEvent event) {
 
     }

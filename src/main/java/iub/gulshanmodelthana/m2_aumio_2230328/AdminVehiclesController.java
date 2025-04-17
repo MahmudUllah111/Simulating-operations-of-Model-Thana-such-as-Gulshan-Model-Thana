@@ -32,9 +32,6 @@ public class AdminVehiclesController {
     private TableColumn<?, ?> vehicleIDTableColumn;
 
     @FXML
-    private TextField vehicleIDTextField;
-
-    @FXML
     private TableView<?> vehicleLogsTableView;
 
     @FXML
@@ -49,7 +46,7 @@ public class AdminVehiclesController {
 
     }
 
-    @FXML
+    @Deprecated
     void filterByIDOnClick(ActionEvent event) {
 
     }
