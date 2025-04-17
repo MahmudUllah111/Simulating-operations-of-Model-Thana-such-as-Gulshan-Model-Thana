@@ -6,6 +6,7 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -33,12 +34,12 @@
                 <Font size="16.0" />
             </font>
         </Label>
-        <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="24.0" layoutY="18.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#backMessage" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="24.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#backMessage" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../image/arrow.png" />
             </image>
         </ImageView>
-        <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="24.0" layoutY="54.0" onMouseClicked="#sandAction" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="28.0" fitWidth="51.0" layoutX="24.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../image/sandwich.png" />
             </image>
@@ -54,28 +55,27 @@
             </font>
         </Label>
         <TextArea fx:id="backupfiletextarea" layoutX="31.0" layoutY="190.0" prefHeight="154.0" prefWidth="668.0" />
-        <Button layoutX="743.0" layoutY="412.0" mnemonicParsing="false" onAction="#savebutton" prefHeight="42.0" prefWidth="124.0" style="-fx-background-color: black;" text="Save" textFill="WHITE">
-            <font>
-                <Font name="System Bold" size="13.0" />
-            </font></Button>
-      <Button layoutX="743.0" layoutY="355.0" mnemonicParsing="false" onAction="#exportasfilebutton" prefHeight="42.0" prefWidth="124.0" style="-fx-background-color: black;" text="Export to File" textFill="WHITE">
+      <Button layoutX="743.0" layoutY="397.0" mnemonicParsing="false" onAction="#createbackupfilebutton" prefHeight="42.0" prefWidth="140.0" style="-fx-background-color: black;" text="Create Backup File" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
       <TableView fx:id="tableview" layoutX="31.0" layoutY="355.0" prefHeight="200.0" prefWidth="668.0">
         <columns>
-          <TableColumn fx:id="fileversiontablecolumn" prefWidth="344.79999351501465" text="File Version/Name" />
-          <TableColumn fx:id="datetablecolumn" prefWidth="322.3999938964844" text="Date" />
+            <TableColumn fx:id="filenametablecolumn" prefWidth="152.80001258850098" text="File Name" />
+          <TableColumn fx:id="backupfilecontenttablecolumn" prefWidth="346.3999938964844" text="Backup File Content" />
+          <TableColumn fx:id="datetablecolumn" prefWidth="168.79998779296875" text="Date" />
         </columns>
       </TableView>
-      <Button layoutX="743.0" layoutY="468.0" mnemonicParsing="false" onAction="#restorebutton" prefHeight="42.0" prefWidth="124.0" style="-fx-background-color: black;" text="Restore" textFill="WHITE">
+      <Button layoutX="743.0" layoutY="468.0" mnemonicParsing="false" onAction="#restorebutton" prefHeight="42.0" prefWidth="140.0" style="-fx-background-color: black;" text="Restore" textFill="WHITE">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
-      <Label layoutX="31.0" layoutY="110.0" text="Date" />
-      <DatePicker layoutX="94.0" layoutY="106.0" promptText="Select Date" />
-      <Label fx:id="messageoutputlabel" layoutX="717.0" layoutY="190.0" prefHeight="142.0" prefWidth="175.0" />
+      <Label layoutX="296.0" layoutY="110.0" text="Date" />
+      <DatePicker fx:id="datePicker" layoutX="352.0" layoutY="106.0" promptText="Select Date" />
+      <Label fx:id="warninglabel" layoutX="708.0" layoutY="193.0" prefHeight="142.0" prefWidth="195.0" />
+      <Label layoutX="28.0" layoutY="110.0" prefHeight="18.0" prefWidth="61.0" text="File Name" />
+      <TextField fx:id="filenameTextField" layoutX="103.0" layoutY="106.0" promptText="Create a Name" />
     </children>
 </AnchorPane>

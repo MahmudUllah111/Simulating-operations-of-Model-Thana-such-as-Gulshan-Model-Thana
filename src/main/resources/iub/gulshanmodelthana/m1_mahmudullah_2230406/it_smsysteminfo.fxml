@@ -32,7 +32,7 @@
                 <Font size="16.0" />
             </font>
         </Label>
-        <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="10.0" layoutY="24.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#backMessage" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="10.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#backMessage" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../image/arrow.png" />
             </image>

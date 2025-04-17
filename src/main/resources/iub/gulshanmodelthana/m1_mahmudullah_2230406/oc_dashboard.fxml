@@ -19,12 +19,12 @@
       <Button layoutX="14.0" layoutY="371.0" mnemonicParsing="false" onAction="#onlinedatabasebutton" prefHeight="37.0" prefWidth="154.0" text="Online Database" />
       <Button layoutX="14.0" layoutY="427.0" mnemonicParsing="false" onAction="#externalcoordinationbutton" prefHeight="37.0" prefWidth="154.0" text="External Coordination" />
       <Button layoutX="14.0" layoutY="481.0" mnemonicParsing="false" onAction="#budgetproposalbutton" prefHeight="37.0" prefWidth="154.0" text="Budget Proposals" />
-      <Label alignment="TOP_CENTER" layoutX="252.0" prefHeight="47.0" prefWidth="366.0" text="Bangladesh Police">
+      <Label alignment="TOP_CENTER" layoutX="246.0" prefHeight="58.0" prefWidth="415.0" text="Gulshan Model Thana">
          <font>
             <Font name="System Bold" size="40.0" />
          </font>
       </Label>
-      <Line endX="272.60003662109375" layoutX="348.0" layoutY="58.0" startX="-100.0" />
+      <Line endX="313.20001220703125" endY="0.4000053405761719" layoutX="348.0" layoutY="58.0" startX="-100.0" />
       <ImageView fitHeight="271.0" fitWidth="288.0" layoutX="318.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true" style="visibility: transparent;">
          <image>
             <Image url="@../image/policelogo.png" />
