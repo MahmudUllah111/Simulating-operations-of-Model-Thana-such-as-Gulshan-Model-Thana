@@ -6,9 +6,11 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -19,33 +21,30 @@ public class AdminMaintainanceController {
     private TextField assignPersonnelForMaintainanceTextField;
 
     @FXML
-    private TableColumn<?, ?> assignedPersonnelIDTableColumn;
+    private TableColumn<AdminMaintainanceModel,String> assignedPersonnelIDTableColumn;
 
     @FXML
     private TextField assignedPersonnelIDTextField;
 
     @FXML
-    private TableColumn<?, ?> assignedPersonnelNameTableColumn;
+    private TableColumn<AdminMaintainanceModel,String> assignedPersonnelNameTableColumn;
 
     @FXML
-    private TableView<?> maintainanceRequestsTavleView;
+    private TableView<AdminMaintainanceModel> maintainanceRequestsTavleView;
 
     @FXML
     private TextField maintainanceStatusTextField;
 
     @FXML
-    private TableColumn<?, ?> maintainanceTypeTableColumn;
+    private TableColumn<AdminMaintainanceModel,String> maintainanceTypeTableColumn;
 
     @FXML
     private TextField maintainanceTypeTextField;
 
     @FXML
-    private TableColumn<?, ?> statusTableColumn;
+    private TableColumn<AdminMaintainanceModel,String> statusTableColumn;
 
-    @FXML
-    void archiveSelectedRequestOnClick(ActionEvent event) {
 
-    }
 
     @FXML
     void backOnClick(ActionEvent event) throws IOException {
@@ -62,6 +61,35 @@ public class AdminMaintainanceController {
     @FXML
     void issueAMaintainanceRequestOnClick(ActionEvent event) {
 
+        String type = maintainanceTypeTextField.getText();
+        String status = maintainanceStatusTextField.getText();
+        String name = assignPersonnelForMaintainanceTextField.getText();
+        String ID = assignedPersonnelIDTextField.getText();
+
+
+        if(type.isEmpty()||status.isEmpty()||name.isEmpty()||ID.isEmpty()){
+
+            Alert warning = new Alert(Alert.AlertType.ERROR);
+            warning.setContentText("Please fill in all fields.");
+            warning.show();
+            return;
+
+        }
+
+
+        AdminMaintainanceModel newMaintainance = new AdminMaintainanceModel(type,status,name,ID);
+        maintainanceRequestsTavleView.getItems().add(newMaintainance);
+
+    }
+
+
+    @FXML
+    void initialize(){
+
+        maintainanceTypeTableColumn.setCellValueFactory(new PropertyValueFactory<>("type"));
+        statusTableColumn.setCellValueFactory(new PropertyValueFactory<>("status"));
+        assignedPersonnelNameTableColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
+        assignedPersonnelIDTableColumn.setCellValueFactory(new PropertyValueFactory<>("ID"));
     }
 
 }

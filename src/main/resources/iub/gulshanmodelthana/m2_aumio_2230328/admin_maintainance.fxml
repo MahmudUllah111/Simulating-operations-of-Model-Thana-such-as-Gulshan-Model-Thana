@@ -31,8 +31,7 @@
       <TextField fx:id="assignPersonnelForMaintainanceTextField" layoutX="251.0" layoutY="85.0" prefHeight="25.0" prefWidth="211.0" />
       <TextField fx:id="assignedPersonnelIDTextField" layoutX="251.0" layoutY="120.0" prefHeight="25.0" prefWidth="211.0" />
       <Button layoutX="251.0" layoutY="172.0" mnemonicParsing="false" onAction="#issueAMaintainanceRequestOnClick" prefHeight="25.0" prefWidth="211.0" text="Issue A Maintainance Request" />
-      <Button layoutX="824.0" layoutY="516.0" mnemonicParsing="false" onAction="#archiveSelectedRequestOnClick" text="Archive Selected Request" />
-      <Button layoutX="45.0" layoutY="516.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
+      <Button layoutX="45.0" layoutY="516.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="25.0" prefWidth="161.0" text="Back" />
       <TextField fx:id="maintainanceStatusTextField" layoutX="251.0" layoutY="53.0" prefHeight="25.0" prefWidth="211.0" />
    </children>
 </AnchorPane>
