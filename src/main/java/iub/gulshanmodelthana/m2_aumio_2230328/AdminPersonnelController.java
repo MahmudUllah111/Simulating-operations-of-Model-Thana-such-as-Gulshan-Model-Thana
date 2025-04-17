@@ -9,29 +9,32 @@ import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class AdminPersonnelController {
 
     @FXML
-    private TableColumn<?, ?> officerIDTableColumn;
+    private TableColumn<AdminPersonnelModel,String> officerIDTableColumn;
 
     @FXML
-    private TableColumn<?, ?> officerNameTableColumn;
+    private TableColumn<AdminPersonnelModel,String> officerNameTableColumn;
 
     @FXML
-    private TableView<?> personnelTableView;
+    private TableView<AdminPersonnelModel> personnelTableView;
 
     @FXML
-    private TableColumn<?, ?> resultTableColumn;
+    private TableColumn<AdminPersonnelModel,String> resultTableColumn;
 
     @FXML
-    private TableColumn<?, ?> trainingNameTableColumn;
+    private TableColumn<AdminPersonnelModel,String> trainingNameTableColumn;
 
     @FXML
-    private TableColumn<?, ?> trainingStatusTableColumn;
+    private TableColumn<AdminPersonnelModel,String> trainingStatusTableColumn;
 
     @FXML
     void backOnClick(ActionEvent event) throws IOException {
@@ -45,9 +48,22 @@ public class AdminPersonnelController {
 
     }
 
-    @Deprecated
-    void filterByTrainingStatusOnClick(ActionEvent event) {
+    @FXML
+    void initialize(){
 
+        officerNameTableColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
+        officerIDTableColumn.setCellValueFactory(new PropertyValueFactory<>("ID"));
+        trainingNameTableColumn.setCellValueFactory(new PropertyValueFactory<>("training"));
+        trainingStatusTableColumn.setCellValueFactory(new PropertyValueFactory<>("status"));
+        resultTableColumn.setCellValueFactory(new PropertyValueFactory<>("result"));
+
+        personnelTableView.getItems().setAll(messageList);
+    }
+
+    public static List<AdminPersonnelModel> messageList =new ArrayList<>();
+    static {
+
+        messageList.add(new AdminPersonnelModel("Mahumudullah","2230406","parkour","too heavy body","failed"));
     }
 
 }
