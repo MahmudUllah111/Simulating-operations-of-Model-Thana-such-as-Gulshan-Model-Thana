@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="packaged.dashboard_one.ViewCriminalController">
+   <children>
+      <TableView fx:id="table_view" layoutX="52.0" layoutY="110.0" prefHeight="221.0" prefWidth="496.0">
+        <columns>
+          <TableColumn fx:id="tc_name" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="tc_id" prefWidth="89.33334350585938" text="ID" />
+            <TableColumn fx:id="tc_crime" prefWidth="93.33331298828125" text="Crime type" />
+            <TableColumn fx:id="tc_officer" prefWidth="122.0" text="Officer assigned" />
+            <TableColumn fx:id="tc_date" prefWidth="116.0" text="Date" />
+        </columns>
+      </TableView>
+      <Label layoutX="196.0" layoutY="14.0" text="Criminal Records">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="499.0" layoutY="343.0" mnemonicParsing="false" onAction="#onHomebutton" text="Home" />
+      <Button layoutX="105.0" layoutY="343.0" mnemonicParsing="false" onAction="#onEditbutton" text="EDIT" />
+      <Button layoutX="176.0" layoutY="343.0" mnemonicParsing="false" onAction="#onDeletebutton" text="DELETE" />
+      <TextField fx:id="tf_search" layoutX="51.0" layoutY="58.0" prefHeight="25.0" prefWidth="423.0" promptText="Enter Name or ID" />
+      <Button layoutX="488.0" layoutY="58.0" mnemonicParsing="false" onAction="#onSearchbutton" text="Search" />
+   </children>
+</AnchorPane>

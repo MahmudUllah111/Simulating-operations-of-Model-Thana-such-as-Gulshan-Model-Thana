@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="iub.gulshanmodelthana.m3_jannati_2330003.User5DashboardController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m3_jannati_2330003.user5DashboardController">
+   <children>
+      <Text layoutX="217.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duty Officer Dashboard">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button layoutX="492.0" layoutY="340.0" mnemonicParsing="false" onAction="#signOut" text="Sign Out" />
+      <Button layoutX="93.0" layoutY="91.0" mnemonicParsing="false" onAction="#registerGD" text="Register a new GD" />
+      <Button layoutX="124.0" layoutY="151.0" mnemonicParsing="false" onAction="#fileFIR" text="File FIR" />
+      <Button layoutX="92.0" layoutY="209.0" mnemonicParsing="false" onAction="#assignPatrolTeam" text="Assign Patrol Team" />
+      <Button layoutX="94.0" layoutY="273.0" mnemonicParsing="false" onAction="#trackOpenCases" text="Track Open Cases" />
+      <Button layoutX="402.0" layoutY="91.0" mnemonicParsing="false" onAction="#issueSummons" text="Issue Summons Notice" />
+      <Button layoutX="406.0" layoutY="151.0" mnemonicParsing="false" onAction="#recordSuspectEntry" text="Record Suspect Entry" />
+      <Button layoutX="353.0" layoutY="209.0" mnemonicParsing="false" onAction="#lostAndFound" text="Manage Lost and Found report" />
+      <Button layoutX="383.0" layoutY="273.0" mnemonicParsing="false" onAction="#generateReport" text="Generate Daily Station Report" />
+   </children>
 </AnchorPane>

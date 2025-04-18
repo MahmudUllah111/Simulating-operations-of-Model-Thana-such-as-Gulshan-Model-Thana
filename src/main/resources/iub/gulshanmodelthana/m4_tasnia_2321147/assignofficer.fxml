@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="packaged.dashboard_one.AssignOfficerController">
+   <children>
+      <TableView fx:id="table_view" layoutX="130.0" layoutY="68.0" prefHeight="200.0" prefWidth="375.0">
+        <columns>
+          <TableColumn fx:id="tc_name" prefWidth="114.66665649414062" text="Officer Name" />
+          <TableColumn fx:id="tc_id" prefWidth="82.0" text="Officer ID" />
+            <TableColumn fx:id="tc_branch" prefWidth="91.33331298828125" text="Branch" />
+            <TableColumn fx:id="tc_case" prefWidth="91.33331298828125" text="Case" />
+        </columns>
+      </TableView>
+      <Label layoutX="194.0" layoutY="23.0" text="Assigned Officer">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="361.0" layoutY="285.0" mnemonicParsing="false" onAction="#onAssignbutton" text="ASSIGN" />
+      <Button layoutX="281.0" layoutY="339.0" mnemonicParsing="false" onAction="#onHomebutton" text="HOME" />
+      <TextField fx:id="tf_assign" layoutX="130.0" layoutY="285.0" prefHeight="25.0" prefWidth="208.0" promptText="Enter Case Status" />
+   </children>
+</AnchorPane>

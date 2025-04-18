@@ -3,7 +3,6 @@ package iub.gulshanmodelthana.m3_jannati_2330003;
 import iub.gulshanmodelthana.common.AppendableObjectOutputStream;
 import iub.gulshanmodelthana.common.SceneSwitcher;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -11,6 +10,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.*;
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class NewGDController {
     @FXML
@@ -35,8 +35,8 @@ public class NewGDController {
     private TableColumn<NewGD_model, String> gdDetailsTableColumn;
     @FXML
     private TableView<NewGD_model> gdListTable;
-    private ObservableList<NewGD_model> GDList = FXCollections.observableArrayList();
-    
+    private ArrayList<NewGD_model> GDList = new ArrayList<>();
+
 
     @FXML
     public void initialize() {
@@ -46,7 +46,7 @@ public class NewGDController {
         gdDateColumn.setCellValueFactory(new PropertyValueFactory<>("date"));
         gdDetailsTableColumn.setCellValueFactory(new PropertyValueFactory<>("details"));
         GDList = getGD();
-        gdListTable.setItems(GDList);
+        gdListTable.getItems().addAll(GDList);
     }
 
 
@@ -90,11 +90,11 @@ public class NewGDController {
             catch (IOException ignored) {}
         }
 
-        GDList.add(GD);
+        gdListTable.getItems().add(GD);
     }
 
-    private ObservableList<NewGD_model> getGD() {
-        ObservableList<NewGD_model> GDList = FXCollections.observableArrayList();
+    private ArrayList<NewGD_model> getGD() {
+        ArrayList<NewGD_model> GDList = new ArrayList<>();
         File f = null;
         FileInputStream fis = null;
         ObjectInputStream ois = null;
@@ -140,7 +140,13 @@ public class NewGDController {
 
     @FXML
     public void backToDashBoardButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("m3_jannati_2330003/DutyOfficerDashboard");
+        SceneSwitcher.switchTo("m3_jannati_2330003/user5Dashboard");
     }
 
+    @FXML
+    public void viewAllGdButton(ActionEvent actionEvent) {
+        GDList = getGD();
+        gdListTable.getItems().clear();
+        gdListTable.getItems().addAll(GDList);
+    }
 }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="packaged.dashboard_one.HelloController">
+   <children>
+      <Label layoutX="54.0" layoutY="14.0" text="Gulshan Model Thana - Criminal Records Manager Dashboard">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="66.0" mnemonicParsing="false" onAction="#criminal_records" text="Criminal Records" />
+      <Button layoutX="129.0" layoutY="66.0" mnemonicParsing="false" onAction="#addnew" text="Add New Record" />
+      <Button layoutX="243.0" layoutY="66.0" mnemonicParsing="false" onAction="#searchrecords" text="Search Records" />
+      <Button layoutX="349.0" layoutY="66.0" mnemonicParsing="false" onAction="#exportrecords" text="Export Records" />
+      <Button layoutX="456.0" layoutY="66.0" mnemonicParsing="false" onAction="#assignofficer" text="Assign Officer" />
+      <Button layoutX="14.0" layoutY="107.0" mnemonicParsing="false" onAction="#viewdetails" text="View Details" />
+      <TableView fx:id="table_view" layoutX="109.0" layoutY="144.0" prefHeight="255.0" prefWidth="293.0">
+        <columns>
+          <TableColumn fx:id="tc_name" prefWidth="96.66665649414062" text="Criminal Name" />
+          <TableColumn fx:id="tc_crime" prefWidth="98.66665649414062" text="Crime type" />
+            <TableColumn fx:id="tc_date" prefWidth="98.66665649414062" text="Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
