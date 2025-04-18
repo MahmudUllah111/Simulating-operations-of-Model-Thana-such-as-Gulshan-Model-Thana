@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane fx:id="suspectNameTextField" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m3_jannati_2330003.SuspectEntryController">
+<AnchorPane fx:id="suspectNameTextField" prefHeight="482.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m3_jannati_2330003.SuspectEntryController">
    <children>
       <Label layoutX="176.0" layoutY="14.0" text="Record Suspect Entry ">
          <font>
@@ -37,7 +36,7 @@
       <TextArea fx:id="caseDetailssTextArea" layoutX="169.0" layoutY="104.0" prefHeight="68.0" prefWidth="200.0" />
       <DatePicker fx:id="entryDatePicker" layoutX="176.0" layoutY="187.0" />
       <Button layoutX="213.0" layoutY="225.0" mnemonicParsing="false" onAction="#suspectEntrySubmitButton" text="Submit" />
-      <TableView fx:id="suspectListTableView" layoutX="23.0" layoutY="278.0" prefHeight="108.0" prefWidth="508.0">
+      <TableView fx:id="suspectListTableView" layoutX="23.0" layoutY="278.0" prefHeight="182.0" prefWidth="508.0">
         <columns>
           <TableColumn fx:id="suspectNameColumn" prefWidth="147.0" text="Suspect Name" />
           <TableColumn fx:id="caseDetailsColumn" prefWidth="197.0" text="Case Details" />

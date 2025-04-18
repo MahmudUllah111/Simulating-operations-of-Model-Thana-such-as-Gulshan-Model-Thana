@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m3_jannati_2330003.TrackCasesController">
    <children>
       <Label layoutX="68.0" layoutY="68.0" text="Search Case :" />
@@ -19,10 +18,10 @@
       </Label>
       <TextField fx:id="caseIdSearch" layoutX="158.0" layoutY="64.0" />
       <Button layoutX="344.0" layoutY="65.0" mnemonicParsing="false" onAction="#caseIdSearcjButton" text="Search" />
-      <TableView layoutX="62.0" layoutY="129.0" prefHeight="200.0" prefWidth="300.0">
+      <TableView fx:id="caseTable" layoutX="62.0" layoutY="129.0" prefHeight="200.0" prefWidth="300.0">
         <columns>
           <TableColumn fx:id="caseIdTableColumn" prefWidth="104.0" text="Case ID" />
-          <TableColumn fx:id="casseStatusTableColumn" prefWidth="193.0" text="Case Status" />
+          <TableColumn fx:id="casseStatusTableColumn" prefWidth="193.0" text="Case Name" />
         </columns>
       </TableView>
       <Button layoutX="419.0" layoutY="65.0" mnemonicParsing="false" onAction="#showCaseDetailsButton" text="Show Details" />
