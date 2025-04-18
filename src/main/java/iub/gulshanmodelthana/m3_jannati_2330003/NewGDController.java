@@ -22,8 +22,6 @@ public class NewGDController {
     @FXML
     private TextField ContactNoField;
     @FXML
-    private DatePicker gdDatepicker;
-    @FXML
     private TableColumn<NewGD_model, String> gdIdTableColumn;
     @FXML
     private TableColumn<NewGD_model, String> complaintNameTableColumn;
@@ -36,7 +34,9 @@ public class NewGDController {
     @FXML
     private TableView<NewGD_model> gdListTable;
     private ObservableList<NewGD_model> GDList = FXCollections.observableArrayList();
-    
+    @FXML
+    private DatePicker gdDatepicker;
+
 
     @FXML
     public void initialize() {

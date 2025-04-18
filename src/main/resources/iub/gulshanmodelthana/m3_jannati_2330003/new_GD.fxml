@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane fx:id="gdDatepicker" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m3_jannati_2330003.NewGDController">
+<AnchorPane prefHeight="400.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m3_jannati_2330003.NewGDController">
    <children>
       <Label layoutX="281.0" layoutY="14.0" text="New  GD   Entry   Form" textAlignment="CENTER" textFill="#1e1818">
          <font>
@@ -33,12 +32,12 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="28.0" layoutY="320.0" text=" GD Date   :">
+      <Label layoutX="36.0" layoutY="312.0" text=" GD Date   :">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="complaintNameField" layoutX="140.0" layoutY="101.0" />
+      <TextField fx:id="complaintNameField" layoutX="184.0" layoutY="102.0" />
       <Label layoutX="26.0" layoutY="65.0" text=" GD ID   :">
          <font>
             <Font size="14.0" />
@@ -46,10 +45,18 @@
       </Label>
       <TextField fx:id="GDIDField" layoutX="184.0" layoutY="61.0" />
       <TextField fx:id="ContactNoField" layoutX="184.0" layoutY="140.0" />
-      <TextArea fx:id="GDDetailsTextArea" layoutX="185.0" layoutY="175.0" prefHeight="128.0" prefWidth="138.0" />
-      <DatePicker layoutX="184.0" layoutY="308.0" />
-      <Button fx:id="saveGd" layoutX="242.0" layoutY="360.0" mnemonicParsing="false" onAction="#saveGdButton" text="Save" />
-      <Button layoutX="317.0" layoutY="361.0" mnemonicParsing="false" onAction="#viewAllGdButton" text="View all GD" />
+      <TextArea fx:id="GDDetailsTextArea" layoutX="185.0" layoutY="175.0" prefHeight="128.0" prefWidth="150.0" />
+      <DatePicker fx:id="gdDatepicker" layoutX="166.0" layoutY="309.0" />
       <Button layoutX="447.0" layoutY="360.0" mnemonicParsing="false" onAction="#backToDashBoardButton" text="Back to Dash Board" />
+      <TableView fx:id="gdListTable" layoutX="365.0" layoutY="66.0" prefHeight="262.0" prefWidth="404.0">
+         <columns>
+            <TableColumn fx:id="gdIdTableColumn" prefWidth="41.0" text="GD ID" />
+            <TableColumn fx:id="complaintNameTableColumn" prefWidth="88.800048828125" text="Name" />
+            <TableColumn fx:id="contactNoTableColumn" prefWidth="77.60000610351562" text="Contact No" />
+            <TableColumn fx:id="gdDetailsTableColumn" minWidth="0.0" prefWidth="120.7999267578125" text="Details" />
+            <TableColumn fx:id="gdDateColumn" prefWidth="76.0001220703125" text="Date" />
+         </columns>
+      </TableView>
+      <Button layoutX="157.0" layoutY="360.0" mnemonicParsing="false" onAction="#saveGdButton" text="Save New GD" />
    </children>
 </AnchorPane>
