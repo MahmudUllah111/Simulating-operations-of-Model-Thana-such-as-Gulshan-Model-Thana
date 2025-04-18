@@ -89,8 +89,8 @@ public class ContactController {
 
     public static List<Contact_Model> messageList = new ArrayList<>();
     static {
-        messageList.add(new Contact_Model("SIMahmud", "Regarding leave from work.", "Feeling unwell from late night duty.", LocalDate.of(2025,4,10)));
-        messageList.add(new Contact_Model("SIOnto", "Regarding the station's ground fan.", "The ground's fan needs to be changed.", LocalDate.of(2025, 4, 11)));
+        messageList.add(new Contact_Model("SI Mahmud", "Regarding leave from work.", "Feeling unwell from late night duty.", LocalDate.of(2025,4,10)));
+        messageList.add(new Contact_Model("SI Onto", "Regarding the station's ground fan.", "The ground's fan needs to be changed.", LocalDate.of(2025, 4, 11)));
         messageList.add(new Contact_Model("Support", "Regarding update system with new software.", "Please update your pc with the latest windows.", LocalDate.of(2025, 4, 12)));
         messageList.add(new Contact_Model("Admin", "Regarding computer bug solution.", "The issue has been fixed", LocalDate.of(2025, 4, 13)));
     }

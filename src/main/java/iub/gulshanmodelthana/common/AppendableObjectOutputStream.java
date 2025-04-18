@@ -10,5 +10,7 @@ public class AppendableObjectOutputStream extends ObjectOutputStream {
     }
 
     @Override
-    protected void writeStreamHeader() throws IOException {}
+    protected void writeStreamHeader() throws IOException {
+
+    }
 }
