@@ -1,12 +1,10 @@
 package iub.gulshanmodelthana.m3_jannati_2330003;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 
-public class newGDController {
+public class NewGDController {
     @javafx.fxml.FXML
     private Button saveGd;
     @javafx.fxml.FXML
@@ -19,6 +17,18 @@ public class newGDController {
     private TextField ContactNoField;
     @javafx.fxml.FXML
     private AnchorPane gdDatepicker;
+    @javafx.fxml.FXML
+    private TableColumn gdIdTableColumn;
+    @javafx.fxml.FXML
+    private TableColumn complaintNameTableColumn;
+    @javafx.fxml.FXML
+    private TableColumn contactNoTableColumn;
+    @javafx.fxml.FXML
+    private TableColumn gdDatePicker;
+    @javafx.fxml.FXML
+    private TableColumn gdDetailsTableColumn;
+    @javafx.fxml.FXML
+    private TableView gdListTable;
 
     @javafx.fxml.FXML
     public void saveGdButton(ActionEvent actionEvent) {
@@ -28,7 +38,7 @@ public class newGDController {
     public void backToDashBoardButton(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void viewAllGdButton(ActionEvent actionEvent) {
     }
 }
