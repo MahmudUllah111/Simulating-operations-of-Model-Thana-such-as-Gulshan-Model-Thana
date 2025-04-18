@@ -9,6 +9,7 @@ public class AssignPatrolTeamController {
     @javafx.fxml.FXML
     private TextArea patrolGoalTextArea;
     @javafx.fxml.FXML
+
     private CheckBox patrolAvailableOfficerCheckbox;
     @javafx.fxml.FXML
     private DatePicker patrolDatePicker;
