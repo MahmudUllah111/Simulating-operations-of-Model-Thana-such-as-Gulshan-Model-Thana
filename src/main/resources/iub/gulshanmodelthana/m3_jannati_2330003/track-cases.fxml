@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m3_jannati_2330003.TrackCasesController">
+   <children>
+      <Label layoutX="68.0" layoutY="68.0" text="Search Case :" />
+      <Label layoutX="212.0" layoutY="14.0" text="Track Cases">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="caseIdSearch" layoutX="158.0" layoutY="64.0" />
+      <Button layoutX="344.0" layoutY="65.0" mnemonicParsing="false" onAction="#caseIdSearcjButton" text="Search" />
+      <TableView layoutX="62.0" layoutY="129.0" prefHeight="200.0" prefWidth="300.0">
+        <columns>
+          <TableColumn fx:id="caseIdTableColumn" prefWidth="104.0" text="Case ID" />
+          <TableColumn fx:id="casseStatusTableColumn" prefWidth="193.0" text="Case Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="419.0" layoutY="65.0" mnemonicParsing="false" onAction="#showCaseDetailsButton" text="Show Details" />
+      <Label fx:id="DetailsShowLabel" layoutX="448.0" layoutY="161.0" text="Details">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="419.0" layoutY="235.0" mnemonicParsing="false" onAction="#backToDashboardButton" prefHeight="49.0" prefWidth="126.0" text="Dashboard" />
+   </children>
+</AnchorPane>
