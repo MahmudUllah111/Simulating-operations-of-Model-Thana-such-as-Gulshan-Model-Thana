@@ -93,7 +93,7 @@ public class NewGDController {
         gdListTable.getItems().add(GD);
     }
 
-    private ArrayList<NewGD_model> getGD() {
+    public static ArrayList<NewGD_model> getGD() {
         ArrayList<NewGD_model> GDList = new ArrayList<>();
         File f = null;
         FileInputStream fis = null;

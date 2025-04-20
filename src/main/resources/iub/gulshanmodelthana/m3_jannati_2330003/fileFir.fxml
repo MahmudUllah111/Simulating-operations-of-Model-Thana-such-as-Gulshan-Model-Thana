@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
@@ -9,54 +8,38 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m3_jannati_2330003.FileFirController">
+<AnchorPane prefHeight="400.0" prefWidth="515.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m3_jannati_2330003.FileFirController">
    <children>
-      <Label layoutX="220.0" layoutY="14.0" text="File an FIR">
+      <Label layoutX="119.0" layoutY="14.0" text="New  FIR   Entry   Form" textAlignment="CENTER" textFill="#1e1818">
          <font>
-            iuhj
-            <Font size="26.0" />
+            <Font size="20.0" />
          </font>
-      </Label>lkn
-      <Label layoutX="27.0" layoutY="61.0" text="FIR Id : ">
+      </Label>
+      <Label layoutX="27.0" layoutY="105.0" text="Complaint Name : ">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="27.0" layoutY="96.0" text="Complaint Name : ">
+      <Label layoutX="26.0" layoutY="175.0" text="FIR Details : ">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="27.0" layoutY="128.0" text="Case Details :">
+      <Label layoutX="28.0" layoutY="320.0" text=" FIR  Date   :">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="27.0" layoutY="246.0" text="Submission Date :">
+      <TextField fx:id="complaintNameField" layoutX="171.0" layoutY="102.0" />
+      <Label layoutX="26.0" layoutY="65.0" text="FIR ID   :">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Button layoutX="212.0" layoutY="294.0" mnemonicParsing="false" onAction="#firSubmitButton" text="Submit">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Button>
-      <TextField fx:id="firIdTextField" layoutX="162.0" layoutY="58.0" />
-      <TextField fx:id="firComplaintTextField" layoutX="162.0" layoutY="93.0" />
-      <TextArea fx:id="caseDetailsTextArea" layoutX="156.0" layoutY="128.0" prefHeight="91.0" prefWidth="173.0" />
-      <DatePicker fx:id="firSubmissionDatePicker" layoutX="156.0" layoutY="242.0" />
-      <ButtonBar layoutX="331.0" layoutY="86.0" prefHeight="40.0" prefWidth="200.0" />
-      <Button layoutX="387.0" layoutY="201.0" mnemonicParsing="false" onAction="#backToDashboardFromFir" prefHeight="91.0" prefWidth="173.0" text="Back To DashBoard">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Button>
-      <Button layoutX="387.0" layoutY="61.0" mnemonicParsing="false" onAction="#allFirButton" prefHeight="91.0" prefWidth="173.0" text="Show All FIR">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Button>
+      <TextField fx:id="FIRIDField" layoutX="184.0" layoutY="61.0" />
+      <TextArea fx:id="FIRDetailsTextArea" layoutX="185.0" layoutY="175.0" prefHeight="128.0" prefWidth="138.0" />
+      <DatePicker fx:id="FIRDatepicker" layoutX="184.0" layoutY="308.0" />
+      <Button layoutX="123.0" layoutY="360.0" mnemonicParsing="false" onAction="#submitbuttone" text="Submit for Approval" />
+      <Button layoutX="374.0" layoutY="360.0" mnemonicParsing="false" onAction="#backToDashBoardButton" text="Back to Dash Board" />
    </children>
 </AnchorPane>

@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 public class NewGD_model implements Serializable {
+    private static final long serialVersionUID = 1L;
     String ID, name, contact, details;
     LocalDate date;
 
