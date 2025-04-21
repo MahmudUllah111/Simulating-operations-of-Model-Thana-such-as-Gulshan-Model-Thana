@@ -18,6 +18,7 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Gulshan Model Thana");
         stage.setScene(scene);
+
         stage.show();
     }
 
