@@ -14,7 +14,7 @@ public class HelloApplication extends Application {
 
         SceneSwitcher.stage = stage;
 
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/login.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/lhello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Gulshan Model Thana");
         stage.setScene(scene);
