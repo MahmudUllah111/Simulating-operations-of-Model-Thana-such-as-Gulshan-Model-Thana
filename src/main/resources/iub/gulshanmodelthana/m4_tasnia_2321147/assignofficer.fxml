@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="packaged.dashboard_one.AssignOfficerController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m4_tasnia_2321147.AssignOfficerController">
    <children>
-      <TableView fx:id="table_view" layoutX="130.0" layoutY="68.0" prefHeight="200.0" prefWidth="375.0">
+      <TableView fx:id="table_view" layoutX="130.0" layoutY="73.0" prefHeight="200.0" prefWidth="375.0">
         <columns>
           <TableColumn fx:id="tc_name" prefWidth="114.66665649414062" text="Officer Name" />
           <TableColumn fx:id="tc_id" prefWidth="82.0" text="Officer ID" />
@@ -18,7 +18,7 @@
             <TableColumn fx:id="tc_case" prefWidth="91.33331298828125" text="Case" />
         </columns>
       </TableView>
-      <Label layoutX="194.0" layoutY="23.0" text="Assigned Officer">
+      <Label layoutX="213.0" layoutY="25.0" text="Assigned Officer">
          <font>
             <Font size="24.0" />
          </font>

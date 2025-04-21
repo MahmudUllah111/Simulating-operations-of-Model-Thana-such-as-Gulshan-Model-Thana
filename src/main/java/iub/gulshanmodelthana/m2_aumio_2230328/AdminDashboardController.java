@@ -80,7 +80,7 @@ public class AdminDashboardController {
 
     @FXML
     void logOutOnCLick(ActionEvent event) throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/login.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("common/hello-view.fxml"));
         Scene nextScene = new Scene(fxmlLoader.load());
 
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();

@@ -60,6 +60,9 @@ public class LoginController {
                 break;
             case "Training Officer" :
                 fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("m3_jannati_2330003/user-6-dashboard.fxml"));
+
+            case "Criminal Records Manager" :
+                fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("m4_tasnia_2321147/hello-view.fxml"));
         }
 
         if (fxmlLoader != null) {

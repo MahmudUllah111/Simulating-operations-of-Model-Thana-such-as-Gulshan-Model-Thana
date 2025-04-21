@@ -14,5 +14,7 @@ module iub.gulshanmodelthana {
     opens iub.gulshanmodelthana.common to javafx.fxml;
     exports iub.gulshanmodelthana.m3_jannati_2330003;
     opens iub.gulshanmodelthana.m3_jannati_2330003 to javafx.fxml;
+    exports iub.gulshanmodelthana.m4_tasnia_2321147;
+    opens iub.gulshanmodelthana.m4_tasnia_2321147 to javafx.fxml;
 
 }

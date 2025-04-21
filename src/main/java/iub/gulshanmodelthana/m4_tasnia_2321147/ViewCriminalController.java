@@ -1,6 +1,7 @@
-package packaged.dashboard_one;
+package iub.gulshanmodelthana.m4_tasnia_2321147;
 
 import javafx.beans.Observable;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,9 +16,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.Scanner;
@@ -42,7 +41,7 @@ public class ViewCriminalController implements Initializable {
     @FXML
     private TableColumn<Criminals, String> tc_officer;
 
-    ObservableList criminal_list;
+    ObservableList<Criminals> criminal_list = FXCollections.observableArrayList();
 
 
     @FXML
@@ -50,16 +49,55 @@ public class ViewCriminalController implements Initializable {
 
     @FXML
     void onDeletebutton(ActionEvent event) {
+        Criminals selectedCriminal = table_view.getSelectionModel().getSelectedItem();
+        if (selectedCriminal != null) {
+            criminal_list.remove(selectedCriminal);
+            saveDataToFile("Criminals.txt");
+            table_view.setItems(criminal_list);
+        }
 
     }
 
     @FXML
     void onEditbutton(ActionEvent event) {
-
+        saveDataToFile("Criminals.txt");
     }
+
+    private void saveDataToFile(String filename) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(filename))) {
+            for (Criminals criminal : criminal_list) {
+                String line = criminal.getName() + " " + criminal.getId() + " " + criminal.getType()
+                        + " " + criminal.getAssigned() + " " + criminal.getDate();
+                bw.write(line);
+                bw.newLine();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     @FXML
     void onSearchbutton(ActionEvent event) {
+
+        String searchTerm = tf_search.getText().trim().toLowerCase();
+        ObservableList<Criminals> filteredList = FXCollections.observableArrayList();
+
+        if (!searchTerm.isEmpty()) {
+            for (Criminals criminal : criminal_list) {
+                if (criminal.getName().toLowerCase().contains(searchTerm) ||
+                        criminal.getId().toLowerCase().contains(searchTerm) ||
+                        criminal.getType().toLowerCase().contains(searchTerm) ||
+                        criminal.getAssigned().toLowerCase().contains(searchTerm) ||
+                        criminal.getDate().toLowerCase().contains(searchTerm)) {
+
+                    filteredList.add(criminal);
+                }
+            }
+            table_view.setItems(filteredList);
+        } else {
+            table_view.setItems(criminal_list);
+        }
 
     }
 
@@ -75,6 +113,7 @@ public class ViewCriminalController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
 
         String filename = "Criminals.txt";
 
@@ -105,13 +144,13 @@ public class ViewCriminalController implements Initializable {
 //            lbl_error.setText("Error loading page.");
         }
 
-        criminal_list = table_view.getItems();
 
-        tc_name.setCellValueFactory(new PropertyValueFactory("name"));
-        tc_id.setCellValueFactory(new PropertyValueFactory("id"));
-        tc_crime.setCellValueFactory(new PropertyValueFactory("type"));
-        tc_officer.setCellValueFactory(new PropertyValueFactory("assigned"));
-        tc_date.setCellValueFactory(new PropertyValueFactory("date"));
+        tc_name.setCellValueFactory(new PropertyValueFactory<>("name"));
+        tc_id.setCellValueFactory(new PropertyValueFactory<>("id"));
+        tc_crime.setCellValueFactory(new PropertyValueFactory<>("type"));
+        tc_officer.setCellValueFactory(new PropertyValueFactory<>("assigned"));
+        tc_date.setCellValueFactory(new PropertyValueFactory<>("date"));
+
 
 
 
