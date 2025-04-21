@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m3_jannati_2330003.user5DashboardController">
+   <children>
+      <Text layoutX="189.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duty Officer Dashboard">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="455.0" layoutY="340.0" mnemonicParsing="false" onAction="#signOut" prefHeight="35.0" prefWidth="102.0" text="Sign Out">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="80.0" layoutY="81.0" mnemonicParsing="false" onAction="#registerGD" prefHeight="50.0" prefWidth="184.0" text="Register a new GD">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="80.0" layoutY="150.0" mnemonicParsing="false" onAction="#fileFIR" prefHeight="50.0" prefWidth="184.0" text="File FIR">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="80.0" layoutY="209.0" mnemonicParsing="false" onAction="#assignPatrolTeam" prefHeight="50.0" prefWidth="184.0" text="Assign Patrol Team">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="82.0" layoutY="273.0" mnemonicParsing="false" onAction="#trackOpenCases" prefHeight="50.0" prefWidth="184.0" text="Track Open Cases">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="335.0" layoutY="81.0" mnemonicParsing="false" onAction="#issueSummons" prefHeight="50.0" prefWidth="184.0" text="Issue Summons Notice">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="335.0" layoutY="141.0" mnemonicParsing="false" onAction="#recordSuspectEntry" prefHeight="50.0" prefWidth="184.0" text="Record Suspect Entry">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="335.0" layoutY="201.0" mnemonicParsing="false" onAction="#lostAndFound" prefHeight="50.0" prefWidth="184.0" text="Manage Lost and Found report" />
+      <Button layoutX="335.0" layoutY="266.0" mnemonicParsing="false" onAction="#generateReport" prefHeight="57.0" prefWidth="184.0" text="Generate Daily Station Report" />
+   </children>
+</AnchorPane>
