@@ -7,22 +7,23 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m3_jannati_2330003.TrainingRecordsController">
+<AnchorPane prefHeight="400.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m3_jannati_2330003.TrainingRecordsController">
    <children>
-      <Label layoutX="189.0" layoutY="27.0" text="Training Records">
+      <Label layoutX="258.0" layoutY="31.0" text="Training Records">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <TableView fx:id="trainingRecordsTableView" layoutX="12.0" layoutY="100.0" prefHeight="200.0" prefWidth="562.0">
+      <TableView fx:id="trainingRecordsTableView" layoutX="12.0" layoutY="100.0" prefHeight="200.0" prefWidth="670.0">
         <columns>
           <TableColumn fx:id="trainingIDtableColumn" prefWidth="125.0" text="Training ID" />
           <TableColumn fx:id="topicTableColumn" prefWidth="142.0" text="Topic" />
             <TableColumn fx:id="goalToAchieveTableColumn" prefWidth="157.0" text="Goal to Achieve" />
             <TableColumn fx:id="dateOfTrainingTableColumn" prefWidth="137.0" text="Date of Training" />
+            <TableColumn fx:id="statusTableColumn" prefWidth="106.39999999999998" text="Status" />
         </columns>
       </TableView>
-      <Button fx:id="backToDashboardButton" layoutX="442.0" layoutY="329.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="121.0" text="Back to Dashboard" />
+      <Button layoutX="442.0" layoutY="329.0" mnemonicParsing="false" onAction="#backToDashboardOnClick" prefHeight="42.0" prefWidth="121.0" text="Back to Dashboard" />
+      <Button layoutX="144.0" layoutY="329.0" mnemonicParsing="false" onAction="#doneOnClick" prefHeight="42.0" prefWidth="122.0" text="Mark as Done" />
    </children>
 </AnchorPane>

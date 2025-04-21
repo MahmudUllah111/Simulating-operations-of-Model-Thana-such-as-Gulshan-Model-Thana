@@ -44,7 +44,7 @@ public class User6DashboardController {
 
     @javafx.fxml.FXML
     public void maintainTraininingRecordsPageBUtton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("m3_jannati_2330003/schedule-training-session");
+        SceneSwitcher.switchTo("m3_jannati_2330003/training-records");
     }
 
     @javafx.fxml.FXML
