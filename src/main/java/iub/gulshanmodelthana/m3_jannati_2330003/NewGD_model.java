@@ -33,6 +33,7 @@ public class NewGD_model implements Serializable {
     }
 
     public String getContact() {
+
         return contact;
     }
 

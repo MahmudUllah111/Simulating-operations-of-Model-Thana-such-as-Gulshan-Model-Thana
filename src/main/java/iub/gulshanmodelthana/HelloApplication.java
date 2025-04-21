@@ -9,7 +9,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class HelloApplication extends Application {
-
     @Override
     public void start(Stage stage) throws IOException {
 
@@ -19,6 +18,7 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Gulshan Model Thana");
         stage.setScene(scene);
+
         stage.show();
     }
 

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m3_jannati_2330003.TrainingRecordsController">
+   <children>
+      <Label layoutX="189.0" layoutY="27.0" text="Training Records">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="trainingRecordsTableView" layoutX="12.0" layoutY="100.0" prefHeight="200.0" prefWidth="562.0">
+        <columns>
+          <TableColumn fx:id="trainingIDtableColumn" prefWidth="125.0" text="Training ID" />
+          <TableColumn fx:id="topicTableColumn" prefWidth="142.0" text="Topic" />
+            <TableColumn fx:id="goalToAchieveTableColumn" prefWidth="157.0" text="Goal to Achieve" />
+            <TableColumn fx:id="dateOfTrainingTableColumn" prefWidth="137.0" text="Date of Training" />
+        </columns>
+      </TableView>
+      <Button fx:id="backToDashboardButton" layoutX="442.0" layoutY="329.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="121.0" text="Back to Dashboard" />
+   </children>
+</AnchorPane>

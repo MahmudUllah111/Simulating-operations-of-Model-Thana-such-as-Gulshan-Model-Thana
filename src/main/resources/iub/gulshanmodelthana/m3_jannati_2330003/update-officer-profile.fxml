@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m3_jannati_2330003.UpdateOfficerProfileController">
+   <children>
+      <Label layoutX="204.0" layoutY="14.0" text="Officer  Profiles">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="90.0" text="Officer List :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="updateOfficerCombobox" layoutX="131.0" layoutY="86.0" prefWidth="150.0" />
+      <Label layoutX="41.0" layoutY="50.0" text="Select Offier you want to update :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="138.0" text="Enter Information to update :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="updateOfficerstextArea" layoutX="41.0" layoutY="167.0" prefHeight="136.0" prefWidth="310.0" />
+      <Button layoutX="138.0" layoutY="329.0" mnemonicParsing="false" onAction="#updateOfficerInfoButton" prefHeight="38.0" prefWidth="123.0" text="Update Information" />
+      <Button layoutX="441.0" layoutY="329.0" mnemonicParsing="false" onAction="#backToDashboardButton" prefHeight="38.0" prefWidth="121.0" text="Back to Dashboard" />
+      <Label fx:id="updateOfficerSuccessMessage" layoutX="426.0" layoutY="167.0" text="Update message" />
+   </children>
+</AnchorPane>

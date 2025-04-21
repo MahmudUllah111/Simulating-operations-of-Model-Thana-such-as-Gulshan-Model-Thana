@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m3_jannati_2330003.TrackOfficerPerformanceController">
+   <children>
+      <Label layoutX="188.0" layoutY="23.0" text="Track Performances">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="75.0" text="View Officer List : ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="performanceOfficerListCombobox" layoutX="223.0" layoutY="67.0" prefHeight="39.0" prefWidth="179.0" />
+      <Button layoutX="207.0" layoutY="152.0" mnemonicParsing="false" onAction="#viewPerformanceButton" prefHeight="53.0" prefWidth="117.0" text="View Performance" />
+      <Button layoutX="426.0" layoutY="301.0" mnemonicParsing="false" onAction="#backToDahsboard" prefHeight="45.0" prefWidth="128.0" text="Back to Dashboard" />
+   </children>
+</AnchorPane>

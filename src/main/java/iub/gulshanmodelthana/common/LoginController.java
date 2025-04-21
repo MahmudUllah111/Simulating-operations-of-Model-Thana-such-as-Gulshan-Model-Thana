@@ -58,6 +58,8 @@ public class LoginController {
             case "Duty Officer":
                 fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("m3_jannati_2330003/user5Dashboard.fxml"));
                 break;
+            case "Training Officer" :
+                fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("m3_jannati_2330003/user-6-dashboard.fxml"));
         }
 
         if (fxmlLoader != null) {

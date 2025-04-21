@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iub.gulshanmodelthana.m3_jannati_2330003.User6DashboardController">
+   <children>
+      <Label layoutX="142.0" layoutY="14.0" text="HR and Training Officer Dahsboard">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="58.0" layoutY="62.0" mnemonicParsing="false" onAction="#viewAndUpdateOfficerProfilePageButton" prefHeight="65.0" prefWidth="220.0" text="View and Update Officer Profiles">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="58.0" layoutY="208.0" mnemonicParsing="false" onAction="#generatePayrollReportPageButton" prefHeight="65.0" prefWidth="220.0" text="Generate Payroll Report">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="58.0" layoutY="135.0" mnemonicParsing="false" onAction="#manageLeaveRequestsPageButton" prefHeight="65.0" prefWidth="220.0" text="Manage Leave Requests">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="58.0" layoutY="281.0" mnemonicParsing="false" onAction="#scheduleTrainingSessionPageButton" prefHeight="65.0" prefWidth="220.0" text="Schedule Training Session">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="329.0" layoutY="62.0" mnemonicParsing="false" onAction="#trackOfficerPerformancePageButton" prefHeight="65.0" prefWidth="220.0" text="Track Officer Performance">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="329.0" layoutY="135.0" mnemonicParsing="false" onAction="#assignTaskPageButton" prefHeight="65.0" prefWidth="220.0" text="Assign Tasks">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="329.0" layoutY="208.0" mnemonicParsing="false" onAction="#manageTransfersPageButton" prefHeight="65.0" prefWidth="220.0" text="Manage Transfers">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="329.0" layoutY="281.0" mnemonicParsing="false" onAction="#maintainTraininingRecordsPageBUtton" prefHeight="65.0" prefWidth="220.0" text="Maintain Training Records">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="494.0" layoutY="361.0" mnemonicParsing="false" onAction="#logoutButton" text="Log Out">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
