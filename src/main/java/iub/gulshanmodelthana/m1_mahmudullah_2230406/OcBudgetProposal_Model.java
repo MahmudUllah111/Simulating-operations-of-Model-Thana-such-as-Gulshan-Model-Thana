@@ -7,12 +7,14 @@ public class OcBudgetProposal_Model {
     private String purpose;
     private String amount;
     private LocalDate submissiondate;
+    private String status;
 
-    public OcBudgetProposal_Model(String itemname, String purpose, String amount, LocalDate submissiondate) {
+    public OcBudgetProposal_Model(String itemname, String purpose, String amount, LocalDate submissiondate, String status) {
         this.itemname = itemname;
         this.purpose = purpose;
         this.amount = amount;
         this.submissiondate = submissiondate;
+        this.status = status;
     }
 
     public String getItemname() {
@@ -47,6 +49,14 @@ public class OcBudgetProposal_Model {
         this.submissiondate = submissiondate;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return "OcBudgetProposal_Model{" +
@@ -54,6 +64,7 @@ public class OcBudgetProposal_Model {
                 ", purpose='" + purpose + '\'' +
                 ", amount='" + amount + '\'' +
                 ", submissiondate=" + submissiondate +
+                ", status='" + status + '\'' +
                 '}';
     }
 }

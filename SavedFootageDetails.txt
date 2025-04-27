@@ -10,3 +10,7 @@ Footage ID: CAM 1
 Location: Main doors of a mall
 Date: 2025-04-09
 ---------------------------------------
+Footage ID: CAM 1
+Location: Super shop entrance doors
+Date: 2025-04-10
+---------------------------------------

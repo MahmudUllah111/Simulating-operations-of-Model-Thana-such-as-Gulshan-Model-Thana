@@ -35,10 +35,14 @@ public class OcBudgetProposalController {
     private TableColumn<OcBudgetProposal_Model, LocalDate> submissionDateTableColumn;
 
     @FXML
-    private TableColumn amountTableColumn;
+    private TableColumn<OcBudgetProposal_Model, String> amountTableColumn;
+
+    @FXML
+    private TableColumn<OcBudgetProposal_Model, String> budgetstatus;
 
     @FXML
     private Label warninglabel;
+
     @FXML
     private TableView <OcBudgetProposal_Model>tableview;
 
@@ -68,8 +72,17 @@ public class OcBudgetProposalController {
         OcBudgetProposal_Model selectedBudget = tableview.getSelectionModel().getSelectedItem();
 
         if (selectedBudget != null) {
-            warninglabel.setText(" The budget has been approved.");
-            warninglabel.setStyle("-fx-border-color: green");
+            if (selectedBudget.getStatus().equals("Pending")) {
+                selectedBudget.setStatus("Approved");
+                tableview.refresh();
+
+                warninglabel.setText(" The budget has been approved.");
+                warninglabel.setStyle("-fx-border-color: green");
+            }
+            else {
+                warninglabel.setText("This budget has already been " + selectedBudget.getStatus());
+                warninglabel.setStyle("-fx-border-color: red");
+            }
         }
         else {
             warninglabel.setText(" Please select a budget first.");
@@ -82,8 +95,17 @@ public class OcBudgetProposalController {
         OcBudgetProposal_Model selectedBudget = tableview.getSelectionModel().getSelectedItem();
 
         if (selectedBudget != null) {
-            warninglabel.setText(" The budget has been rejected.");
-            warninglabel.setStyle("-fx-border-color: orange");
+            if (selectedBudget.getStatus().equals("Pending")){
+                selectedBudget.setStatus("Rejected");
+                tableview.refresh();
+
+                warninglabel.setText(" The budget has been rejected.");
+                warninglabel.setStyle("-fx-border-color: orange");
+            }
+            else {
+                warninglabel.setText("This budget has already been " + selectedBudget.getStatus());
+                warninglabel.setStyle("-fx-border-color: red");
+            }
         }
         else {
             warninglabel.setText(" Please select a budget first.");
@@ -99,17 +121,18 @@ public class OcBudgetProposalController {
         purposeTableColumn.setCellValueFactory(new PropertyValueFactory<>("purpose"));
         amountTableColumn.setCellValueFactory(new PropertyValueFactory<>("amount"));
         submissionDateTableColumn.setCellValueFactory(new PropertyValueFactory<>("submissiondate"));
+        budgetstatus.setCellValueFactory(new PropertyValueFactory<>("status"));
 
         tableview.getItems().setAll(messageList);
     }
 
     public static List<OcBudgetProposal_Model> messageList = new ArrayList<>();
     static {
-        messageList.add(new OcBudgetProposal_Model("Chair & Table","For GD Office room","20000",LocalDate.of(2025,4,20)));
-        messageList.add(new OcBudgetProposal_Model("Desktop Computer","For IT room","60000",LocalDate.of(2025,4,22)));
-        messageList.add(new OcBudgetProposal_Model("New transportation vehicle","For crminal transport","1500000",LocalDate.of(2025,4,25)));
-        messageList.add(new OcBudgetProposal_Model("Pistol ammunition ","For Officers","300000",LocalDate.of(2025,4,25)));
-        messageList.add(new OcBudgetProposal_Model("New Cells ","To hold more criminal","50000",LocalDate.of(2025,4,30)));
+        messageList.add(new OcBudgetProposal_Model("Chair & Table","For GD Office room","20000",LocalDate.of(2025,4,20), "Pending"));
+        messageList.add(new OcBudgetProposal_Model("Desktop Computer","For IT room","60000",LocalDate.of(2025,4,22), "Pending"));
+        messageList.add(new OcBudgetProposal_Model("New transportation vehicle","For crminal transport","1500000",LocalDate.of(2025,4,25), "Pending"));
+        messageList.add(new OcBudgetProposal_Model("Pistol ammunition ","For Officers","300000",LocalDate.of(2025,4,25), "Pending"));
+        messageList.add(new OcBudgetProposal_Model("New Cells ","To hold more criminal","50000",LocalDate.of(2025,4,30), "Pending"));
 
     }
 }

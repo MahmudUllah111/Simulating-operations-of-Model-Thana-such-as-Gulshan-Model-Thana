@@ -50,8 +50,9 @@
             <columns>
                 <TableColumn fx:id="itemNameTableColumn" prefWidth="267.2000370025635" text="Item Name" />
                 <TableColumn fx:id="purposeTableColumn" prefWidth="267.1999816894531" text="Purpose" />
-                <TableColumn fx:id="amountTableColumn" prefWidth="164.79998779296875" text="Amount" />
-                <TableColumn fx:id="submissionDateTableColumn" prefWidth="207.2000732421875" text="Submission Date" />
+                <TableColumn fx:id="amountTableColumn" prefWidth="110.4000244140625" text="Amount" />
+                <TableColumn fx:id="submissionDateTableColumn" prefWidth="130.39996337890625" text="Submission Date" />
+            <TableColumn fx:id="budgetstatus" prefWidth="132.0" text="Status" />
             </columns>
         </TableView>
         <Label layoutX="7.0" layoutY="168.0" text="Submitted Budget">
