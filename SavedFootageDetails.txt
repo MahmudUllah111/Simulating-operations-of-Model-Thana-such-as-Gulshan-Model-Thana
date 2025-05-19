@@ -14,3 +14,7 @@ Footage ID: CAM 1
 Location: Super shop entrance doors
 Date: 2025-04-10
 ---------------------------------------
+Footage ID: CAM 3
+Location: Parking lot entrance
+Date: 2025-04-11
+---------------------------------------
